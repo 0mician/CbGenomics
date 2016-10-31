@@ -2,13 +2,17 @@
 
 readonly SOFTWARE_REQUIRED=(fastq-dump spades.py ht-trim ht-filter)
 readonly SRA_ACCESSION="SraAccList.txt"
-readonly ARGS="$@"
+readonly ARG="$1"
+readonly SRA_FOLDER="sra"
 
 # progress prompt
 progress_prompt(){
-    echo -e "\n\n######  $1 ######"
+    echo -e "\n######  $1 ######"
 }
 
+usage(){
+    echo "Usage : $0 [retrieve_sra | qc_fastq | assembly | annotation ]"
+}
 # checks if a given software is available on the system (not testing for specific version)
 is_installed() {
     local software=$1
@@ -35,8 +39,8 @@ software_checklist() {
 retrieve_sra(){
     progress_prompt "retrieving SRA files"
     while IFS= read -r line; do
-	echo "Retrieving $line from SRA"
-	#fastq-dump --split-files --outdir $line
+	#echo "$line"
+	fastq-dump -v --split-files --outdir $SRA_FOLDER $line
     done < "$SRA_ACCESSION"
 }
 
@@ -51,24 +55,22 @@ assembly(){
 }
 
 main() {
-    echo "${ARGS[@]}"
-    if [ ${#ARGS[@]} -eq 0 ]
+    if [ -z "$ARG" ]
     then
-     	echo "Usage : $0 [all | retrieve_sra | qc_fastq | assembly | annotation ]"
-    	exit
+     	usage ; exit ;
     fi
     
     software_checklist
 
-    case "${ARGS}" in
-	"all") 
-	    retrieve_sra ;;
+    case "$ARG" in
 	"retrieve_sra")
 	    retrieve_sra ;;
 	"qc_fastq")
 	    qc_fastq ;;
 	"assembly")
 	    assembly ;;
+	*)
+	    usage ; exit ;;
     esac
 }
 main
