@@ -1,0 +1,4 @@
+* CbGenomics
+
+  Analysis of genomic sequences from /Clostridium botulinum/ available
+  on NCBI. (SRA database)
