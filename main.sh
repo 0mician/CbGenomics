@@ -75,11 +75,29 @@ qc_fastq() {
 	       $SRA_FOLDER/$line/${line}_final_1.fastq \
 	       $SRA_FOLDER/$line/${line}_final_2.fastq \
 	       $SRA_FOLDER/$line/${line}_final_s.fastq
+
+	# Clean up folder fastq files (unless you have 1Tb+ free space)
+	rm $SRA_FOLDER/$line/${line}_1_trim.fastq \
+	   $SRA_FOLDER/$line/${line}_2_trim.fastq \
+	   $SRA_FOLDER/$line/${line}_1.fastq \
+	   $SRA_FOLDER/$line/${line}_2.fastq
+	
     done < "$SRA_ACCESSION"
 }
 
 # denovo assembly with spades
 assembly(){
+    while IFS= read -r line; do
+	spades.py -t 8 -k 21,33,55,77 --careful \
+		  --pe1-1 $SRA_FOLDER/$line/${line}_final_1.fastq \
+		  --pe1-2 $SRA_FOLDER/$line/${line}_final_2.fastq \
+		  --s1 $SRA_FOLDER/$line/${line}_final_s.fastq \
+		  -o $SRA_FOLDER/$line/asm
+    done < "$SRA_ACCESSION"
+}
+
+# Annotation with prokka
+annotation(){
     echo "todo"
 }
 
@@ -98,6 +116,8 @@ main() {
 	    qc_fastq ;;
 	"assembly")
 	    assembly ;;
+	"annotation")
+	    annotation ;;
 	*)
 	    usage ; exit ;;
     esac
