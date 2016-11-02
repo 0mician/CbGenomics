@@ -1,0 +1,309 @@
+
+######  software checklist ######
+Checking if fastq-dump is installed...........OK
+Checking if spades.py is installed...........OK
+Checking if ht-trim is installed...........OK
+Checking if ht-filter is installed...........OK
+Checking if fastqc is installed...........OK
+
+######  pre-processing quality control ######
+Started analysis of SRR2059504_1.fastq
+Approx 5% complete for SRR2059504_1.fastq
+Approx 10% complete for SRR2059504_1.fastq
+Started analysis of SRR2059504_2.fastq
+Approx 15% complete for SRR2059504_1.fastq
+Approx 5% complete for SRR2059504_2.fastq
+Approx 20% complete for SRR2059504_1.fastq
+Approx 10% complete for SRR2059504_2.fastq
+Approx 25% complete for SRR2059504_1.fastq
+Approx 15% complete for SRR2059504_2.fastq
+Approx 30% complete for SRR2059504_1.fastq
+Approx 20% complete for SRR2059504_2.fastq
+Approx 35% complete for SRR2059504_1.fastq
+Approx 25% complete for SRR2059504_2.fastq
+Approx 40% complete for SRR2059504_1.fastq
+Approx 30% complete for SRR2059504_2.fastq
+Approx 35% complete for SRR2059504_2.fastq
+Approx 45% complete for SRR2059504_1.fastq
+Approx 40% complete for SRR2059504_2.fastq
+Approx 50% complete for SRR2059504_1.fastq
+Approx 45% complete for SRR2059504_2.fastq
+Approx 55% complete for SRR2059504_1.fastq
+Approx 50% complete for SRR2059504_2.fastq
+Approx 60% complete for SRR2059504_1.fastq
+Approx 55% complete for SRR2059504_2.fastq
+Approx 65% complete for SRR2059504_1.fastq
+Approx 60% complete for SRR2059504_2.fastq
+Approx 70% complete for SRR2059504_1.fastq
+Approx 65% complete for SRR2059504_2.fastq
+Approx 75% complete for SRR2059504_1.fastq
+Approx 70% complete for SRR2059504_2.fastq
+Approx 80% complete for SRR2059504_1.fastq
+Approx 75% complete for SRR2059504_2.fastq
+Approx 85% complete for SRR2059504_1.fastq
+Approx 80% complete for SRR2059504_2.fastq
+Approx 90% complete for SRR2059504_1.fastq
+Approx 85% complete for SRR2059504_2.fastq
+Approx 95% complete for SRR2059504_1.fastq
+Approx 90% complete for SRR2059504_2.fastq
+Analysis complete for SRR2059504_1.fastq
+Approx 95% complete for SRR2059504_2.fastq
+Analysis complete for SRR2059504_2.fastq
+
+######  Trimming ######
+guess encode from front 500 sequences of file /mnt/data/CbGenomics//SRR2059504/SRR2059504_1.fastq
+encode: casava1.8
+# input files:
+#  /mnt/data/CbGenomics//SRR2059504/SRR2059504_1.fastq
+# output file: /mnt/data/CbGenomics//SRR2059504/SRR2059504_1_trim.fastq
+# trim side: both
+# word size: 5
+# quality cutoff: 20
+	50000 reads
+	100000 reads
+	150000 reads
+	200000 reads
+	250000 reads
+	300000 reads
+	350000 reads
+	400000 reads
+	450000 reads
+	500000 reads
+	550000 reads
+	600000 reads
+	650000 reads
+	700000 reads
+	750000 reads
+	800000 reads
+	850000 reads
+	900000 reads
+	950000 reads
+	1000000 reads
+	1050000 reads
+	1100000 reads
+	1150000 reads
+	1200000 reads
+	1250000 reads
+	1300000 reads
+	1350000 reads
+	1400000 reads
+	1450000 reads
+	1500000 reads
+	1550000 reads
+	1600000 reads
+	1650000 reads
+	1700000 reads
+	1750000 reads
+	1800000 reads
+	1850000 reads
+	1900000 reads
+done: 1946503 reads
+guess encode from front 500 sequences of file /mnt/data/CbGenomics//SRR2059504/SRR2059504_2.fastq
+encode: casava1.8
+# input files:
+#  /mnt/data/CbGenomics//SRR2059504/SRR2059504_2.fastq
+# output file: /mnt/data/CbGenomics//SRR2059504/SRR2059504_2_trim.fastq
+# trim side: both
+# word size: 5
+# quality cutoff: 20
+	50000 reads
+	100000 reads
+	150000 reads
+	200000 reads
+	250000 reads
+	300000 reads
+	350000 reads
+	400000 reads
+	450000 reads
+	500000 reads
+	550000 reads
+	600000 reads
+	650000 reads
+	700000 reads
+	750000 reads
+	800000 reads
+	850000 reads
+	900000 reads
+	950000 reads
+	1000000 reads
+	1050000 reads
+	1100000 reads
+	1150000 reads
+	1200000 reads
+	1250000 reads
+	1300000 reads
+	1350000 reads
+	1400000 reads
+	1450000 reads
+	1500000 reads
+	1550000 reads
+	1600000 reads
+	1650000 reads
+	1700000 reads
+	1750000 reads
+	1800000 reads
+	1850000 reads
+	1900000 reads
+done: 1946503 reads
+
+######  Size exclusion ######
+guess quality encode from front 500 sequences of file /mnt/data/CbGenomics//SRR2059504/SRR2059504_1_trim.fastq
+quality encode is casava1.8
+# paired-end
+# input files:
+#  /mnt/data/CbGenomics//SRR2059504/SRR2059504_1_trim.fastq and /mnt/data/CbGenomics//SRR2059504/SRR2059504_2_trim.fastq
+# output prefix: /mnt/data/CbGenomics//SRR2059504/SRR2059504_final
+# filter: length
+# quality encoding: casava1.8
+# length cutoff: 50
+	50000 pairs, 0 accept by pair, 0 accept by single
+	100000 pairs, 0 accept by pair, 0 accept by single
+	150000 pairs, 0 accept by pair, 0 accept by single
+	200000 pairs, 0 accept by pair, 0 accept by single
+	250000 pairs, 0 accept by pair, 0 accept by single
+	300000 pairs, 0 accept by pair, 0 accept by single
+	350000 pairs, 0 accept by pair, 0 accept by single
+	400000 pairs, 0 accept by pair, 0 accept by single
+	450000 pairs, 0 accept by pair, 0 accept by single
+	500000 pairs, 0 accept by pair, 0 accept by single
+	550000 pairs, 0 accept by pair, 0 accept by single
+	600000 pairs, 0 accept by pair, 0 accept by single
+	650000 pairs, 0 accept by pair, 0 accept by single
+	700000 pairs, 0 accept by pair, 0 accept by single
+	750000 pairs, 0 accept by pair, 0 accept by single
+	800000 pairs, 0 accept by pair, 0 accept by single
+	850000 pairs, 0 accept by pair, 0 accept by single
+	900000 pairs, 0 accept by pair, 0 accept by single
+	950000 pairs, 0 accept by pair, 0 accept by single
+	1000000 pairs, 0 accept by pair, 0 accept by single
+	1050000 pairs, 0 accept by pair, 0 accept by single
+	1100000 pairs, 0 accept by pair, 0 accept by single
+	1150000 pairs, 25411 accept by pair, 602 accept by single
+	1200000 pairs, 69100 accept by pair, 1696 accept by single
+	1250000 pairs, 112945 accept by pair, 2780 accept by single
+	1300000 pairs, 156799 accept by pair, 3940 accept by single
+	1350000 pairs, 200872 accept by pair, 5238 accept by single
+	1400000 pairs, 244994 accept by pair, 6787 accept by single
+	1450000 pairs, 289452 accept by pair, 8368 accept by single
+	1500000 pairs, 334533 accept by pair, 10172 accept by single
+	1550000 pairs, 380447 accept by pair, 12396 accept by single
+	1600000 pairs, 424840 accept by pair, 13747 accept by single
+	1650000 pairs, 468923 accept by pair, 15043 accept by single
+	1700000 pairs, 513074 accept by pair, 16483 accept by single
+	1750000 pairs, 557591 accept by pair, 17827 accept by single
+	1800000 pairs, 602294 accept by pair, 19292 accept by single
+	1850000 pairs, 647511 accept by pair, 21012 accept by single
+	1900000 pairs, 693238 accept by pair, 22982 accept by single
+	1946503 pairs, 737006 accept by pair, 24748 accept by single
+done
+
+######  post-processing quality control ######
+Started analysis of SRR2059504_final_1.fastq
+Approx 5% complete for SRR2059504_final_1.fastq
+Approx 10% complete for SRR2059504_final_1.fastq
+Started analysis of SRR2059504_final_2.fastq
+Approx 15% complete for SRR2059504_final_1.fastq
+Approx 5% complete for SRR2059504_final_2.fastq
+Approx 20% complete for SRR2059504_final_1.fastq
+Approx 10% complete for SRR2059504_final_2.fastq
+Approx 25% complete for SRR2059504_final_1.fastq
+Started analysis of SRR2059504_final_s.fastq
+Approx 5% complete for SRR2059504_final_s.fastq
+Approx 10% complete for SRR2059504_final_s.fastq
+Approx 15% complete for SRR2059504_final_s.fastq
+Approx 20% complete for SRR2059504_final_s.fastq
+Approx 15% complete for SRR2059504_final_2.fastq
+Approx 25% complete for SRR2059504_final_s.fastq
+Approx 30% complete for SRR2059504_final_s.fastq
+Approx 35% complete for SRR2059504_final_s.fastq
+Approx 40% complete for SRR2059504_final_s.fastq
+Approx 45% complete for SRR2059504_final_s.fastq
+Approx 50% complete for SRR2059504_final_s.fastq
+Approx 55% complete for SRR2059504_final_s.fastq
+Approx 30% complete for SRR2059504_final_1.fastq
+Approx 60% complete for SRR2059504_final_s.fastq
+Approx 65% complete for SRR2059504_final_s.fastq
+Approx 70% complete for SRR2059504_final_s.fastq
+Approx 75% complete for SRR2059504_final_s.fastq
+Approx 20% complete for SRR2059504_final_2.fastq
+Approx 80% complete for SRR2059504_final_s.fastq
+Approx 85% complete for SRR2059504_final_s.fastq
+Approx 90% complete for SRR2059504_final_s.fastq
+Approx 95% complete for SRR2059504_final_s.fastq
+Analysis complete for SRR2059504_final_s.fastq
+Approx 35% complete for SRR2059504_final_1.fastq
+Approx 25% complete for SRR2059504_final_2.fastq
+Approx 30% complete for SRR2059504_final_2.fastq
+Approx 40% complete for SRR2059504_final_1.fastq
+Approx 35% complete for SRR2059504_final_2.fastq
+Approx 45% complete for SRR2059504_final_1.fastq
+Approx 40% complete for SRR2059504_final_2.fastq
+Approx 50% complete for SRR2059504_final_1.fastq
+Approx 45% complete for SRR2059504_final_2.fastq
+Approx 50% complete for SRR2059504_final_2.fastq
+Approx 55% complete for SRR2059504_final_1.fastq
+Approx 55% complete for SRR2059504_final_2.fastq
+Approx 60% complete for SRR2059504_final_1.fastq
+Approx 60% complete for SRR2059504_final_2.fastq
+Approx 65% complete for SRR2059504_final_1.fastq
+Approx 65% complete for SRR2059504_final_2.fastq
+Approx 70% complete for SRR2059504_final_1.fastq
+Approx 70% complete for SRR2059504_final_2.fastq
+Approx 75% complete for SRR2059504_final_1.fastq
+Approx 75% complete for SRR2059504_final_2.fastq
+Approx 80% complete for SRR2059504_final_1.fastq
+Approx 80% complete for SRR2059504_final_2.fastq
+Approx 85% complete for SRR2059504_final_1.fastq
+Approx 85% complete for SRR2059504_final_2.fastq
+Approx 90% complete for SRR2059504_final_1.fastq
+Approx 90% complete for SRR2059504_final_2.fastq
+Approx 95% complete for SRR2059504_final_1.fastq
+Approx 95% complete for SRR2059504_final_2.fastq
+Approx 100% complete for SRR2059504_final_1.fastq
+Analysis complete for SRR2059504_final_1.fastq
+Approx 100% complete for SRR2059504_final_2.fastq
+Analysis complete for SRR2059504_final_2.fastq
+
+######  pre-processing quality control ######
+Started analysis of SRR2059505_1.fastq
+Approx 5% complete for SRR2059505_1.fastq
+Started analysis of SRR2059505_2.fastq
+Approx 10% complete for SRR2059505_1.fastq
+Approx 5% complete for SRR2059505_2.fastq
+Approx 15% complete for SRR2059505_1.fastq
+Approx 10% complete for SRR2059505_2.fastq
+Approx 20% complete for SRR2059505_1.fastq
+Approx 15% complete for SRR2059505_2.fastq
+Approx 25% complete for SRR2059505_1.fastq
+Approx 20% complete for SRR2059505_2.fastq
+Approx 30% complete for SRR2059505_1.fastq
+Approx 25% complete for SRR2059505_2.fastq
+Approx 35% complete for SRR2059505_1.fastq
+Approx 30% complete for SRR2059505_2.fastq
+Approx 40% complete for SRR2059505_1.fastq
+Approx 35% complete for SRR2059505_2.fastq
+Approx 45% complete for SRR2059505_1.fastq
+Approx 40% complete for SRR2059505_2.fastq
+Approx 50% complete for SRR2059505_1.fastq
+Approx 45% complete for SRR2059505_2.fastq
+Approx 50% complete for SRR2059505_2.fastq
+Approx 55% complete for SRR2059505_1.fastq
+Approx 55% complete for SRR2059505_2.fastq
+Approx 60% complete for SRR2059505_1.fastq
+Approx 60% complete for SRR2059505_2.fastq
+Approx 65% complete for SRR2059505_1.fastq
+Approx 65% complete for SRR2059505_2.fastq
+Approx 70% complete for SRR2059505_1.fastq
+Approx 70% complete for SRR2059505_2.fastq
+Approx 75% complete for SRR2059505_1.fastq
+Approx 75% complete for SRR2059505_2.fastq
+Approx 80% complete for SRR2059505_1.fastq
+Approx 80% complete for SRR2059505_2.fastq
+Approx 85% complete for SRR2059505_1.fastq
+Approx 90% complete for SRR2059505_1.fastq
+Approx 85% complete for SRR2059505_2.fastq
+Approx 90% complete for SRR2059505_2.fastq
+Approx 95% complete for SRR2059505_1.fastq
+Analysis complete for SRR2059505_1.fastq
+Approx 95% complete for SRR2059505_2.fastq
+Analysis complete for SRR2059505_2.fastq
