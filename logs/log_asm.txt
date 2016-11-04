@@ -1,0 +1,81 @@
+
+######  software checklist ######
+Checking if fastq-dump is installed...........OK
+Checking if spades.py is installed...........OK
+Checking if bbduk.sh is installed...........OK
+Checking if fastqc is installed...........OK
+Checking if quast.py is installed...........OK
+Command line: /home/sid/Tools/SPAdes-3.9.0-Linux/bin/spades.py	-t	8	-k	21,33,45,55	--careful	--pe1-1	/mnt/data/CbGenomics/SRR2059504/SRR2059504_1_final.fastq	--pe1-2	/mnt/data/CbGenomics/SRR2059504/SRR2059504_2_final.fastq	-o	/mnt/data/CbGenomics/SRR2059504/asm	
+
+System information:
+  SPAdes version: 3.9.0
+  Python version: 2.7.12
+  OS: Linux-4.4.0-45-generic-x86_64-with-Ubuntu-16.04-xenial
+
+Output dir: /mnt/data/CbGenomics/SRR2059504/asm
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Multi-cell mode (you should set '--sc' flag if input data was obtained with MDA (single-cell) technology or --meta flag if processing metagenomic dataset)
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/mnt/data/CbGenomics/SRR2059504/SRR2059504_1_final.fastq']
+      right reads: ['/mnt/data/CbGenomics/SRR2059504/SRR2059504_2_final.fastq']
+      interlaced reads: not specified
+      single reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed (with gzip)
+Assembly parameters:
+  k: [21, 33, 45, 55]
+  Repeat resolution is enabled
+  Mismatch careful mode is turned ON
+  MismatchCorrector will be used
+  Coverage cutoff is turned OFF
+Other parameters:
+  Dir for temp files: /mnt/data/CbGenomics/SRR2059504/asm/tmp
+  Threads: 8
+  Memory limit (in Gb): 23
+
+
+======= SPAdes pipeline started. Log can be found here: /mnt/data/CbGenomics/SRR2059504/asm/spades.log
+
+
+===== Read error correction started. 
+
+
+== Running read error correction tool: /home/sid/Tools/SPAdes-3.9.0-Linux/bin/hammer /mnt/data/CbGenomics/SRR2059504/asm/corrected/configs/config.info
+
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  83)   Starting BayesHammer, built from N/A, git revision N/A
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  84)   Loading config from /mnt/data/CbGenomics/SRR2059504/asm/corrected/configs/config.info
+  0:00:00.000     4M / 4M    INFO    General                 (memory_limit.hpp          :  47)   Memory limit set to 23 Gb
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  93)   Trying to determine PHRED offset
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  99)   Determined value is 33
+  0:00:00.000     4M / 4M    INFO    General                 (hammer_tools.cpp          :  36)   Hamming graph threshold tau=1, k=21, subkmer positions = [ 0 10 ]
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  : 120)   Size of aux. kmer data 24 bytes
+     === ITERATION 0 begins ===
+  0:00:00.000     4M / 4M    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 346)   Building kmer index
+  0:00:00.000     4M / 4M    INFO   K-mer Splitting          (kmer_data.cpp             :  91)   Splitting kmer instances into 128 buckets. This might take a while.
+  0:00:00.000     4M / 4M    INFO    General                 (file_limit.hpp            :  30)   Open file limit set to 1024
+  0:00:00.000     4M / 4M    INFO    General                 (kmer_index_builder.hpp    : 105)   Memory available for splitting buffers: 0.958171 Gb
+  0:00:00.000     4M / 4M    INFO    General                 (kmer_index_builder.hpp    : 113)   Using cell size of 524288
+  0:00:00.000     8G / 8G    INFO   K-mer Splitting          (kmer_data.cpp             :  98)   Processing /mnt/data/CbGenomics/SRR2059504/SRR2059504_1_final.fastq
+  0:00:03.091     8G / 8G    INFO   K-mer Splitting          (kmer_data.cpp             : 108)   Processed 671648 reads
+  0:00:03.091     8G / 8G    INFO   K-mer Splitting          (kmer_data.cpp             :  98)   Processing /mnt/data/CbGenomics/SRR2059504/SRR2059504_2_final.fastq
+  0:00:06.029     8G / 8G    INFO   K-mer Splitting          (kmer_data.cpp             : 108)   Processed 1343296 reads
+  0:00:06.029     8G / 8G    INFO   K-mer Splitting          (kmer_data.cpp             : 113)   Total 1343296 reads processed
+  0:00:06.029     8G / 8G    INFO    General                 (kmer_index_builder.hpp    : 232)   Starting k-mer counting.
+  0:00:06.284     8G / 8G    INFO    General                 (kmer_index_builder.hpp    : 238)   K-mer counting done. There are 10269172 kmers in total.
+  0:00:06.284     8G / 8G    INFO    General                 (kmer_index_builder.hpp    : 240)   Merging temporary buckets.
+  0:00:06.329     8G / 8G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 355)   Building perfect hash indices
+  0:00:07.021     8G / 8G    INFO    General                 (kmer_index_builder.hpp    : 256)   Merging final buckets.
+  0:00:07.072     8G / 8G    INFO   K-mer Index Building     (kmer_index_builder.hpp    : 401)   Index built. Total 3355280 bytes occupied (2.61387 bits per kmer).
+  0:00:07.098    32M / 8G    INFO   K-mer Counting           (kmer_data.cpp             : 357)   Arranging kmers in hash map order
+  0:00:07.647   192M / 8G    INFO    General                 (main.cpp                  : 155)   Clustering Hamming graph.
+  0:00:18.251   192M / 8G    INFO    General                 (main.cpp                  : 162)   Extracting clusters
+  0:00:20.023   192M / 8G    INFO    General                 (main.cpp                  : 174)   Clustering done. Total clusters: 8090360
+  0:00:20.023   112M / 8G    INFO   K-mer Counting           (kmer_data.cpp             : 379)   Collecting K-mer information, this takes a while.
+  0:00:20.066   348M / 8G    INFO   K-mer Counting           (kmer_data.cpp             : 385)   Processing /mnt/data/CbGenomics/SRR2059504/SRR2059504_1_final.fastq
