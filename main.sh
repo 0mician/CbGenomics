@@ -3,7 +3,7 @@
 readonly SOFTWARE_REQUIRED=(fastq-dump spades.py bbduk.sh fastqc quast.py )
 readonly SRA_ACCESSION="SraAccList.txt"
 readonly ARG="$1"
-readonly SRA_FOLDER="/mnt/data/sra"
+readonly SRA_FOLDER="/mnt/data/CbGenomics"
 
 # progress prompt
 progress_prompt(){
@@ -47,6 +47,13 @@ retrieve_sra(){
 # performs the QC of the reads
 qc_fastq() {
     while IFS= read -r line; do
+	# Added adhoc to restart analysis after a failure (if post
+	# folder exists, then files have already been processed).
+	if [ -d "$SRA_FOLDER/$line/post" ]; then
+	    echo "done"
+	    continue
+	fi
+	
 	# Reports of pre-processing quality control of fastq files
 	progress_prompt "pre-processing quality control"
 	mkdir $SRA_FOLDER/$line/pre
@@ -75,27 +82,27 @@ qc_fastq() {
 	progress_prompt "post-processing quality control"
 	mkdir $SRA_FOLDER/$line/post
 	fastqc --outdir $SRA_FOLDER/$line/post --extract --threads 4 \
-	       $SRA_FOLDER/$line/${line}_final_1.fastq \
-	       $SRA_FOLDER/$line/${line}_final_2.fastq \
-	       $SRA_FOLDER/$line/${line}_final_s.fastq
+	       $SRA_FOLDER/$line/${line}_1_final.fastq \
+	       $SRA_FOLDER/$line/${line}_2_final.fastq 
 
 	# Clean up folder fastq files (unless you have 1Tb+ free space)
 	rm $SRA_FOLDER/$line/${line}_1_trim.fastq \
 	   $SRA_FOLDER/$line/${line}_2_trim.fastq \
 	   $SRA_FOLDER/$line/${line}_1.fastq \
 	   $SRA_FOLDER/$line/${line}_2.fastq
-
     done < "$SRA_ACCESSION"
 }
 
 # denovo assembly with spades and QC with quast
 assembly(){
     while IFS= read -r line; do
-	spades.py -t 8 -k 21,33,55 --careful \
-		  --pe1-1 $SRA_FOLDER/$line/${line}_final_1.fastq \
-		  --pe1-2 $SRA_FOLDER/$line/${line}_final_2.fastq \
-		  --s1 $SRA_FOLDER/$line/${line}_final_s.fastq \
+	spades.py -t 8 -k 21,33,49 --careful \
+		  --pe1-1 $SRA_FOLDER/$line/${line}_1_final.fastq \
+		  --pe1-2 $SRA_FOLDER/$line/${line}_2_final.fastq \
 		  -o $SRA_FOLDER/$line/asm
+	quast.py -t 8 -o $SRA_FOLDER/$line/quast \
+		 $SRA_FOLDER/$line/asm/contigs.fasta
+	
 	break
     done < "$SRA_ACCESSION"
 }
