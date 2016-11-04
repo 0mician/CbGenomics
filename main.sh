@@ -40,6 +40,13 @@ software_checklist() {
 retrieve_sra(){
     progress_prompt "retrieving SRA files"
     while IFS= read -r line; do
+	# Added adhoc to restart analysis after a failure (if post
+	# folder exists, then files have already been processed).
+	if [ -d "$SRA_FOLDER/$line" ]; then
+	    echo "done"
+	    continue
+	fi
+	
 	fastq-dump -v --split-files --outdir $SRA_FOLDER/$line $line
     done < "$SRA_ACCESSION"
 }
@@ -96,13 +103,24 @@ qc_fastq() {
 # denovo assembly with spades and QC with quast
 assembly(){
     while IFS= read -r line; do
-	spades.py -t 8 -k 21,33,49 --careful \
+	# Added adhoc to restart analysis after a failure (if post
+	# folder exists, then files have already been processed).
+	if [ -d "$SRA_FOLDER/$line/quast_contig" ]; then
+	    echo "done"
+	    continue
+	fi
+
+	# Assembly with spades
+	spades.py -t 8 -k 21,33,45,57 --careful \
 		  --pe1-1 $SRA_FOLDER/$line/${line}_1_final.fastq \
 		  --pe1-2 $SRA_FOLDER/$line/${line}_2_final.fastq \
 		  -o $SRA_FOLDER/$line/asm
-	quast.py -t 8 -o $SRA_FOLDER/$line/quast \
-		 $SRA_FOLDER/$line/asm/contigs.fasta
 	
+	# QC of the assembly
+	quast.py -t 8 -o $SRA_FOLDER/$line/quast_contig \
+		 $SRA_FOLDER/$line/asm/contigs.fasta
+	quast.py -t 8 -o $SRA_FOLDER/$line/quast_scaf \
+		 $SRA_FOLDER/$line/asm/scaffolds.fasta
 	break
     done < "$SRA_ACCESSION"
 }
