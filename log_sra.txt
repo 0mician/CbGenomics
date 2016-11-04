@@ -1,0 +1,1261 @@
+
+######  software checklist ######
+Checking if fastq-dump is installed...........OK
+Checking if spades.py is installed...........OK
+Checking if ht-trim is installed...........OK
+Checking if ht-filter is installed...........OK
+Checking if fastqc is installed...........OK
+Checking if quast.py is installed...........OK
+
+######  retrieving SRA files ######
+Read 1946503 spots for SRR2059504
+Written 1946503 spots for SRR2059504
+Read 3257258 spots for SRR2059505
+Written 3257258 spots for SRR2059505
+Read 1484945 spots for SRR2059506
+Written 1484945 spots for SRR2059506
+Read 1132163 spots for SRR2059507
+Written 1132163 spots for SRR2059507
+Read 1044480 spots for SRR2059508
+Written 1044480 spots for SRR2059508
+Read 5583442 spots for SRR2059509
+Written 5583442 spots for SRR2059509
+Read 3264100 spots for SRR2059510
+Written 3264100 spots for SRR2059510
+Read 970285 spots for SRR2059511
+Written 970285 spots for SRR2059511
+Read 1228348 spots for SRR2059512
+Written 1228348 spots for SRR2059512
+Read 1205528 spots for SRR2059513
+Written 1205528 spots for SRR2059513
+Read 1659231 spots for SRR2059514
+Written 1659231 spots for SRR2059514
+Read 8414213 spots for SRR2059515
+Written 8414213 spots for SRR2059515
+Read 937301 spots for SRR2059516
+Written 937301 spots for SRR2059516
+Read 3565228 spots for SRR2059517
+Written 3565228 spots for SRR2059517
+Read 3948517 spots for SRR2059518
+Written 3948517 spots for SRR2059518
+2016-11-03T17:01:30 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:01:31 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:01:31 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:01:31 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:01:31 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:01:32 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:01:32 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:01:32 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:01:32 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:01:32 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:01:32 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:01:33 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:01:33 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:01:33 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:01:33 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1643378 spots for SRR2059519
+Written 1643378 spots for SRR2059519
+Read 10692098 spots for SRR2059520
+Written 10692098 spots for SRR2059520
+Read 1732871 spots for SRR2059521
+Written 1732871 spots for SRR2059521
+Read 791950 spots for SRR2059522
+Written 791950 spots for SRR2059522
+2016-11-03T17:03:13 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:03:13 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:03:13 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:03:13 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:03:14 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:03:14 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:03:14 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:03:14 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:03:14 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:03:15 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:03:15 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:03:15 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:03:15 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:03:15 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:03:16 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2039579 spots for SRR2059523
+Written 2039579 spots for SRR2059523
+2016-11-03T17:03:28 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:03:28 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:03:28 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:03:28 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:03:29 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:03:29 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:03:29 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:03:29 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:03:30 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:03:30 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:03:30 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:03:30 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:03:30 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:03:30 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:03:31 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2215366 spots for SRR2059524
+Written 2215366 spots for SRR2059524
+2016-11-03T17:03:44 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:03:44 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:03:44 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:03:44 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:03:44 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:03:45 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:03:45 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:03:45 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:03:45 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:03:45 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:03:46 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:03:46 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:03:46 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:03:46 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:03:46 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2651323 spots for SRR2059525
+Written 2651323 spots for SRR2059525
+Read 1885299 spots for SRR2059526
+Written 1885299 spots for SRR2059526
+2016-11-03T17:04:13 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:13 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:13 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:04:13 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:14 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:14 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:04:14 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:14 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:14 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:04:15 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:15 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:15 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:04:15 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:16 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:16 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 948165 spots for SRR2059527
+Written 948165 spots for SRR2059527
+2016-11-03T17:04:21 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:21 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:22 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:04:22 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:22 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:22 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:04:22 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:23 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:23 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:04:23 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:23 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:23 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:04:24 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:24 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:24 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2193618 spots for SRR2059528
+Written 2193618 spots for SRR2059528
+2016-11-03T17:04:37 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:37 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:38 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:04:38 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:38 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:38 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:04:38 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:39 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:39 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:04:39 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:39 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:39 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:04:39 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:40 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:40 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1107022 spots for SRR2059529
+Written 1107022 spots for SRR2059529
+2016-11-03T17:04:46 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:46 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:47 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:04:47 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:47 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:47 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:04:48 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:48 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:48 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:04:48 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:48 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:49 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:04:49 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:04:49 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:04:49 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2000680 spots for SRR2059530
+Written 2000680 spots for SRR2059530
+2016-11-03T17:05:00 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:05:00 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:05:00 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:05:00 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:05:01 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:05:01 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:05:01 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:05:01 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:05:01 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:05:02 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:05:02 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:05:02 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:05:02 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:05:02 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:05:03 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2328432 spots for SRR2059531
+Written 2328432 spots for SRR2059531
+Read 779669 spots for SRR2059532
+Written 779669 spots for SRR2059532
+Read 1396295 spots for SRR2059533
+Written 1396295 spots for SRR2059533
+2016-11-03T17:05:29 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:05:29 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:05:30 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:05:30 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:05:30 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:05:30 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:05:31 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:05:31 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:05:31 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:05:31 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:05:31 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:05:32 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:05:32 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:05:32 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:05:32 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1026844 spots for SRR2059534
+Written 1026844 spots for SRR2059534
+Read 1853046 spots for SRR2059535
+Written 1853046 spots for SRR2059535
+2016-11-03T17:05:51 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:05:52 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:05:52 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:05:52 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:05:52 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:05:52 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:05:53 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:05:53 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:05:53 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:05:53 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:05:53 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:05:54 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:05:54 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:05:54 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:05:54 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2422988 spots for SRR2059536
+Written 2422988 spots for SRR2059536
+2016-11-03T17:06:08 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:06:09 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:06:09 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:06:09 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:06:09 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:06:10 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:06:10 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:06:10 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:06:10 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:06:10 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:06:11 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:06:11 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:06:11 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:06:11 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:06:11 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2156676 spots for SRR2059537
+Written 2156676 spots for SRR2059537
+Read 1227696 spots for SRR2059538
+Written 1227696 spots for SRR2059538
+Read 2065555 spots for SRR2059539
+Written 2065555 spots for SRR2059539
+Read 820556 spots for SRR2059540
+Written 820556 spots for SRR2059540
+Read 2107963 spots for SRR2059541
+Written 2107963 spots for SRR2059541
+Read 4744572 spots for SRR2059542
+Written 4744572 spots for SRR2059542
+Read 1387633 spots for SRR2059543
+Written 1387633 spots for SRR2059543
+Read 3100727 spots for SRR2059544
+Written 3100727 spots for SRR2059544
+Read 876245 spots for SRR2059545
+Written 876245 spots for SRR2059545
+Read 6570604 spots for SRR2059546
+Written 6570604 spots for SRR2059546
+Read 1199779 spots for SRR2059547
+Written 1199779 spots for SRR2059547
+2016-11-03T17:08:36 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:08:36 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:08:37 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:08:37 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:08:37 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:08:37 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:08:37 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:08:38 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:08:38 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:08:38 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:08:38 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:08:38 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:08:39 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:08:39 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:08:39 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2625764 spots for SRR2059548
+Written 2625764 spots for SRR2059548
+Read 1218248 spots for SRR2059549
+Written 1218248 spots for SRR2059549
+Read 756756 spots for SRR2059550
+Written 756756 spots for SRR2059550
+Read 1466101 spots for SRR2059551
+Written 1466101 spots for SRR2059551
+Read 1355520 spots for SRR2059552
+Written 1355520 spots for SRR2059552
+2016-11-03T17:09:23 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:09:23 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:09:23 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:09:24 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:09:24 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:09:24 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:09:24 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:09:24 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:09:25 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:09:25 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:09:25 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:09:25 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:09:25 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:09:26 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:09:26 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1777109 spots for SRR2059553
+Written 1777109 spots for SRR2059553
+2016-11-03T17:09:36 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:09:36 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:09:36 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:09:36 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:09:36 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:09:37 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:09:37 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:09:37 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:09:37 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:09:37 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:09:38 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:09:38 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:09:38 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:09:38 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:09:38 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2689771 spots for SRR2059554
+Written 2689771 spots for SRR2059554
+Read 2113422 spots for SRR2059555
+Written 2113422 spots for SRR2059555
+Read 1087010 spots for SRR2059556
+Written 1087010 spots for SRR2059556
+Read 3899597 spots for SRR2059557
+Written 3899597 spots for SRR2059557
+Read 783989 spots for SRR2059558
+Written 783989 spots for SRR2059558
+2016-11-03T17:10:43 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:10:43 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:10:44 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:10:44 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:10:44 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:10:44 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:10:44 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:10:44 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:10:45 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:10:45 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:10:45 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:10:45 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:10:46 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:10:46 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:10:46 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1169722 spots for SRR2059559
+Written 1169722 spots for SRR2059559
+2016-11-03T17:10:53 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:10:53 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:10:54 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:10:54 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:10:54 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:10:54 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:10:54 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:10:55 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:10:55 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:10:55 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:10:55 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:10:55 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:10:56 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:10:56 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:10:56 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2037731 spots for SRR2059560
+Written 2037731 spots for SRR2059560
+Read 1044878 spots for SRR2059561
+Written 1044878 spots for SRR2059561
+2016-11-03T17:11:14 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:11:14 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:11:14 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:11:14 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:11:15 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:11:15 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:11:15 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:11:15 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:11:15 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:11:16 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:11:16 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:11:16 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:11:16 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:11:16 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:11:17 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1189689 spots for SRR2059562
+Written 1189689 spots for SRR2059562
+Read 746924 spots for SRR2059563
+Written 746924 spots for SRR2059563
+Read 1430371 spots for SRR2059564
+Written 1430371 spots for SRR2059564
+Read 4384634 spots for SRR2059565
+Written 4384634 spots for SRR2059565
+2016-11-03T17:12:00 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:12:00 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:12:01 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:12:01 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:12:01 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:12:01 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:12:01 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:12:02 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:12:02 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:12:02 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:12:02 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:12:02 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:12:03 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:12:03 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:12:03 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1011033 spots for SRR2059566
+Written 1011033 spots for SRR2059566
+Read 1115518 spots for SRR2059567
+Written 1115518 spots for SRR2059567
+Read 4552230 spots for SRR2059568
+Written 4552230 spots for SRR2059568
+Read 2685079 spots for SRR2059569
+Written 2685079 spots for SRR2059569
+Read 1594913 spots for SRR2059570
+Written 1594913 spots for SRR2059570
+Read 899692 spots for SRR2059571
+Written 899692 spots for SRR2059571
+Read 1076086 spots for SRR2059572
+Written 1076086 spots for SRR2059572
+2016-11-03T17:13:18 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:13:18 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:13:19 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:13:19 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:13:19 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:13:20 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:13:20 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:13:20 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:13:20 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:13:20 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:13:20 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:13:21 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:13:21 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:13:21 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:13:21 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2274146 spots for SRR2059573
+Written 2274146 spots for SRR2059573
+Read 822088 spots for SRR2059574
+Written 822088 spots for SRR2059574
+Read 3677865 spots for SRR2059575
+Written 3677865 spots for SRR2059575
+2016-11-03T17:13:58 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:13:58 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:13:59 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:13:59 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:13:59 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:13:59 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:14:00 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:14:00 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:14:00 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:14:00 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:14:00 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:14:01 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:14:01 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:14:01 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:14:01 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1639581 spots for SRR2059576
+Written 1639581 spots for SRR2059576
+2016-11-03T17:14:11 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:14:11 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:14:11 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:14:12 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:14:12 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:14:12 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:14:12 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:14:12 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:14:13 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:14:13 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:14:13 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:14:13 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:14:13 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:14:14 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:14:14 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1371415 spots for SRR2059577
+Written 1371415 spots for SRR2059577
+2016-11-03T17:14:22 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:14:22 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:14:22 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:14:23 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:14:23 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:14:23 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:14:23 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:14:23 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:14:24 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:14:24 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:14:24 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:14:24 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:14:24 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:14:24 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:14:25 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2595402 spots for SRR2059578
+Written 2595402 spots for SRR2059578
+Read 896623 spots for SRR2059579
+Written 896623 spots for SRR2059579
+Read 2928304 spots for SRR2059580
+Written 2928304 spots for SRR2059580
+Read 1443710 spots for SRR2059581
+Written 1443710 spots for SRR2059581
+Read 1991329 spots for SRR2059582
+Written 1991329 spots for SRR2059582
+Read 1972199 spots for SRR2059583
+Written 1972199 spots for SRR2059583
+Read 916871 spots for SRR2059584
+Written 916871 spots for SRR2059584
+2016-11-03T17:15:37 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:15:37 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:15:38 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:15:38 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:15:38 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:15:38 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:15:39 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:15:39 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:15:39 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:15:39 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:15:39 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:15:40 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:15:40 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:15:40 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:15:40 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2947647 spots for SRR2059585
+Written 2947647 spots for SRR2059585
+Read 1396987 spots for SRR2059586
+Written 1396987 spots for SRR2059586
+2016-11-03T17:16:06 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:16:06 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:16:07 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:16:07 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:16:07 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:16:07 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:16:07 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:16:08 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:16:08 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:16:08 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:16:08 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:16:08 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:16:09 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:16:09 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:16:09 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1111243 spots for SRR2059587
+Written 1111243 spots for SRR2059587
+2016-11-03T17:16:16 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:16:17 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:16:17 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:16:17 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:16:17 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:16:17 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:16:18 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:16:18 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:16:18 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:16:18 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:16:18 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:16:19 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:16:19 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:16:19 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:16:19 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1190317 spots for SRR2059588
+Written 1190317 spots for SRR2059588
+2016-11-03T17:16:26 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:16:26 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:16:26 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:16:26 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:16:27 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:16:27 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:16:27 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:16:27 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:16:27 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:16:28 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:16:28 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:16:28 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:16:28 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:16:28 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:16:29 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1977333 spots for SRR2059589
+Written 1977333 spots for SRR2059589
+Read 841893 spots for SRR2059590
+Written 841893 spots for SRR2059590
+Read 1266003 spots for SRR2059591
+Written 1266003 spots for SRR2059591
+Read 1284632 spots for SRR2059592
+Written 1284632 spots for SRR2059592
+Read 3084902 spots for SRR2059593
+Written 3084902 spots for SRR2059593
+Read 2099409 spots for SRR2059594
+Written 2099409 spots for SRR2059594
+Read 1862129 spots for SRR2059595
+Written 1862129 spots for SRR2059595
+2016-11-03T17:17:42 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:17:42 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:17:43 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:17:43 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:17:43 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:17:43 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:17:43 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:17:44 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:17:44 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:17:44 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:17:44 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:17:44 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:17:45 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:17:45 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:17:45 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2662860 spots for SRR2059596
+Written 2662860 spots for SRR2059596
+2016-11-03T17:18:01 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:18:01 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:18:01 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:18:01 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:18:01 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:18:02 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:18:02 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:18:02 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:18:02 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:18:02 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:18:02 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:18:03 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:18:03 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:18:03 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:18:03 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1184744 spots for SRR2059597
+Written 1184744 spots for SRR2059597
+Read 4529981 spots for SRR2059598
+Written 4529981 spots for SRR2059598
+Read 4746661 spots for SRR2059599
+Written 4746661 spots for SRR2059599
+2016-11-03T17:18:53 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:18:53 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:18:54 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:18:54 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:18:54 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:18:54 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:18:54 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:18:55 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:18:55 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:18:55 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:18:55 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:18:55 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:18:56 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:18:56 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:18:56 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2288806 spots for SRR2059600
+Written 2288806 spots for SRR2059600
+2016-11-03T17:19:10 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:19:10 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:19:11 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:19:11 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:19:11 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:19:11 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:19:11 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:19:12 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:19:12 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:19:12 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:19:12 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:19:12 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:19:13 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:19:13 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:19:13 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2728735 spots for SRR2059601
+Written 2728735 spots for SRR2059601
+2016-11-03T17:19:28 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:19:29 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:19:29 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:19:29 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:19:29 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:19:29 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:19:30 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:19:30 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:19:30 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:19:30 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:19:30 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:19:31 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:19:31 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:19:31 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:19:31 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2001111 spots for SRR2059602
+Written 2001111 spots for SRR2059602
+Read 1294355 spots for SRR2059603
+Written 1294355 spots for SRR2059603
+2016-11-03T17:19:51 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:19:52 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:19:52 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:19:52 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:19:52 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:19:52 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:19:53 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:19:53 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:19:53 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:19:53 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:19:53 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:19:54 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:19:54 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:19:54 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:19:54 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1122074 spots for SRR2059450
+Written 1122074 spots for SRR2059450
+2016-11-03T17:20:01 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:20:02 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:20:02 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:20:02 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:20:02 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:20:03 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:20:03 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:20:03 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:20:03 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:20:03 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:20:04 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:20:04 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:20:04 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:20:04 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:20:04 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2700674 spots for SRR2059451
+Written 2700674 spots for SRR2059451
+2016-11-03T17:20:20 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:20:20 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:20:20 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:20:20 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:20:20 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:20:21 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:20:21 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:20:21 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:20:21 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:20:21 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:20:22 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:20:22 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:20:22 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:20:22 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:20:22 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 5070965 spots for SRR2059452
+Written 5070965 spots for SRR2059452
+Read 1084334 spots for SRR2059453
+Written 1084334 spots for SRR2059453
+Read 955969 spots for SRR2059454
+Written 955969 spots for SRR2059454
+2016-11-03T17:21:10 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:21:10 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:21:10 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:21:10 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:21:10 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:21:11 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:21:11 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:21:11 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:21:11 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:21:11 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:21:12 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:21:12 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:21:12 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:21:12 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:21:12 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2491006 spots for SRR2059455
+Written 2491006 spots for SRR2059455
+Read 5536819 spots for SRR2059456
+Written 5536819 spots for SRR2059456
+2016-11-03T17:21:56 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:21:56 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:21:56 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:21:56 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:21:57 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:21:57 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:21:57 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:21:57 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:21:58 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:21:58 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:21:58 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:21:58 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:21:58 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:21:58 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:21:59 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2470631 spots for SRR2059457
+Written 2470631 spots for SRR2059457
+2016-11-03T17:22:13 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:22:13 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:22:14 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:22:14 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:22:14 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:22:14 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:22:14 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:22:15 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:22:15 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:22:15 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:22:15 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:22:15 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:22:16 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:22:16 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:22:16 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2249984 spots for SRR2059458
+Written 2249984 spots for SRR2059458
+Read 5370646 spots for SRR2059459
+Written 5370646 spots for SRR2059459
+Read 2131766 spots for SRR2059460
+Written 2131766 spots for SRR2059460
+Read 2616460 spots for SRR2059461
+Written 2616460 spots for SRR2059461
+Read 1004968 spots for SRR2059462
+Written 1004968 spots for SRR2059462
+2016-11-03T17:23:42 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:23:42 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:23:43 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:23:43 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:23:43 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:23:43 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:23:44 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:23:44 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:23:44 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:23:44 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:23:44 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:23:45 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:23:45 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:23:45 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:23:45 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2883552 spots for SRR2059463
+Written 2883552 spots for SRR2059463
+Read 832074 spots for SRR2059464
+Written 832074 spots for SRR2059464
+Read 2951609 spots for SRR2059465
+Written 2951609 spots for SRR2059465
+Read 1369880 spots for SRR2059466
+Written 1369880 spots for SRR2059466
+2016-11-03T17:24:36 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:24:36 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:24:36 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:24:36 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:24:36 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:24:37 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:24:37 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:24:37 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:24:37 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:24:37 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:24:38 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:24:38 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:24:38 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:24:38 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:24:38 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1621836 spots for SRR2059467
+Written 1621836 spots for SRR2059467
+Read 1355554 spots for SRR2059468
+Written 1355554 spots for SRR2059468
+Read 1715720 spots for SRR2059469
+Written 1715720 spots for SRR2059469
+Rejected 1028109 READS because READLEN < 1
+Read 5908087 spots for SRR2059470
+Written 5908087 spots for SRR2059470
+2016-11-03T17:25:34 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:25:34 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:25:34 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:25:34 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:25:35 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:25:35 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:25:35 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:25:35 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:25:35 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:25:36 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:25:36 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:25:36 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:25:36 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:25:36 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:25:37 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2779100 spots for SRR2059471
+Written 2779100 spots for SRR2059471
+Read 4074756 spots for SRR2059472
+Written 4074756 spots for SRR2059472
+2016-11-03T17:26:12 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:26:13 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:26:13 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:26:13 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:26:13 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:26:13 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:26:14 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:26:14 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:26:14 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:26:14 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:26:14 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:26:15 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:26:15 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:26:15 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:26:15 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 3027201 spots for SRR2059473
+Written 3027201 spots for SRR2059473
+2016-11-03T17:26:33 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:26:33 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:26:33 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:26:34 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:26:34 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:26:34 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:26:34 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:26:34 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:26:35 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:26:35 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:26:35 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:26:35 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:26:35 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:26:36 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:26:36 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1032241 spots for SRR2059474
+Written 1032241 spots for SRR2059474
+Read 990035 spots for SRR2059475
+Written 990035 spots for SRR2059475
+Read 1462613 spots for SRR2059476
+Written 1462613 spots for SRR2059476
+2016-11-03T17:26:56 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:26:56 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:26:56 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:26:57 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:26:57 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:26:57 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:26:57 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:26:57 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:26:58 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:26:58 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:26:58 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:26:58 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:26:58 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:26:58 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:26:59 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1217635 spots for SRR2059477
+Written 1217635 spots for SRR2059477
+2016-11-03T17:27:06 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:27:06 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:27:06 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:27:06 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:27:06 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:27:07 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:27:07 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:27:07 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:27:07 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:27:07 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:27:08 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:27:08 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:27:08 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:27:08 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:27:08 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2229900 spots for SRR2059478
+Written 2229900 spots for SRR2059478
+Read 764700 spots for SRR2059479
+Written 764700 spots for SRR2059479
+Read 2108866 spots for SRR2059480
+Written 2108866 spots for SRR2059480
+2016-11-03T17:27:39 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:27:39 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:27:39 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:27:39 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:27:39 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:27:40 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:27:40 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:27:40 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:27:40 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:27:40 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:27:41 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:27:41 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:27:41 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:27:41 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:27:41 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 935634 spots for SRR2059481
+Written 935634 spots for SRR2059481
+2016-11-03T17:27:47 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:27:48 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:27:48 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:27:48 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:27:48 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:27:48 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:27:49 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:27:49 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:27:49 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:27:49 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:27:49 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:27:50 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:27:50 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:27:50 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:27:50 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2859037 spots for SRR2059482
+Written 2859037 spots for SRR2059482
+2016-11-03T17:28:07 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:28:07 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:28:07 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:28:08 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:28:08 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:28:08 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:28:08 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:28:08 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:28:08 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:28:09 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:28:09 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:28:09 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:28:09 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:28:09 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:28:10 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2709340 spots for SRR2059483
+Written 2709340 spots for SRR2059483
+Read 1106577 spots for SRR2059484
+Written 1106577 spots for SRR2059484
+Read 1581371 spots for SRR2059485
+Written 1581371 spots for SRR2059485
+Read 2152782 spots for SRR2059486
+Written 2152782 spots for SRR2059486
+Read 1528283 spots for SRR2059487
+Written 1528283 spots for SRR2059487
+2016-11-03T17:29:03 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:29:03 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:29:04 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:29:04 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:29:04 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:29:04 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:29:04 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:29:05 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:29:05 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:29:05 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:29:05 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:29:05 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:29:06 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:29:06 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:29:06 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1873065 spots for SRR2059488
+Written 1873065 spots for SRR2059488
+2016-11-03T17:29:17 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:29:17 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:29:17 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:29:17 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:29:18 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:29:18 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:29:18 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:29:18 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:29:18 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:29:19 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:29:19 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:29:19 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:29:19 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:29:19 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:29:20 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2141887 spots for SRR2059489
+Written 2141887 spots for SRR2059489
+2016-11-03T17:29:32 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:29:33 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:29:33 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:29:33 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:29:33 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:29:33 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:29:34 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:29:34 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:29:34 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:29:34 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:29:34 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:29:35 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:29:35 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:29:35 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:29:35 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1951336 spots for SRR2059490
+Written 1951336 spots for SRR2059490
+Read 2478953 spots for SRR2059491
+Written 2478953 spots for SRR2059491
+Read 1910281 spots for SRR2059492
+Written 1910281 spots for SRR2059492
+2016-11-03T17:30:13 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:30:13 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:30:14 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:30:14 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:30:14 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:30:14 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:30:14 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:30:15 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:30:15 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:30:15 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:30:15 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:30:15 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:30:16 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:30:16 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:30:16 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2261058 spots for SRR2059493
+Written 2261058 spots for SRR2059493
+Read 1261548 spots for SRR2059494
+Written 1261548 spots for SRR2059494
+2016-11-03T17:30:37 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:30:37 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:30:37 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:30:38 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:30:38 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:30:38 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:30:38 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:30:38 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:30:39 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:30:39 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:30:39 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:30:39 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:30:39 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:30:39 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:30:40 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1679683 spots for SRR2059495
+Written 1679683 spots for SRR2059495
+2016-11-03T17:30:52 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:30:52 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:30:52 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:30:52 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:30:52 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:30:53 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:30:53 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:30:53 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:30:53 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:30:53 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:30:54 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:30:54 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:30:54 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:30:54 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:30:54 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:31:03 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2195783 spots for SRR2059496
+Written 2195783 spots for SRR2059496
+2016-11-03T17:32:46 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:32:46 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:32:46 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:32:47 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:32:47 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:32:48 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:32:48 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:32:48 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:32:48 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:32:48 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:32:49 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:32:49 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:32:49 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:32:49 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:32:49 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1039406 spots for SRR2059497
+Written 1039406 spots for SRR2059497
+2016-11-03T17:35:05 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:35:06 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:35:06 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:35:07 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:35:07 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:35:08 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:35:08 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:35:08 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:35:09 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:35:09 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:35:09 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:35:09 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:35:09 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:35:10 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:35:10 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:35:22 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:35:33 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:35:47 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Rejected 2625120 READS because READLEN < 1
+Read 5140591 spots for SRR2059498
+Written 5140591 spots for SRR2059498
+2016-11-03T17:40:40 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:40:40 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:40:40 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:40:41 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:40:42 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:40:42 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:40:42 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:40:43 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:40:43 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:40:43 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:40:43 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:40:43 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:40:44 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:40:44 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:40:44 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:40:54 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:41:05 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:41:15 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:41:25 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:41:36 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:41:47 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:42:55 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:43:07 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:43:17 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:43:28 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1542403 spots for SRR2059499
+Written 1542403 spots for SRR2059499
+2016-11-03T17:43:58 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:43:59 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:43:59 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:44:00 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:44:00 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:44:00 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:44:01 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:44:01 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:44:01 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:44:01 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:44:02 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:44:02 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:44:02 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:44:02 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:44:02 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1197509 spots for SRR2059500
+Written 1197509 spots for SRR2059500
+2016-11-03T17:46:42 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:46:42 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:46:42 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:46:44 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:46:44 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:46:44 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:46:44 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:46:45 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:46:45 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:46:45 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:46:45 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:46:45 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:46:46 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:46:46 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:46:46 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:46:57 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:47:07 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:47:17 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2907119 spots for SRR2059501
+Written 2907119 spots for SRR2059501
+2016-11-03T17:50:56 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:50:57 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:50:57 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:50:58 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:50:58 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:50:58 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:50:59 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:50:59 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:50:59 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:50:59 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:51:00 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:51:00 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:51:00 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:51:00 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:51:00 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 1260187 spots for SRR2059502
+Written 1260187 spots for SRR2059502
+2016-11-03T17:53:31 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:53:31 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:53:31 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:53:32 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:53:32 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:53:32 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:53:32 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:53:32 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:53:33 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:53:33 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:53:33 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:53:33 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:53:33 fastq-dump.2.8.0: KClientHttpOpen - connected to www.ncbi.nlm.nih.gov 
+2016-11-03T17:53:34 fastq-dump.2.8.0: KClientHttpOpen - verifying CA cert 
+2016-11-03T17:53:34 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:53:44 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:53:55 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:54:06 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:54:17 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:54:29 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:54:40 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:54:51 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:55:01 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+2016-11-03T17:55:13 fastq-dump.2.8.0: KClientHttpOpen - connected to sra-download.ncbi.nlm.nih.gov 
+Read 2136437 spots for SRR2059503
+Written 2136437 spots for SRR2059503
