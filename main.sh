@@ -155,7 +155,7 @@ annotation(){
 	       --genus Clostridium \
 	       --species botulinum \
 	       --usegenus \
-	       --outdir $SRA_FOLDER/$line/annotation $$SRA_FOLDER/$line/asm/contigs.fasta
+	       --outdir $SRA_FOLDER/$line/annotation $SRA_FOLDER/$line/asm/contigs.fasta
 	break
     done < "$SRA_ACCESSION"
 }
