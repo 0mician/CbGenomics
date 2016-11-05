@@ -1,9 +1,11 @@
 #!/bin/bash
 
-readonly SOFTWARE_REQUIRED=(fastq-dump spades.py bbduk.sh fastqc quast.py )
+readonly SOFTWARE_REQUIRED=(fastq-dump spades.py bbduk.sh fastqc makeblastdb
+			    cd-hit quast.py prokka prokka-genbank_to_fasta_db)
 readonly SRA_ACCESSION="SraAccList.txt"
 readonly ARG="$1"
 readonly SRA_FOLDER="/mnt/data/CbGenomics"
+readonly PROTEIN_DB="protein_db"
 
 # progress prompt
 progress_prompt(){
@@ -125,9 +127,32 @@ assembly(){
     done < "$SRA_ACCESSION"
 }
 
+build_protein_db(){
+    if [ -e "$(dirname $(which prokka))/../db/genus/Clostridium" ]; then
+	echo "DB already exists"
+	return 1
+    fi
+    
+    progress_prompt "Building protein database for genus Clostridium"
+    prokka-genbank_to_fasta_db $protein_db/*.gbk > $protein_db/Clostridium.faa
+    cd-hit -i $protein_db/Clostridium.faa -o $protein_db/Clostridium \
+	   -T 0 -M 0 -g 1 -s 0.8 -c 0.9
+    makeblastdb -dbtype prot -in $protein_db/Clostridium
+    mv $protein_db/Clostridium.p* $(dirname $(which prokka))/../db/genus/
+}
+
 # Annotation with prokka
 annotation(){
-    echo "todo"
+    for strain in *.fna
+    do
+	base=$(basename $strain)
+	name=$(echo ${base%%.*})
+	prokka --cpus 8 --kingdom Bacteria \
+	       --genus Clostridium \
+	       --species botulinum \
+	       --usegenus \
+	       --outdir $name $strain
+    done
 }
 
 main() {
@@ -145,6 +170,8 @@ main() {
 	    qc_fastq ;;
 	"assembly")
 	    assembly ;;
+	"build_protein_db")
+	    build_protein_db ;;
 	"annotation")
 	    annotation ;;
 	*)
