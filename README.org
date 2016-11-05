@@ -4,3 +4,8 @@
   on NCBI - SRA. Original dataset created for the study [[http://aem.asm.org/content/81/17/5938][Clostridium
   botulinum Group II Isolate Phylogenomic Profiling Using Whole-Genome
   Sequence Data]].
+
+* Note
+  The main purpose of the scripts is to document the steps behind the
+  aquisition and processing of the data. They won't run out of the box
+  on your system.

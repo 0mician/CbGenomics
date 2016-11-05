@@ -2,7 +2,7 @@
 
 readonly SOFTWARE_REQUIRED=(fastq-dump spades.py bbduk.sh fastqc makeblastdb
 			    cd-hit quast.py prokka prokka-genbank_to_fasta_db)
-readonly SRA_ACCESSION="SraAccList.txt"
+readonly SRA_ACCESSION="data/SraAccList.txt"
 readonly ARG="$1"
 readonly SRA_FOLDER="/mnt/data/CbGenomics"
 readonly PROTEIN_DB="protein_db"
