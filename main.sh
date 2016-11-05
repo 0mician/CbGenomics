@@ -143,16 +143,21 @@ build_protein_db(){
 
 # Annotation with prokka
 annotation(){
-    for strain in *.fna
-    do
-	base=$(basename $strain)
-	name=$(echo ${base%%.*})
+    while IFS= read -r line; do
+	# Added adhoc to restart analysis after a failure (if post
+	# folder exists, then files have already been processed).
+	if [ -d "$SRA_FOLDER/$line/annotation" ]; then
+	    echo "done"
+	    continue
+	fi
+	
 	prokka --cpus 8 --kingdom Bacteria \
 	       --genus Clostridium \
 	       --species botulinum \
 	       --usegenus \
-	       --outdir $name $strain
-    done
+	       --outdir $SRA_FOLDER/$line/annotation $$SRA_FOLDER/$line/asm/contigs.fasta
+	break
+    done < "$SRA_ACCESSION"
 }
 
 main() {
