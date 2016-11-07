@@ -9,11 +9,12 @@ readonly PROTEIN_DB="protein_db"
 
 # progress prompt
 progress_prompt(){
-    echo -e "\n######  $1 ######"
+    echo -e "\n######  $1  ######"
 }
 
+# options available for the script
 usage(){
-    echo "Usage : $0 [retrieve_sra | qc_fastq | assembly | annotation ]"
+    echo "Usage : $0 [retrieve_sra | qc_fastq | assembly | build_protein_db | annotation ]"
 }
 
 # checks if a given software is available on the system (not testing for specific version)
@@ -118,7 +119,7 @@ assembly(){
 		  --pe1-2 $SRA_FOLDER/$line/${line}_2_final.fastq \
 		  -o $SRA_FOLDER/$line/asm
 	
-	# QC of the assembly
+	# QC of the assembly (contigs and scaffolds)
 	quast.py -t 8 -o $SRA_FOLDER/$line/quast_contig \
 		 $SRA_FOLDER/$line/asm/contigs.fasta
 	quast.py -t 8 -o $SRA_FOLDER/$line/quast_scaf \
@@ -127,12 +128,16 @@ assembly(){
     done < "$SRA_ACCESSION"
 }
 
+# creates a blastable protein database (useful for Prokka)
 build_protein_db(){
+    # database already exists?
     if [ -e "$(dirname $(which prokka))/../db/genus/Clostridium" ]; then
 	echo "DB already exists"
 	return 1
     fi
-    
+
+    # prerequesite: genbank files have been downloaded for the representatives
+    # of the Clostridium genus (and saved in protein_db folder)
     progress_prompt "Building protein database for genus Clostridium"
     prokka-genbank_to_fasta_db $protein_db/*.gbk > $protein_db/Clostridium.faa
     cd-hit -i $protein_db/Clostridium.faa -o $protein_db/Clostridium \
