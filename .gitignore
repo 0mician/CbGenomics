@@ -38,3 +38,4 @@ emacs-config.el
 
 # folder
 publication/
+venv/
