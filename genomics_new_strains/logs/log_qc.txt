@@ -1,0 +1,559 @@
+
+######  software checklist  ######
+Checking if fastq-dump is installed...........OK
+Checking if spades.py is installed...........OK
+Checking if bbduk.sh is installed...........OK
+Checking if fastqc is installed...........OK
+Checking if makeblastdb is installed...........OK
+Checking if cd-hit is installed...........OK
+Checking if quast.py is installed...........OK
+Checking if prokka is installed...........OK
+Checking if prokka-genbank_to_fasta_db is installed...........OK
+
+######  pre-processing quality control  ######
+Started analysis of CC-3676_S1_L001_R1_001.fastq
+Started analysis of CC-3676_S1_L001_R2_001.fastq
+Approx 5% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 5% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 10% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 10% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 15% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 15% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 20% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 20% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 25% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 25% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 30% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 30% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 35% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 35% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 40% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 40% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 45% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 45% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 50% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 50% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 55% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 55% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 60% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 60% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 65% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 65% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 70% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 70% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 75% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 75% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 80% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 80% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 85% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 85% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 90% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 90% complete for CC-3676_S1_L001_R2_001.fastq
+Approx 95% complete for CC-3676_S1_L001_R1_001.fastq
+Approx 95% complete for CC-3676_S1_L001_R2_001.fastq
+Analysis complete for CC-3676_S1_L001_R1_001.fastq
+Analysis complete for CC-3676_S1_L001_R2_001.fastq
+
+######  Clipping remaining adapters   ######
+java -Djava.library.path=/home/sid/Tools/bbmap/jni/ -ea -Xmx9161m -Xms9161m -cp /home/sid/Tools/bbmap/current/ jgi.BBDukF in=/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_L001_R1_001.fastq in2=/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_L001_R2_001.fastq out=/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_1_trim.fastq out2=/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_2_trim.fastq ref=adapters.fa ktrim=l k=23 mink=11 hdist=2 tpe tbo
+Executing jgi.BBDukF [in=/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_L001_R1_001.fastq, in2=/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_L001_R2_001.fastq, out=/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_1_trim.fastq, out2=/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_2_trim.fastq, ref=adapters.fa, ktrim=l, k=23, mink=11, hdist=2, tpe, tbo]
+
+BBDuk version 36.49
+maskMiddle was disabled because useShortKmers=true
+Initial:
+Memory: max=9207m, free=9014m, used=193m
+
+Added 1567990 kmers; time: 	0.380 seconds.
+Memory: max=9207m, free=8582m, used=625m
+
+Input is being processed as paired
+Started output streams:	0.004 seconds.
+Processing time:   		14.870 seconds.
+
+Input:                  	3867066 reads 		579899580 bases.
+KTrimmed:               	4996 reads (0.13%) 	147353 bases (0.03%)
+Trimmed by overlap:     	982 reads (0.03%) 	36666 bases (0.01%)
+Total Removed:          	406 reads (0.01%) 	184019 bases (0.03%)
+Result:                 	3866660 reads (99.99%) 	579715561 bases (99.97%)
+
+Time:   			15.257 seconds.
+Reads Processed:       3867k 	253.47k reads/sec
+Bases Processed:        579m 	38.01m bases/sec
+
+######  Base calling quality control and size exclusion  ######
+java -Djava.library.path=/home/sid/Tools/bbmap/jni/ -ea -Xmx9139m -Xms9139m -cp /home/sid/Tools/bbmap/current/ jgi.BBDukF in=/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_1_trim.fastq in2=/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_2_trim.fastq out=/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_1_final.fastq out2=/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_2_final.fastq qtrim=r trimq=28 minlen=50
+Executing jgi.BBDukF [in=/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_1_trim.fastq, in2=/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_2_trim.fastq, out=/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_1_final.fastq, out2=/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_2_final.fastq, qtrim=r, trimq=28, minlen=50]
+
+BBDuk version 36.49
+Initial:
+Memory: max=9185m, free=8993m, used=192m
+
+Input is being processed as paired
+Started output streams:	0.008 seconds.
+Processing time:   		2.552 seconds.
+
+Input:                  	3866660 reads 		579715561 bases.
+QTrimmed:               	914986 reads (23.66%) 	51211293 bases (8.83%)
+Total Removed:          	185924 reads (4.81%) 	51211293 bases (8.83%)
+Result:                 	3680736 reads (95.19%) 	528504268 bases (91.17%)
+
+Time:   			2.566 seconds.
+Reads Processed:       3866k 	1506.86k reads/sec
+Bases Processed:        579m 	225.92m bases/sec
+
+######  post-processing quality control  ######
+Started analysis of CC-3676_S1_1_final.fastq
+Started analysis of CC-3676_S1_2_final.fastq
+Approx 5% complete for CC-3676_S1_1_final.fastq
+Approx 5% complete for CC-3676_S1_2_final.fastq
+Approx 10% complete for CC-3676_S1_1_final.fastq
+Approx 10% complete for CC-3676_S1_2_final.fastq
+Approx 15% complete for CC-3676_S1_1_final.fastq
+Approx 15% complete for CC-3676_S1_2_final.fastq
+Approx 20% complete for CC-3676_S1_1_final.fastq
+Approx 20% complete for CC-3676_S1_2_final.fastq
+Approx 25% complete for CC-3676_S1_1_final.fastq
+Approx 25% complete for CC-3676_S1_2_final.fastq
+Approx 30% complete for CC-3676_S1_1_final.fastq
+Approx 30% complete for CC-3676_S1_2_final.fastq
+Approx 35% complete for CC-3676_S1_1_final.fastq
+Approx 35% complete for CC-3676_S1_2_final.fastq
+Approx 40% complete for CC-3676_S1_1_final.fastq
+Approx 40% complete for CC-3676_S1_2_final.fastq
+Approx 45% complete for CC-3676_S1_1_final.fastq
+Approx 45% complete for CC-3676_S1_2_final.fastq
+Approx 50% complete for CC-3676_S1_1_final.fastq
+Approx 50% complete for CC-3676_S1_2_final.fastq
+Approx 55% complete for CC-3676_S1_1_final.fastq
+Approx 55% complete for CC-3676_S1_2_final.fastq
+Approx 60% complete for CC-3676_S1_1_final.fastq
+Approx 60% complete for CC-3676_S1_2_final.fastq
+Approx 65% complete for CC-3676_S1_1_final.fastq
+Approx 65% complete for CC-3676_S1_2_final.fastq
+Approx 70% complete for CC-3676_S1_1_final.fastq
+Approx 70% complete for CC-3676_S1_2_final.fastq
+Approx 75% complete for CC-3676_S1_1_final.fastq
+Approx 75% complete for CC-3676_S1_2_final.fastq
+Approx 80% complete for CC-3676_S1_1_final.fastq
+Approx 80% complete for CC-3676_S1_2_final.fastq
+Approx 85% complete for CC-3676_S1_1_final.fastq
+Approx 85% complete for CC-3676_S1_2_final.fastq
+Approx 90% complete for CC-3676_S1_1_final.fastq
+Approx 90% complete for CC-3676_S1_2_final.fastq
+Approx 95% complete for CC-3676_S1_1_final.fastq
+Approx 95% complete for CC-3676_S1_2_final.fastq
+Analysis complete for CC-3676_S1_1_final.fastq
+Analysis complete for CC-3676_S1_2_final.fastq
+rm: cannot remove '/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_1.fastq': No such file or directory
+rm: cannot remove '/mnt/data/CbFastq/CC-3676_S1/CC-3676_S1_2.fastq': No such file or directory
+
+######  pre-processing quality control  ######
+Started analysis of CC-3677_S2_L001_R1_001.fastq
+Started analysis of CC-3677_S2_L001_R2_001.fastq
+Approx 5% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 5% complete for CC-3677_S2_L001_R2_001.fastq
+Approx 10% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 10% complete for CC-3677_S2_L001_R2_001.fastq
+Approx 15% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 15% complete for CC-3677_S2_L001_R2_001.fastq
+Approx 20% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 20% complete for CC-3677_S2_L001_R2_001.fastq
+Approx 25% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 25% complete for CC-3677_S2_L001_R2_001.fastq
+Approx 30% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 30% complete for CC-3677_S2_L001_R2_001.fastq
+Approx 35% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 35% complete for CC-3677_S2_L001_R2_001.fastq
+Approx 40% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 40% complete for CC-3677_S2_L001_R2_001.fastq
+Approx 45% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 45% complete for CC-3677_S2_L001_R2_001.fastq
+Approx 50% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 50% complete for CC-3677_S2_L001_R2_001.fastq
+Approx 55% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 60% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 55% complete for CC-3677_S2_L001_R2_001.fastq
+Approx 65% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 60% complete for CC-3677_S2_L001_R2_001.fastq
+Approx 70% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 65% complete for CC-3677_S2_L001_R2_001.fastq
+Approx 75% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 70% complete for CC-3677_S2_L001_R2_001.fastq
+Approx 80% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 75% complete for CC-3677_S2_L001_R2_001.fastq
+Approx 85% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 80% complete for CC-3677_S2_L001_R2_001.fastq
+Approx 90% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 85% complete for CC-3677_S2_L001_R2_001.fastq
+Approx 95% complete for CC-3677_S2_L001_R1_001.fastq
+Approx 90% complete for CC-3677_S2_L001_R2_001.fastq
+Analysis complete for CC-3677_S2_L001_R1_001.fastq
+Approx 95% complete for CC-3677_S2_L001_R2_001.fastq
+Analysis complete for CC-3677_S2_L001_R2_001.fastq
+
+######  Clipping remaining adapters   ######
+java -Djava.library.path=/home/sid/Tools/bbmap/jni/ -ea -Xmx9138m -Xms9138m -cp /home/sid/Tools/bbmap/current/ jgi.BBDukF in=/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_L001_R1_001.fastq in2=/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_L001_R2_001.fastq out=/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_1_trim.fastq out2=/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_2_trim.fastq ref=adapters.fa ktrim=l k=23 mink=11 hdist=2 tpe tbo
+Executing jgi.BBDukF [in=/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_L001_R1_001.fastq, in2=/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_L001_R2_001.fastq, out=/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_1_trim.fastq, out2=/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_2_trim.fastq, ref=adapters.fa, ktrim=l, k=23, mink=11, hdist=2, tpe, tbo]
+
+BBDuk version 36.49
+maskMiddle was disabled because useShortKmers=true
+Initial:
+Memory: max=9182m, free=8991m, used=191m
+
+Added 1567990 kmers; time: 	0.377 seconds.
+Memory: max=9182m, free=8559m, used=623m
+
+Input is being processed as paired
+Started output streams:	0.004 seconds.
+Processing time:   		14.310 seconds.
+
+Input:                  	3709762 reads 		554954885 bases.
+KTrimmed:               	6837 reads (0.18%) 	234076 bases (0.04%)
+Trimmed by overlap:     	1194 reads (0.03%) 	37105 bases (0.01%)
+Total Removed:          	602 reads (0.02%) 	271181 bases (0.05%)
+Result:                 	3709160 reads (99.98%) 	554683704 bases (99.95%)
+
+Time:   			14.695 seconds.
+Reads Processed:       3709k 	252.45k reads/sec
+Bases Processed:        554m 	37.76m bases/sec
+
+######  Base calling quality control and size exclusion  ######
+java -Djava.library.path=/home/sid/Tools/bbmap/jni/ -ea -Xmx9121m -Xms9121m -cp /home/sid/Tools/bbmap/current/ jgi.BBDukF in=/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_1_trim.fastq in2=/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_2_trim.fastq out=/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_1_final.fastq out2=/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_2_final.fastq qtrim=r trimq=28 minlen=50
+Executing jgi.BBDukF [in=/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_1_trim.fastq, in2=/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_2_trim.fastq, out=/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_1_final.fastq, out2=/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_2_final.fastq, qtrim=r, trimq=28, minlen=50]
+
+BBDuk version 36.49
+Initial:
+Memory: max=9166m, free=8975m, used=191m
+
+Input is being processed as paired
+Started output streams:	0.016 seconds.
+Processing time:   		1.749 seconds.
+
+Input:                  	3709160 reads 		554683704 bases.
+QTrimmed:               	761256 reads (20.52%) 	41173842 bases (7.42%)
+Total Removed:          	149432 reads (4.03%) 	41173842 bases (7.42%)
+Result:                 	3559728 reads (95.97%) 	513509862 bases (92.58%)
+
+Time:   			1.772 seconds.
+Reads Processed:       3709k 	2093.03k reads/sec
+Bases Processed:        554m 	313.00m bases/sec
+
+######  post-processing quality control  ######
+Started analysis of CC-3677_S2_1_final.fastq
+Started analysis of CC-3677_S2_2_final.fastq
+Approx 5% complete for CC-3677_S2_1_final.fastq
+Approx 5% complete for CC-3677_S2_2_final.fastq
+Approx 10% complete for CC-3677_S2_1_final.fastq
+Approx 10% complete for CC-3677_S2_2_final.fastq
+Approx 15% complete for CC-3677_S2_1_final.fastq
+Approx 15% complete for CC-3677_S2_2_final.fastq
+Approx 20% complete for CC-3677_S2_1_final.fastq
+Approx 20% complete for CC-3677_S2_2_final.fastq
+Approx 25% complete for CC-3677_S2_1_final.fastq
+Approx 25% complete for CC-3677_S2_2_final.fastq
+Approx 30% complete for CC-3677_S2_1_final.fastq
+Approx 30% complete for CC-3677_S2_2_final.fastq
+Approx 35% complete for CC-3677_S2_1_final.fastq
+Approx 35% complete for CC-3677_S2_2_final.fastq
+Approx 40% complete for CC-3677_S2_1_final.fastq
+Approx 40% complete for CC-3677_S2_2_final.fastq
+Approx 45% complete for CC-3677_S2_1_final.fastq
+Approx 45% complete for CC-3677_S2_2_final.fastq
+Approx 50% complete for CC-3677_S2_1_final.fastq
+Approx 50% complete for CC-3677_S2_2_final.fastq
+Approx 55% complete for CC-3677_S2_1_final.fastq
+Approx 55% complete for CC-3677_S2_2_final.fastq
+Approx 60% complete for CC-3677_S2_1_final.fastq
+Approx 60% complete for CC-3677_S2_2_final.fastq
+Approx 65% complete for CC-3677_S2_1_final.fastq
+Approx 65% complete for CC-3677_S2_2_final.fastq
+Approx 70% complete for CC-3677_S2_1_final.fastq
+Approx 70% complete for CC-3677_S2_2_final.fastq
+Approx 75% complete for CC-3677_S2_1_final.fastq
+Approx 75% complete for CC-3677_S2_2_final.fastq
+Approx 80% complete for CC-3677_S2_1_final.fastq
+Approx 80% complete for CC-3677_S2_2_final.fastq
+Approx 85% complete for CC-3677_S2_1_final.fastq
+Approx 85% complete for CC-3677_S2_2_final.fastq
+Approx 90% complete for CC-3677_S2_1_final.fastq
+Approx 90% complete for CC-3677_S2_2_final.fastq
+Approx 95% complete for CC-3677_S2_1_final.fastq
+Approx 95% complete for CC-3677_S2_2_final.fastq
+Analysis complete for CC-3677_S2_1_final.fastq
+Analysis complete for CC-3677_S2_2_final.fastq
+rm: cannot remove '/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_1.fastq': No such file or directory
+rm: cannot remove '/mnt/data/CbFastq/CC-3677_S2/CC-3677_S2_2.fastq': No such file or directory
+
+######  pre-processing quality control  ######
+Started analysis of CC-3678_S3_L001_R1_001.fastq
+Started analysis of CC-3678_S3_L001_R2_001.fastq
+Approx 5% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 5% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 10% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 10% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 15% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 15% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 20% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 20% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 25% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 25% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 30% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 30% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 35% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 35% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 40% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 40% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 45% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 45% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 50% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 50% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 55% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 55% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 60% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 60% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 65% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 65% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 70% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 70% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 75% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 75% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 80% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 80% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 85% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 85% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 90% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 90% complete for CC-3678_S3_L001_R2_001.fastq
+Approx 95% complete for CC-3678_S3_L001_R1_001.fastq
+Approx 95% complete for CC-3678_S3_L001_R2_001.fastq
+Analysis complete for CC-3678_S3_L001_R1_001.fastq
+Analysis complete for CC-3678_S3_L001_R2_001.fastq
+
+######  Clipping remaining adapters   ######
+java -Djava.library.path=/home/sid/Tools/bbmap/jni/ -ea -Xmx9125m -Xms9125m -cp /home/sid/Tools/bbmap/current/ jgi.BBDukF in=/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_L001_R1_001.fastq in2=/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_L001_R2_001.fastq out=/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_1_trim.fastq out2=/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_2_trim.fastq ref=adapters.fa ktrim=l k=23 mink=11 hdist=2 tpe tbo
+Executing jgi.BBDukF [in=/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_L001_R1_001.fastq, in2=/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_L001_R2_001.fastq, out=/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_1_trim.fastq, out2=/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_2_trim.fastq, ref=adapters.fa, ktrim=l, k=23, mink=11, hdist=2, tpe, tbo]
+
+BBDuk version 36.49
+maskMiddle was disabled because useShortKmers=true
+Initial:
+Memory: max=9170m, free=8979m, used=191m
+
+Added 1567990 kmers; time: 	0.376 seconds.
+Memory: max=9170m, free=8548m, used=622m
+
+Input is being processed as paired
+Started output streams:	0.010 seconds.
+Processing time:   		14.581 seconds.
+
+Input:                  	3985362 reads 		597063524 bases.
+KTrimmed:               	6546 reads (0.16%) 	219303 bases (0.04%)
+Trimmed by overlap:     	1090 reads (0.03%) 	34145 bases (0.01%)
+Total Removed:          	528 reads (0.01%) 	253448 bases (0.04%)
+Result:                 	3984834 reads (99.99%) 	596810076 bases (99.96%)
+
+Time:   			14.971 seconds.
+Reads Processed:       3985k 	266.21k reads/sec
+Bases Processed:        597m 	39.88m bases/sec
+
+######  Base calling quality control and size exclusion  ######
+java -Djava.library.path=/home/sid/Tools/bbmap/jni/ -ea -Xmx9107m -Xms9107m -cp /home/sid/Tools/bbmap/current/ jgi.BBDukF in=/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_1_trim.fastq in2=/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_2_trim.fastq out=/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_1_final.fastq out2=/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_2_final.fastq qtrim=r trimq=28 minlen=50
+Executing jgi.BBDukF [in=/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_1_trim.fastq, in2=/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_2_trim.fastq, out=/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_1_final.fastq, out2=/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_2_final.fastq, qtrim=r, trimq=28, minlen=50]
+
+BBDuk version 36.49
+Initial:
+Memory: max=9152m, free=8961m, used=191m
+
+Input is being processed as paired
+Started output streams:	0.009 seconds.
+Processing time:   		3.095 seconds.
+
+Input:                  	3984834 reads 		596810076 bases.
+QTrimmed:               	818430 reads (20.54%) 	44490009 bases (7.45%)
+Total Removed:          	162220 reads (4.07%) 	44490009 bases (7.45%)
+Result:                 	3822614 reads (95.93%) 	552320067 bases (92.55%)
+
+Time:   			3.111 seconds.
+Reads Processed:       3984k 	1280.98k reads/sec
+Bases Processed:        596m 	191.85m bases/sec
+
+######  post-processing quality control  ######
+Started analysis of CC-3678_S3_1_final.fastq
+Started analysis of CC-3678_S3_2_final.fastq
+Approx 5% complete for CC-3678_S3_1_final.fastq
+Approx 5% complete for CC-3678_S3_2_final.fastq
+Approx 10% complete for CC-3678_S3_1_final.fastq
+Approx 10% complete for CC-3678_S3_2_final.fastq
+Approx 15% complete for CC-3678_S3_1_final.fastq
+Approx 15% complete for CC-3678_S3_2_final.fastq
+Approx 20% complete for CC-3678_S3_1_final.fastq
+Approx 20% complete for CC-3678_S3_2_final.fastq
+Approx 25% complete for CC-3678_S3_1_final.fastq
+Approx 25% complete for CC-3678_S3_2_final.fastq
+Approx 30% complete for CC-3678_S3_1_final.fastq
+Approx 30% complete for CC-3678_S3_2_final.fastq
+Approx 35% complete for CC-3678_S3_1_final.fastq
+Approx 35% complete for CC-3678_S3_2_final.fastq
+Approx 40% complete for CC-3678_S3_1_final.fastq
+Approx 40% complete for CC-3678_S3_2_final.fastq
+Approx 45% complete for CC-3678_S3_1_final.fastq
+Approx 45% complete for CC-3678_S3_2_final.fastq
+Approx 50% complete for CC-3678_S3_1_final.fastq
+Approx 50% complete for CC-3678_S3_2_final.fastq
+Approx 55% complete for CC-3678_S3_1_final.fastq
+Approx 55% complete for CC-3678_S3_2_final.fastq
+Approx 60% complete for CC-3678_S3_1_final.fastq
+Approx 60% complete for CC-3678_S3_2_final.fastq
+Approx 65% complete for CC-3678_S3_1_final.fastq
+Approx 65% complete for CC-3678_S3_2_final.fastq
+Approx 70% complete for CC-3678_S3_1_final.fastq
+Approx 70% complete for CC-3678_S3_2_final.fastq
+Approx 75% complete for CC-3678_S3_1_final.fastq
+Approx 75% complete for CC-3678_S3_2_final.fastq
+Approx 80% complete for CC-3678_S3_1_final.fastq
+Approx 80% complete for CC-3678_S3_2_final.fastq
+Approx 85% complete for CC-3678_S3_1_final.fastq
+Approx 85% complete for CC-3678_S3_2_final.fastq
+Approx 90% complete for CC-3678_S3_1_final.fastq
+Approx 90% complete for CC-3678_S3_2_final.fastq
+Approx 95% complete for CC-3678_S3_1_final.fastq
+Approx 95% complete for CC-3678_S3_2_final.fastq
+Analysis complete for CC-3678_S3_1_final.fastq
+Analysis complete for CC-3678_S3_2_final.fastq
+rm: cannot remove '/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_1.fastq': No such file or directory
+rm: cannot remove '/mnt/data/CbFastq/CC-3678_S3/CC-3678_S3_2.fastq': No such file or directory
+
+######  pre-processing quality control  ######
+Started analysis of CC-1985_S4_L001_R1_001.fastq
+Started analysis of CC-1985_S4_L001_R2_001.fastq
+Approx 5% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 5% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 10% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 10% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 15% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 15% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 20% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 20% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 25% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 25% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 30% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 30% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 35% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 35% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 40% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 40% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 45% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 45% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 50% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 50% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 55% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 55% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 60% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 60% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 65% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 65% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 70% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 70% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 75% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 75% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 80% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 80% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 85% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 85% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 90% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 90% complete for CC-1985_S4_L001_R2_001.fastq
+Approx 95% complete for CC-1985_S4_L001_R1_001.fastq
+Approx 95% complete for CC-1985_S4_L001_R2_001.fastq
+Analysis complete for CC-1985_S4_L001_R1_001.fastq
+Analysis complete for CC-1985_S4_L001_R2_001.fastq
+
+######  Clipping remaining adapters   ######
+java -Djava.library.path=/home/sid/Tools/bbmap/jni/ -ea -Xmx9110m -Xms9110m -cp /home/sid/Tools/bbmap/current/ jgi.BBDukF in=/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_L001_R1_001.fastq in2=/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_L001_R2_001.fastq out=/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_1_trim.fastq out2=/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_2_trim.fastq ref=adapters.fa ktrim=l k=23 mink=11 hdist=2 tpe tbo
+Executing jgi.BBDukF [in=/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_L001_R1_001.fastq, in2=/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_L001_R2_001.fastq, out=/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_1_trim.fastq, out2=/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_2_trim.fastq, ref=adapters.fa, ktrim=l, k=23, mink=11, hdist=2, tpe, tbo]
+
+BBDuk version 36.49
+maskMiddle was disabled because useShortKmers=true
+Initial:
+Memory: max=9154m, free=8963m, used=191m
+
+Added 1567990 kmers; time: 	0.395 seconds.
+Memory: max=9154m, free=8533m, used=621m
+
+Input is being processed as paired
+Started output streams:	0.004 seconds.
+Processing time:   		13.187 seconds.
+
+Input:                  	3546836 reads 		531042238 bases.
+KTrimmed:               	5907 reads (0.17%) 	197505 bases (0.04%)
+Trimmed by overlap:     	983 reads (0.03%) 	31699 bases (0.01%)
+Total Removed:          	520 reads (0.01%) 	229204 bases (0.04%)
+Result:                 	3546316 reads (99.99%) 	530813034 bases (99.96%)
+
+Time:   			13.589 seconds.
+Reads Processed:       3546k 	261.01k reads/sec
+Bases Processed:        531m 	39.08m bases/sec
+
+######  Base calling quality control and size exclusion  ######
+java -Djava.library.path=/home/sid/Tools/bbmap/jni/ -ea -Xmx9096m -Xms9096m -cp /home/sid/Tools/bbmap/current/ jgi.BBDukF in=/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_1_trim.fastq in2=/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_2_trim.fastq out=/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_1_final.fastq out2=/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_2_final.fastq qtrim=r trimq=28 minlen=50
+Executing jgi.BBDukF [in=/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_1_trim.fastq, in2=/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_2_trim.fastq, out=/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_1_final.fastq, out2=/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_2_final.fastq, qtrim=r, trimq=28, minlen=50]
+
+BBDuk version 36.49
+Initial:
+Memory: max=9140m, free=8949m, used=191m
+
+Input is being processed as paired
+Started output streams:	0.012 seconds.
+Processing time:   		3.000 seconds.
+
+Input:                  	3546316 reads 		530813034 bases.
+QTrimmed:               	745603 reads (21.02%) 	41068010 bases (7.74%)
+Total Removed:          	151054 reads (4.26%) 	41068010 bases (7.74%)
+Result:                 	3395262 reads (95.74%) 	489745024 bases (92.26%)
+
+Time:   			3.020 seconds.
+Reads Processed:       3546k 	1174.25k reads/sec
+Bases Processed:        530m 	175.76m bases/sec
+
+######  post-processing quality control  ######
+Started analysis of CC-1985_S4_1_final.fastq
+Started analysis of CC-1985_S4_2_final.fastq
+Approx 5% complete for CC-1985_S4_1_final.fastq
+Approx 5% complete for CC-1985_S4_2_final.fastq
+Approx 10% complete for CC-1985_S4_1_final.fastq
+Approx 10% complete for CC-1985_S4_2_final.fastq
+Approx 15% complete for CC-1985_S4_1_final.fastq
+Approx 15% complete for CC-1985_S4_2_final.fastq
+Approx 20% complete for CC-1985_S4_1_final.fastq
+Approx 20% complete for CC-1985_S4_2_final.fastq
+Approx 25% complete for CC-1985_S4_1_final.fastq
+Approx 25% complete for CC-1985_S4_2_final.fastq
+Approx 30% complete for CC-1985_S4_1_final.fastq
+Approx 30% complete for CC-1985_S4_2_final.fastq
+Approx 35% complete for CC-1985_S4_1_final.fastq
+Approx 35% complete for CC-1985_S4_2_final.fastq
+Approx 40% complete for CC-1985_S4_1_final.fastq
+Approx 40% complete for CC-1985_S4_2_final.fastq
+Approx 45% complete for CC-1985_S4_1_final.fastq
+Approx 45% complete for CC-1985_S4_2_final.fastq
+Approx 50% complete for CC-1985_S4_1_final.fastq
+Approx 50% complete for CC-1985_S4_2_final.fastq
+Approx 55% complete for CC-1985_S4_1_final.fastq
+Approx 55% complete for CC-1985_S4_2_final.fastq
+Approx 60% complete for CC-1985_S4_1_final.fastq
+Approx 60% complete for CC-1985_S4_2_final.fastq
+Approx 65% complete for CC-1985_S4_1_final.fastq
+Approx 65% complete for CC-1985_S4_2_final.fastq
+Approx 70% complete for CC-1985_S4_1_final.fastq
+Approx 70% complete for CC-1985_S4_2_final.fastq
+Approx 75% complete for CC-1985_S4_1_final.fastq
+Approx 75% complete for CC-1985_S4_2_final.fastq
+Approx 80% complete for CC-1985_S4_1_final.fastq
+Approx 80% complete for CC-1985_S4_2_final.fastq
+Approx 85% complete for CC-1985_S4_1_final.fastq
+Approx 85% complete for CC-1985_S4_2_final.fastq
+Approx 90% complete for CC-1985_S4_1_final.fastq
+Approx 90% complete for CC-1985_S4_2_final.fastq
+Approx 95% complete for CC-1985_S4_1_final.fastq
+Approx 95% complete for CC-1985_S4_2_final.fastq
+Analysis complete for CC-1985_S4_1_final.fastq
+Analysis complete for CC-1985_S4_2_final.fastq
+rm: cannot remove '/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_1.fastq': No such file or directory
+rm: cannot remove '/mnt/data/CbFastq/CC-1985_S4/CC-1985_S4_2.fastq': No such file or directory

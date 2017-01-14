@@ -1,0 +1,1208 @@
+
+######  software checklist  ######
+Checking if fastq-dump is installed...........OK
+Checking if spades.py is installed...........OK
+Checking if bbduk.sh is installed...........OK
+Checking if fastqc is installed...........OK
+Checking if makeblastdb is installed...........OK
+Checking if cd-hit is installed...........OK
+Checking if quast.py is installed...........OK
+Checking if prokka is installed...........OK
+Checking if prokka-genbank_to_fasta_db is installed...........OK
+[09:35:34] This is prokka 1.12-beta
+[09:35:34] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[09:35:34] Homepage is https://github.com/tseemann/prokka
+[09:35:34] Local time is Thu Jan  5 09:35:34 2017
+[09:35:34] You are sid
+[09:35:34] Operating system is linux
+[09:35:34] You have BioPerl 1.006924
+[09:35:34] System has 8 cores.
+[09:35:34] Will use maximum of 8 cores.
+[09:35:34] Annotating as >>> Bacteria <<<
+[09:35:34] Creating new output folder: /mnt/data/CbFastq/CC-3676_S1/annotation
+[09:35:34] Running: mkdir -p \/mnt\/data\/CbFastq\/CC\-3676_S1\/annotation
+[09:35:34] Using filename prefix: PROKKA_01052017.XXX
+[09:35:34] Setting HMMER_NCPU=1
+[09:35:34] Writing log to: /mnt/data/CbFastq/CC-3676_S1/annotation/PROKKA_01052017.log
+[09:35:34] Command: /home/sid/Tools/prokka/bin/prokka --cpus 8 --kingdom Bacteria --genus Clostridium --species botulinum --usegenus --locustag CLSTRD --outdir /mnt/data/CbFastq/CC-3676_S1/annotation /mnt/data/CbFastq/CC-3676_S1/asm/contigs.fasta
+[09:35:34] Appending to PATH: /home/sid/Tools/prokka/bin/../binaries/linux
+[09:35:34] Appending to PATH: /home/sid/Tools/prokka/bin/../binaries/linux/../common
+[09:35:34] Appending to PATH: /home/sid/Tools/prokka/bin
+[09:35:34] Looking for 'aragorn' - found /home/sid/Tools/prokka/bin/../binaries/linux/aragorn
+[09:35:34] Determined aragorn version is 1.2
+[09:35:34] Looking for 'blastp' - found /usr/bin/blastp
+[09:35:34] Determined blastp version is 2.2
+[09:35:34] Looking for 'cmpress' - found /usr/bin/cmpress
+[09:35:34] Determined cmpress version is 1.1
+[09:35:34] Looking for 'cmscan' - found /usr/bin/cmscan
+[09:35:34] Determined cmscan version is 1.1
+[09:35:34] Looking for 'egrep' - found /bin/egrep
+[09:35:34] Looking for 'find' - found /usr/bin/find
+[09:35:34] Looking for 'grep' - found /bin/grep
+[09:35:34] Looking for 'hmmpress' - found /usr/bin/hmmpress
+[09:35:34] Determined hmmpress version is 3.1
+[09:35:34] Looking for 'hmmscan' - found /usr/bin/hmmscan
+[09:35:34] Determined hmmscan version is 3.1
+[09:35:34] Looking for 'less' - found /usr/bin/less
+[09:35:34] Looking for 'makeblastdb' - found /usr/bin/makeblastdb
+[09:35:34] Determined makeblastdb version is 2.2
+[09:35:34] Looking for 'minced' - found /home/sid/Tools/prokka/bin/../binaries/linux/../common/minced
+[09:35:34] Determined minced version is 2.0
+[09:35:34] Looking for 'parallel' - found /usr/bin/parallel
+[09:35:34] Determined parallel version is 20141022
+[09:35:34] Looking for 'prodigal' - found /home/sid/Tools/prokka/bin/../binaries/linux/prodigal
+[09:35:34] Determined prodigal version is 2.6
+[09:35:34] Looking for 'prokka-genbank_to_fasta_db' - found /home/sid/Tools/prokka/bin/prokka-genbank_to_fasta_db
+[09:35:34] Looking for 'sed' - found /bin/sed
+[09:35:34] Looking for 'tbl2asn' - found /home/sid/Tools/prokka/bin/../binaries/linux/tbl2asn
+[09:35:34] Determined tbl2asn version is 25.0
+[09:35:34] Using genetic code table 11.
+[09:35:34] Loading and checking input file: /mnt/data/CbFastq/CC-3676_S1/asm/contigs.fasta
+[09:35:34] Wrote 184 contigs totalling 3913751 bp.
+[09:35:34] Predicting tRNAs and tmRNAs
+[09:35:34] Running: aragorn -l -gc11  -w \/mnt\/data\/CbFastq\/CC\-3676_S1\/annotation\/PROKKA_01052017\.fna
+[09:35:35] 1 tRNA-Met [224,300] 35 (cat)
+[09:35:35] 2 tRNA-Ala [305,380] 34 (tgc)
+[09:35:35] 3 tRNA-Phe [23323,23398] 34 (gaa)
+[09:35:35] 4 tRNA-Glu c[584031,584105] 34 (ctc)
+[09:35:35] 5 tRNA-Leu c[726649,726735] 35 (caa)
+[09:35:35] 1 tRNA-Trp [22137,22211] 33 (cca)
+[09:35:35] 2 tRNA-Trp [33719,33793] 33 (cca)
+[09:35:35] 3 tRNA-Met c[559315,559390] 34 (cat)
+[09:35:35] 1 tRNA-Arg [13207,13283] 35 (tct)
+[09:35:35] 1 tRNA-Phe [228,303] 34 (gaa)
+[09:35:35] 2 tRNA-Cys [305,378] 33 (gca)
+[09:35:35] 3 tRNA-Thr [26373,26448] 34 (ggt)
+[09:35:35] 4 tRNA-Pro [226118,226193] 34 (tgg)
+[09:35:35] 5 tRNA-Gly [226210,226283] 33 (tcc)
+[09:35:35] 6 tRNA-Arg [226517,226593] 35 (tct)
+[09:35:35] 7 tRNA-Pro [226600,226675] 34 (tgg)
+[09:35:35] 8 tRNA-Gly [226698,226771] 33 (tcc)
+[09:35:35] 9 tRNA-Arg [226786,226862] 35 (tct)
+[09:35:35] 10 tRNA-His [226868,226943] 34 (gtg)
+[09:35:35] 11 tRNA-Gln [226947,227021] 33 (ttg)
+[09:35:35] 1 tRNA-Ser [4667,4757] 36 (tga)
+[09:35:35] 2 tRNA-Ser [4793,4883] 35 (gct)
+[09:35:35] 3 tRNA-Ser [5350,5440] 36 (tga)
+[09:35:35] 4 tRNA-Ser [5476,5566] 35 (gct)
+[09:35:35] 5 tRNA-Arg [18642,18716] 34 (acg)
+[09:35:35] 6 tRNA-Leu [151194,151282] 35 (taa)
+[09:35:35] 7 tRNA-Met [151303,151378] 34 (cat)
+[09:35:35] 8 tRNA-Met [151389,151465] 35 (cat)
+[09:35:35] 9 tRNA-Leu [151471,151559] 35 (taa)
+[09:35:35] 10 tRNA-Asn [165465,165539] 33 (gtt)
+[09:35:35] 11 tRNA-Asn [165857,165931] 33 (gtt)
+[09:35:35] 12 tRNA-Asn [166238,166312] 33 (gtt)
+[09:35:35] 1 tRNA-Cys [42836,42910] 33 (gca)
+[09:35:35] 1 tRNA-Asn [107,181] 33 (gtt)
+[09:35:35] 1 tRNA-Arg [18675,18749] 34 (cct)
+[09:35:35] 2 tRNA-Ser [22630,22721] 35 (gga)
+[09:35:35] 1 tRNA-Asp [71,147] 35 (gtc)
+[09:35:35] 1 tRNA-Glu [41610,41684] 34 (ttc)
+[09:35:35] 2 tRNA-Val [41698,41773] 34 (tac)
+[09:35:35] 3 tRNA-Asp [41780,41856] 35 (gtc)
+[09:35:35] 4 tRNA-Thr [41866,41940] 33 (tgt)
+[09:35:35] 5 tRNA-Glu [41972,42046] 34 (ttc)
+[09:35:35] 6 tRNA-Val [42059,42134] 34 (tac)
+[09:35:35] 1 tRNA-Arg [28504,28580] 35 (tct)
+[09:35:35] 2 tRNA-Lys [28584,28659] 34 (ttt)
+[09:35:35] 3 tRNA-Arg [29251,29327] 35 (tct)
+[09:35:35] 4 tRNA-Lys [29331,29406] 34 (ttt)
+[09:35:35] 1 tRNA-Arg c[12436,12512] 35 (tcg)
+[09:35:35] 2 tRNA-Gly c[12556,12629] 33 (tcc)
+[09:35:35] 3 tRNA-Gly c[12643,12717] 33 (gcc)
+[09:35:35] 4 tRNA-Leu c[12723,12807] 35 (tag)
+[09:35:35] 5 tRNA-Lys c[12814,12889] 34 (ttt)
+[09:35:35] 1 tRNA-Lys [297,372] 34 (ctt)
+[09:35:35] 2 tRNA-Lys [3965,4040] 34 (ttt)
+[09:35:35] 1 tRNA-Ile c[443,519] 35 (gat)
+[09:35:35] 1 tRNA-Tyr c[2,86] 35 (gta)
+[09:35:35] 2 tRNA-Thr c[93,167] 33 (tgt)
+[09:35:35] 3 tRNA-Val c[188,263] 34 (tac)
+[09:35:35] 4 tRNA-Tyr c[271,355] 35 (gta)
+[09:35:35] 1 tRNA-Lys [67,140] 34 (ttt)
+[09:35:35] 2 tRNA-Leu [145,227] 35 (tag)
+[09:35:35] Found 61 tRNAs
+[09:35:35] Predicting Ribosomal RNAs
+[09:35:35] You need either Barrnap or RNAmmer installed to predict rRNAs!
+[09:35:35] Skipping ncRNA search, enable with --rfam if desired.
+[09:35:35] Total of 61 tRNA + rRNA features
+[09:35:35] Searching for CRISPR repeats
+[09:35:36] CRISPR1 NODE_6_length_203927_cov_51.4136 188577 with 13 spacers
+[09:35:36] CRISPR2 NODE_17_length_42077_cov_56.821 29849 with 6 spacers
+[09:35:36] Found 2 CRISPRs
+[09:35:36] Predicting coding sequences
+[09:35:36] Contigs total 3913751 bp, so using single mode
+[09:35:36] Running: prodigal -i \/mnt\/data\/CbFastq\/CC\-3676_S1\/annotation\/PROKKA_01052017\.fna -c -m -g 11 -p single -f sco -q
+[09:35:38] Found 3639 CDS
+[09:35:38] Connecting features back to sequences
+[09:35:38] Using custom Clostridium database for annotation
+[09:35:38] Annotating CDS, please be patient.
+[09:35:38] Will use 8 CPUs for similarity searching.
+[09:35:39] There are still 3639 unannotated CDS left (started with 3639)
+[09:35:39] Will use blast to search against /home/sid/Tools/prokka/bin/../db/genus/Clostridium with 8 CPUs
+[09:35:39] Running: cat \/mnt\/data\/CbFastq\/CC\-3676_S1\/annotation\/Clostridium\.faa | parallel --gnu --plain -j 8 --block 68323 --recstart '>' --pipe blastp -query - -db /home/sid/Tools/prokka/bin/../db/genus/Clostridium -evalue 1e-06 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \/mnt\/data\/CbFastq\/CC\-3676_S1\/annotation\/Clostridium\.blast 2> /dev/null
+[09:36:10] Modify product: HutP superfamily => HutP superfamily protein
+[09:36:10] Modify product: transcription termination/antitermination protein NusA => hypothetical protein
+[09:36:10] Modify product: DUF378 domain-containing protein => hypothetical protein
+[09:36:11] Modify product: DUF350 domain-containing protein => hypothetical protein
+[09:36:11] Modify product: phosphotransferase enzyme family => phosphotransferase enzyme family protein
+[09:36:11] Modify product: DUF1292 domain-containing protein => hypothetical protein
+[09:36:11] Modify product: periplasmic molybdate-binding protein/domain => periplasmic molybdate-binding protein/domain protein
+[09:36:11] Modify product: nucleoside hydrolase IUNH family => nucleoside hydrolase IUNH family protein
+[09:36:11] Modify product: DUF4250 domain-containing protein => hypothetical protein
+[09:36:11] Modify product: DUF1292 domain-containing protein => hypothetical protein
+[09:36:11] Modify product: carbon storage regulator homolog => hypothetical protein
+[09:36:11] Modify product: DUF368 domain-containing protein => hypothetical protein
+[09:36:11] Modify product: DUF4931 domain-containing protein => hypothetical protein
+[09:36:11] Modify product: prepilin-type N-terminal cleavage/methylation domain-containing protein => hypothetical protein
+[09:36:11] Modify product: prepilin-type N-terminal cleavage/methylation domain-containing protein => hypothetical protein
+[09:36:11] Modify product: prepilin-type N-terminal cleavage/methylation domain-containing protein => hypothetical protein
+[09:36:11] Modify product: transcription termination/antitermination protein NusG => hypothetical protein
+[09:36:12] Modify product: DUF4956 domain-containing protein => hypothetical protein
+[09:36:12] Modify product: DUF5050 domain-containing protein => hypothetical protein
+[09:36:12] Modify product: DUF5105 domain-containing protein => hypothetical protein
+[09:36:12] Modify product: DUF378 domain-containing protein => hypothetical protein
+[09:36:12] Modify product: prepilin-type N-terminal cleavage/methylation domain-containing protein => hypothetical protein
+[09:36:12] Modify product: N utilization substance protein B homolog => hypothetical protein
+[09:36:12] Modify product: replication terminator protein => hypothetical protein
+[09:36:12] Modify product: replication terminator protein => hypothetical protein
+[09:36:12] Modify product: DUF4163 domain-containing protein => hypothetical protein
+[09:36:12] Modify product: transcription termination factor Rho => hypothetical protein
+[09:36:13] Modify product: DUF2798 domain-containing protein => hypothetical protein
+[09:36:13] Modify product: DUF370 domain-containing protein => hypothetical protein
+[09:36:13] Modify product: DUF1963 domain-containing protein => hypothetical protein
+[09:36:13] Modify product: DUF4163 domain-containing protein => hypothetical protein
+[09:36:13] Modify product: DUF4163 domain-containing protein => hypothetical protein
+[09:36:13] Cleaned 32 /product names
+[09:36:13] Deleting unwanted file: /mnt/data/CbFastq/CC-3676_S1/annotation/Clostridium.faa
+[09:36:13] Deleting unwanted file: /mnt/data/CbFastq/CC-3676_S1/annotation/Clostridium.blast
+[09:36:13] There are still 838 unannotated CDS left (started with 3639)
+[09:36:13] Will use blast to search against /home/sid/Tools/prokka/bin/../db/kingdom/Bacteria/sprot with 8 CPUs
+[09:36:13] Running: cat \/mnt\/data\/CbFastq\/CC\-3676_S1\/annotation\/sprot\.faa | parallel --gnu --plain -j 8 --block 8979 --recstart '>' --pipe blastp -query - -db /home/sid/Tools/prokka/bin/../db/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \/mnt\/data\/CbFastq\/CC\-3676_S1\/annotation\/sprot\.blast 2> /dev/null
+[09:36:18] Modify product: Pentapeptide repeat protein VPA0095 => Pentapeptide repeat protein
+[09:36:18] Cleaned 1 /product names
+[09:36:18] Deleting unwanted file: /mnt/data/CbFastq/CC-3676_S1/annotation/sprot.faa
+[09:36:18] Deleting unwanted file: /mnt/data/CbFastq/CC-3676_S1/annotation/sprot.blast
+[09:36:18] There are still 823 unannotated CDS left (started with 3639)
+[09:36:18] Will use hmmer3 to search against /home/sid/Tools/prokka/bin/../db/hmm/HAMAP.hmm with 8 CPUs
+[09:36:18] Running: cat \/mnt\/data\/CbFastq\/CC\-3676_S1\/annotation\/HAMAP\.hmm\.faa | parallel --gnu --plain -j 8 --block 8654 --recstart '>' --pipe hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 /home/sid/Tools/prokka/bin/../db/hmm/HAMAP.hmm /dev/stdin > \/mnt\/data\/CbFastq\/CC\-3676_S1\/annotation\/HAMAP\.hmm\.hmmer3 2> /dev/null
+[09:36:25] Deleting unwanted file: /mnt/data/CbFastq/CC-3676_S1/annotation/HAMAP.hmm.faa
+[09:36:25] Deleting unwanted file: /mnt/data/CbFastq/CC-3676_S1/annotation/HAMAP.hmm.hmmer3
+[09:36:25] Labelling remaining 815 proteins as 'hypothetical protein'
+[09:36:25] Possible /pseudo 'transketolase' at NODE_1_length_733988_cov_88.2347 position 49791
+[09:36:25] Possible /pseudo 'lipase' at NODE_1_length_733988_cov_88.2347 position 96447
+[09:36:25] Possible /pseudo 'signal peptidase I' at NODE_1_length_733988_cov_88.2347 position 134046
+[09:36:25] Possible /pseudo 'cell wall-binding protein' at NODE_1_length_733988_cov_88.2347 position 168703
+[09:36:25] Possible /pseudo 'collagenolytic protease' at NODE_1_length_733988_cov_88.2347 position 217894
+[09:36:25] Possible /pseudo 'cell wall-binding protein' at NODE_1_length_733988_cov_88.2347 position 224179
+[09:36:25] Possible /pseudo 'cell wall hydrolase' at NODE_1_length_733988_cov_88.2347 position 254313
+[09:36:25] Possible /pseudo 'cell wall-binding protein' at NODE_1_length_733988_cov_88.2347 position 290096
+[09:36:25] Possible /pseudo 'iron transporter FeoA' at NODE_1_length_733988_cov_88.2347 position 455480
+[09:36:25] Possible /pseudo 'membrane protein' at NODE_1_length_733988_cov_88.2347 position 475275
+[09:36:25] Possible /pseudo 'acetyltransferase' at NODE_1_length_733988_cov_88.2347 position 476795
+[09:36:25] Possible /pseudo 'ABC transporter' at NODE_1_length_733988_cov_88.2347 position 548163
+[09:36:25] Possible /pseudo 'rubredoxin/rubrerythrin' at NODE_1_length_733988_cov_88.2347 position 695679
+[09:36:25] Possible /pseudo 'transcriptional regulator' at NODE_1_length_733988_cov_88.2347 position 731345
+[09:36:25] Possible /pseudo 'MarR family transcriptional regulator' at NODE_2_length_593605_cov_67.4539 position 37429
+[09:36:25] Possible /pseudo 'ABC transporter' at NODE_2_length_593605_cov_67.4539 position 39764
+[09:36:25] Possible /pseudo 'terminase' at NODE_2_length_593605_cov_67.4539 position 229440
+[09:36:25] Possible /pseudo 'chitinase' at NODE_2_length_593605_cov_67.4539 position 307183
+[09:36:25] Possible /pseudo 'MFS transporter' at NODE_2_length_593605_cov_67.4539 position 349051
+[09:36:25] Possible /pseudo 'PTS fructose transporter subunit IIABC' at NODE_2_length_593605_cov_67.4539 position 411923
+[09:36:25] Possible /pseudo 'alpha-mannosidase' at NODE_2_length_593605_cov_67.4539 position 413037
+[09:36:25] Possible /pseudo 'alpha-mannosidase' at NODE_2_length_593605_cov_67.4539 position 414275
+[09:36:25] Possible /pseudo 'membrane protein' at NODE_2_length_593605_cov_67.4539 position 498190
+[09:36:25] Possible /pseudo 'membrane protein' at NODE_2_length_593605_cov_67.4539 position 515400
+[09:36:25] Possible /pseudo 'membrane protein' at NODE_2_length_593605_cov_67.4539 position 515984
+[09:36:25] Possible /pseudo 'transketolase' at NODE_2_length_593605_cov_67.4539 position 542369
+[09:36:25] Possible /pseudo 'competence protein ComF' at NODE_3_length_583366_cov_83.8299 position 5257
+[09:36:25] Possible /pseudo 'peptidase S8' at NODE_3_length_583366_cov_83.8299 position 30361
+[09:36:25] Possible /pseudo 'adenine permease' at NODE_3_length_583366_cov_83.8299 position 32926
+[09:36:25] Possible /pseudo '2-hydroxyglutaryl-CoA dehydratase' at NODE_3_length_583366_cov_83.8299 position 124334
+[09:36:25] Possible /pseudo 'histidine kinase' at NODE_3_length_583366_cov_83.8299 position 215550
+[09:36:25] Possible /pseudo 'transcriptional regulator' at NODE_3_length_583366_cov_83.8299 position 224083
+[09:36:25] Possible /pseudo 'flagellar hook protein FlgE' at NODE_3_length_583366_cov_83.8299 position 335604
+[09:36:25] Possible /pseudo 'chemotaxis protein MotB' at NODE_3_length_583366_cov_83.8299 position 337988
+[09:36:25] Possible /pseudo 'flagellar basal body rod protein FlgG' at NODE_3_length_583366_cov_83.8299 position 349533
+[09:36:25] Possible /pseudo 'competence protein ComEC' at NODE_3_length_583366_cov_83.8299 position 369077
+[09:36:25] Possible /pseudo 'phage protein' at NODE_3_length_583366_cov_83.8299 position 418742
+[09:36:25] Possible /pseudo 'glutathionylspermidine synthase' at NODE_3_length_583366_cov_83.8299 position 541801
+[09:36:25] Possible /pseudo 'membrane protein' at NODE_3_length_583366_cov_83.8299 position 549290
+[09:36:25] Possible /pseudo 'cell surface protein' at NODE_4_length_275141_cov_64.6477 position 99938
+[09:36:25] Possible /pseudo 'peptide ABC transporter ATP-binding protein' at NODE_4_length_275141_cov_64.6477 position 137433
+[09:36:25] Possible /pseudo 'NrdH-redoxin' at NODE_5_length_227023_cov_117.168 position 14575
+[09:36:25] Possible /pseudo 'energy-coupling factor transporter ATPase' at NODE_5_length_227023_cov_117.168 position 60964
+[09:36:25] Possible /pseudo 'fumarate hydratase' at NODE_5_length_227023_cov_117.168 position 69604
+[09:36:25] Possible /pseudo 'chromate transporter' at NODE_5_length_227023_cov_117.168 position 81145
+[09:36:25] Possible /pseudo 'membrane protein' at NODE_5_length_227023_cov_117.168 position 87123
+[09:36:25] Possible /pseudo 'multidrug transporter' at NODE_5_length_227023_cov_117.168 position 116940
+[09:36:25] Possible /pseudo 'PTS system glucitol/sorbitol-specific transporter subunit IIBC' at NODE_5_length_227023_cov_117.168 position 202699
+[09:36:25] Possible /pseudo 'two-component sensor histidine kinase' at NODE_6_length_203927_cov_51.4136 position 67399
+[09:36:25] Possible /pseudo 'hydrogenase formation protein HypD' at NODE_6_length_203927_cov_51.4136 position 132237
+[09:36:25] Possible /pseudo 'Ni/Fe hydrogenase' at NODE_6_length_203927_cov_51.4136 position 139092
+[09:36:25] Possible /pseudo 'Ni/Fe hydrogenase' at NODE_6_length_203927_cov_51.4136 position 139425
+[09:36:25] Possible /pseudo 'Ni/Fe hydrogenase' at NODE_6_length_203927_cov_51.4136 position 139623
+[09:36:25] Possible /pseudo 'sugar ABC transporter permease' at NODE_6_length_203927_cov_51.4136 position 169148
+[09:36:25] Possible /pseudo 'peptidase S8' at NODE_6_length_203927_cov_51.4136 position 197070
+[09:36:25] Possible /pseudo 'membrane protein' at NODE_7_length_171334_cov_116.835 position 39541
+[09:36:25] Possible /pseudo 'spore maturation protein' at NODE_7_length_171334_cov_116.835 position 82474
+[09:36:25] Possible /pseudo 'encapsulation protein CapA' at NODE_7_length_171334_cov_116.835 position 128404
+[09:36:25] Possible /pseudo 'carboxysome shell protein' at NODE_8_length_165252_cov_53.5121 position 61780
+[09:36:25] Possible /pseudo 'MFS transporter' at NODE_8_length_165252_cov_53.5121 position 83291
+[09:36:25] Possible /pseudo 'MFS transporter' at NODE_8_length_165252_cov_53.5121 position 83567
+[09:36:25] Possible /pseudo 'type I pullulanase' at NODE_8_length_165252_cov_53.5121 position 117486
+[09:36:25] Possible /pseudo '50S ribosomal protein L25' at NODE_9_length_154289_cov_55.4484 position 132812
+[09:36:25] Possible /pseudo 'two-component sensor histidine kinase' at NODE_10_length_121835_cov_68.4223 position 27034
+[09:36:25] Possible /pseudo 'phage infection protein' at NODE_10_length_121835_cov_68.4223 position 31553
+[09:36:25] Possible /pseudo 'cell wall-binding protein' at NODE_10_length_121835_cov_68.4223 position 119450
+[09:36:25] Possible /pseudo 'transcriptional regulator' at NODE_11_length_101055_cov_61.119 position 11193
+[09:36:25] Possible /pseudo 'FkbM family methyltransferase' at NODE_11_length_101055_cov_61.119 position 46042
+[09:36:25] Possible /pseudo 'NADH dehydrogenase' at NODE_11_length_101055_cov_61.119 position 77714
+[09:36:25] Possible /pseudo 'RepB family plasmid replication initiator protein' at NODE_12_length_71398_cov_94.4785 position 68707
+[09:36:25] Possible /pseudo 'spore coat protein' at NODE_13_length_67409_cov_94.3972 position 22279
+[09:36:25] Possible /pseudo 'spore coat protein' at NODE_13_length_67409_cov_94.3972 position 23098
+[09:36:25] Possible /pseudo 'membrane protein' at NODE_14_length_61274_cov_108.935 position 1175
+[09:36:25] Possible /pseudo 'PTS glucose transporter subunit IIA' at NODE_14_length_61274_cov_108.935 position 59459
+[09:36:25] Possible /pseudo 'transketolase' at NODE_15_length_48188_cov_105.348 position 36105
+[09:36:25] Possible /pseudo 'phage portal protein' at NODE_18_length_30351_cov_62.1523 position 9748
+[09:36:25] Possible /pseudo 'myo-inositol 2-dehydrogenase' at NODE_42_length_2030_cov_156.794 position 903
+[09:36:25] Found 89 unique /gene codes.
+[09:36:25] Fixed 2 duplicate /gene - flgG_1 flgG_2
+[09:36:25] Fixed 2 duplicate /gene - gyrB_1 gyrB_2
+[09:36:25] Fixed 2 duplicate /gene - recU_1 recU_2
+[09:36:25] Fixed 2 duplicate /gene - fusA_1 fusA_2
+[09:36:25] Fixed 2 duplicate /gene - ribH_1 ribH_2
+[09:36:25] Fixed 2 duplicate /gene - gutE_1 gutE_2
+[09:36:25] Fixed 2 duplicate /gene - bepA_1 bepA_2
+[09:36:25] Fixed 2 duplicate /gene - tuf_1 tuf_2
+[09:36:25] Fixed 2 duplicate /gene - gldA_1 gldA_2
+[09:36:25] Fixed 9 colliding /gene names.
+[09:36:25] Adding /locus_tag identifiers
+[09:36:25] Assigned 3700 locus_tags to CDS and RNA features.
+[09:36:25] Writing outputs to /mnt/data/CbFastq/CC-3676_S1/annotation/
+[09:36:27] Generating annotation statistics file
+[09:36:27] Generating Genbank and Sequin files
+[09:36:27] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.12-beta from https://github.com/tseemann/prokka' -Z \/mnt\/data\/CbFastq\/CC\-3676_S1\/annotation\/PROKKA_01052017\.err -i \/mnt\/data\/CbFastq\/CC\-3676_S1\/annotation\/PROKKA_01052017\.fsa 2> /dev/null
+[09:36:37] Deleting unwanted file: /mnt/data/CbFastq/CC-3676_S1/annotation/errorsummary.val
+[09:36:37] Deleting unwanted file: /mnt/data/CbFastq/CC-3676_S1/annotation/PROKKA_01052017.dr
+[09:36:37] Deleting unwanted file: /mnt/data/CbFastq/CC-3676_S1/annotation/PROKKA_01052017.fixedproducts
+[09:36:37] Deleting unwanted file: /mnt/data/CbFastq/CC-3676_S1/annotation/PROKKA_01052017.ecn
+[09:36:37] Deleting unwanted file: /mnt/data/CbFastq/CC-3676_S1/annotation/PROKKA_01052017.val
+[09:36:37] Repairing broken .GBK output that tbl2asn produces...
+[09:36:37] Running: sed 's/COORDINATES: profile/COORDINATES:profile/' < \/mnt\/data\/CbFastq\/CC\-3676_S1\/annotation\/PROKKA_01052017\.gbf > \/mnt\/data\/CbFastq\/CC\-3676_S1\/annotation\/PROKKA_01052017\.gbk
+[09:36:37] Deleting unwanted file: /mnt/data/CbFastq/CC-3676_S1/annotation/PROKKA_01052017.gbf
+[09:36:37] Output files:
+[09:36:37] /mnt/data/CbFastq/CC-3676_S1/annotation/PROKKA_01052017.txt
+[09:36:37] /mnt/data/CbFastq/CC-3676_S1/annotation/PROKKA_01052017.ffn
+[09:36:37] /mnt/data/CbFastq/CC-3676_S1/annotation/PROKKA_01052017.sqn
+[09:36:37] /mnt/data/CbFastq/CC-3676_S1/annotation/PROKKA_01052017.tbl
+[09:36:37] /mnt/data/CbFastq/CC-3676_S1/annotation/PROKKA_01052017.gff
+[09:36:37] /mnt/data/CbFastq/CC-3676_S1/annotation/PROKKA_01052017.fsa
+[09:36:37] /mnt/data/CbFastq/CC-3676_S1/annotation/PROKKA_01052017.fna
+[09:36:37] /mnt/data/CbFastq/CC-3676_S1/annotation/PROKKA_01052017.log
+[09:36:37] /mnt/data/CbFastq/CC-3676_S1/annotation/PROKKA_01052017.faa
+[09:36:37] /mnt/data/CbFastq/CC-3676_S1/annotation/PROKKA_01052017.gbk
+[09:36:37] /mnt/data/CbFastq/CC-3676_S1/annotation/PROKKA_01052017.err
+[09:36:37] Annotation finished successfully.
+[09:36:37] Walltime used: 1.05 minutes
+[09:36:37] If you use this result please cite the Prokka paper:
+[09:36:37] Seemann T (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30(14):2068-9.
+[09:36:37] Type 'prokka --citation' for more details.
+[09:36:37] Share and enjoy!
+[09:36:37] This is prokka 1.12-beta
+[09:36:37] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[09:36:37] Homepage is https://github.com/tseemann/prokka
+[09:36:37] Local time is Thu Jan  5 09:36:37 2017
+[09:36:37] You are sid
+[09:36:37] Operating system is linux
+[09:36:37] You have BioPerl 1.006924
+[09:36:37] System has 8 cores.
+[09:36:37] Will use maximum of 8 cores.
+[09:36:37] Annotating as >>> Bacteria <<<
+[09:36:37] Creating new output folder: /mnt/data/CbFastq/CC-3677_S2/annotation
+[09:36:37] Running: mkdir -p \/mnt\/data\/CbFastq\/CC\-3677_S2\/annotation
+[09:36:37] Using filename prefix: PROKKA_01052017.XXX
+[09:36:37] Setting HMMER_NCPU=1
+[09:36:37] Writing log to: /mnt/data/CbFastq/CC-3677_S2/annotation/PROKKA_01052017.log
+[09:36:37] Command: /home/sid/Tools/prokka/bin/prokka --cpus 8 --kingdom Bacteria --genus Clostridium --species botulinum --usegenus --locustag CLSTRD --outdir /mnt/data/CbFastq/CC-3677_S2/annotation /mnt/data/CbFastq/CC-3677_S2/asm/contigs.fasta
+[09:36:37] Appending to PATH: /home/sid/Tools/prokka/bin/../binaries/linux
+[09:36:37] Appending to PATH: /home/sid/Tools/prokka/bin/../binaries/linux/../common
+[09:36:37] Appending to PATH: /home/sid/Tools/prokka/bin
+[09:36:37] Looking for 'aragorn' - found /home/sid/Tools/prokka/bin/../binaries/linux/aragorn
+[09:36:37] Determined aragorn version is 1.2
+[09:36:37] Looking for 'blastp' - found /usr/bin/blastp
+[09:36:37] Determined blastp version is 2.2
+[09:36:37] Looking for 'cmpress' - found /usr/bin/cmpress
+[09:36:37] Determined cmpress version is 1.1
+[09:36:37] Looking for 'cmscan' - found /usr/bin/cmscan
+[09:36:37] Determined cmscan version is 1.1
+[09:36:37] Looking for 'egrep' - found /bin/egrep
+[09:36:37] Looking for 'find' - found /usr/bin/find
+[09:36:37] Looking for 'grep' - found /bin/grep
+[09:36:37] Looking for 'hmmpress' - found /usr/bin/hmmpress
+[09:36:37] Determined hmmpress version is 3.1
+[09:36:37] Looking for 'hmmscan' - found /usr/bin/hmmscan
+[09:36:37] Determined hmmscan version is 3.1
+[09:36:37] Looking for 'less' - found /usr/bin/less
+[09:36:37] Looking for 'makeblastdb' - found /usr/bin/makeblastdb
+[09:36:37] Determined makeblastdb version is 2.2
+[09:36:37] Looking for 'minced' - found /home/sid/Tools/prokka/bin/../binaries/linux/../common/minced
+[09:36:38] Determined minced version is 2.0
+[09:36:38] Looking for 'parallel' - found /usr/bin/parallel
+[09:36:38] Determined parallel version is 20141022
+[09:36:38] Looking for 'prodigal' - found /home/sid/Tools/prokka/bin/../binaries/linux/prodigal
+[09:36:38] Determined prodigal version is 2.6
+[09:36:38] Looking for 'prokka-genbank_to_fasta_db' - found /home/sid/Tools/prokka/bin/prokka-genbank_to_fasta_db
+[09:36:38] Looking for 'sed' - found /bin/sed
+[09:36:38] Looking for 'tbl2asn' - found /home/sid/Tools/prokka/bin/../binaries/linux/tbl2asn
+[09:36:38] Determined tbl2asn version is 25.0
+[09:36:38] Using genetic code table 11.
+[09:36:38] Loading and checking input file: /mnt/data/CbFastq/CC-3677_S2/asm/contigs.fasta
+[09:36:38] Wrote 175 contigs totalling 3647744 bp.
+[09:36:38] Predicting tRNAs and tmRNAs
+[09:36:38] Running: aragorn -l -gc11  -w \/mnt\/data\/CbFastq\/CC\-3677_S2\/annotation\/PROKKA_01052017\.fna
+[09:36:38] 1 tRNA-Arg [10929,11005] 35 (tct)
+[09:36:38] 2 tRNA-Lys [11010,11085] 34 (ttt)
+[09:36:38] 3 tRNA-Cys [269388,269462] 33 (gca)
+[09:36:38] 1 tRNA-Met [12791,12866] 34 (cat)
+[09:36:38] 1 tRNA-Leu [54688,54774] 35 (caa)
+[09:36:38] 2 tRNA-Glu [207246,207320] 34 (ctc)
+[09:36:38] 1 tRNA-Trp [23248,23322] 33 (cca)
+[09:36:38] 2 tRNA-Trp [24929,25003] 33 (cca)
+[09:36:38] 3 tmRNA [153734,154087] 95,124 AEDNFALAA*
+[09:36:38] 1 tRNA-Phe [287,362] 34 (gaa)
+[09:36:38] 2 tRNA-Cys [364,437] 33 (gca)
+[09:36:38] 3 tRNA-Thr [26190,26265] 34 (ggt)
+[09:36:38] 4 tRNA-Pro [215135,215210] 34 (tgg)
+[09:36:38] 5 tRNA-Gly [215227,215300] 33 (tcc)
+[09:36:38] 6 tRNA-Arg [215533,215609] 35 (tct)
+[09:36:38] 7 tRNA-Pro [215616,215691] 34 (tgg)
+[09:36:38] 8 tRNA-Gly [215714,215787] 33 (tcc)
+[09:36:38] 9 tRNA-Arg [215802,215878] 35 (tct)
+[09:36:38] 10 tRNA-His [215884,215959] 34 (gtg)
+[09:36:38] 11 tRNA-Gln [215963,216037] 33 (ttg)
+[09:36:38] 1 tRNA-Arg [115012,115088] 35 (tct)
+[09:36:38] 2 tRNA-Lys [115093,115168] 34 (ttt)
+[09:36:38] 1 tRNA-Arg c[86293,86367] 34 (acg)
+[09:36:38] 2 tRNA-Ser c[99323,99413] 35 (gct)
+[09:36:38] 3 tRNA-Ser c[99449,99539] 36 (tga)
+[09:36:38] 4 tRNA-Ser c[99854,99944] 35 (gct)
+[09:36:38] 5 tRNA-Ser c[99980,100070] 36 (tga)
+[09:36:38] 6 tRNA-Ala c[104808,104883] 34 (tgc)
+[09:36:38] 7 tRNA-Met c[104888,104964] 35 (cat)
+[09:36:38] 1 tRNA-Asn c[5049,5123] 33 (gtt)
+[09:36:38] 2 tRNA-Asn c[5435,5509] 33 (gtt)
+[09:36:38] 3 tRNA-Asn c[5837,5911] 33 (gtt)
+[09:36:38] 4 tRNA-Leu c[19771,19859] 35 (taa)
+[09:36:38] 5 tRNA-Met c[19865,19941] 35 (cat)
+[09:36:38] 6 tRNA-Met c[19952,20027] 34 (cat)
+[09:36:38] 7 tRNA-Leu c[20048,20136] 35 (taa)
+[09:36:38] 1 tRNA-Ser c[35601,35692] 35 (gga)
+[09:36:38] 2 tRNA-Arg c[46177,46251] 34 (cct)
+[09:36:38] 1 tRNA-Asn [165,239] 33 (gtt)
+[09:36:38] 1 tRNA-Asp [73,149] 35 (gtc)
+[09:36:38] 1 tRNA-Thr c[2,76] 33 (tgt)
+[09:36:38] 2 tRNA-Val c[97,172] 34 (tac)
+[09:36:38] 3 tRNA-Glu c[186,260] 34 (ttc)
+[09:36:38] 4 tRNA-Thr c[290,364] 33 (tgt)
+[09:36:38] 5 tRNA-Asp c[374,450] 35 (gtc)
+[09:36:38] 6 tRNA-Val c[457,532] 34 (tac)
+[09:36:38] 7 tRNA-Glu c[546,620] 34 (ttc)
+[09:36:38] 1 tRNA-Phe c[199,274] 34 (gaa)
+[09:36:38] 1 tRNA-Lys [2,77] 34 (ttt)
+[09:36:38] 2 tRNA-Leu [84,168] 35 (tag)
+[09:36:38] 3 tRNA-Gly [174,248] 33 (gcc)
+[09:36:38] 4 tRNA-Gly [262,335] 33 (tcc)
+[09:36:38] 5 tRNA-Arg [474,550] 35 (tcg)
+[09:36:38] 1 tRNA-Lys [63,138] 34 (ctt)
+[09:36:38] 2 tRNA-Lys [2532,2607] 34 (ttt)
+[09:36:38] 1 tRNA-Ile c[292,368] 35 (gat)
+[09:36:38] 2 tRNA-Ala c[372,447] 34 (tgc)
+[09:36:38] 1 tRNA-Tyr c[2,86] 35 (gta)
+[09:36:38] 2 tRNA-Thr c[93,167] 33 (tgt)
+[09:36:38] 3 tRNA-Val c[188,263] 34 (tac)
+[09:36:38] 4 tRNA-Tyr c[270,354] 35 (gta)
+[09:36:38] 1 tRNA-Lys [61,136] 34 (ctt)
+[09:36:38] 2 tRNA-His [145,220] 34 (gtg)
+[09:36:38] Found 63 tRNAs
+[09:36:38] Predicting Ribosomal RNAs
+[09:36:38] You need either Barrnap or RNAmmer installed to predict rRNAs!
+[09:36:38] Skipping ncRNA search, enable with --rfam if desired.
+[09:36:38] Total of 62 tRNA + rRNA features
+[09:36:38] Searching for CRISPR repeats
+[09:36:39] CRISPR1 NODE_2_length_416502_cov_55.6412 108927 with 30 spacers
+[09:36:39] CRISPR2 NODE_4_length_326231_cov_73.6665 96420 with 48 spacers
+[09:36:39] CRISPR3 NODE_19_length_17173_cov_53.5389 617 with 4 spacers
+[09:36:39] CRISPR4 NODE_19_length_17173_cov_53.5389 10464 with 15 spacers
+[09:36:39] CRISPR5 NODE_19_length_17173_cov_53.5389 14503 with 15 spacers
+[09:36:39] Found 5 CRISPRs
+[09:36:39] Predicting coding sequences
+[09:36:39] Contigs total 3647744 bp, so using single mode
+[09:36:39] Running: prodigal -i \/mnt\/data\/CbFastq\/CC\-3677_S2\/annotation\/PROKKA_01052017\.fna -c -m -g 11 -p single -f sco -q
+[09:36:41] Found 3268 CDS
+[09:36:41] Connecting features back to sequences
+[09:36:41] Using custom Clostridium database for annotation
+[09:36:41] Annotating CDS, please be patient.
+[09:36:41] Will use 8 CPUs for similarity searching.
+[09:36:42] There are still 3268 unannotated CDS left (started with 3268)
+[09:36:42] Will use blast to search against /home/sid/Tools/prokka/bin/../db/genus/Clostridium with 8 CPUs
+[09:36:42] Running: cat \/mnt\/data\/CbFastq\/CC\-3677_S2\/annotation\/Clostridium\.faa | parallel --gnu --plain -j 8 --block 64249 --recstart '>' --pipe blastp -query - -db /home/sid/Tools/prokka/bin/../db/genus/Clostridium -evalue 1e-06 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \/mnt\/data\/CbFastq\/CC\-3677_S2\/annotation\/Clostridium\.blast 2> /dev/null
+[09:37:12] Modify product: carbon storage regulator homolog => hypothetical protein
+[09:37:12] Modify product: DUF1292 domain-containing protein => hypothetical protein
+[09:37:12] Modify product: DUF4250 domain-containing protein => hypothetical protein
+[09:37:12] Modify product: DUF378 domain-containing protein => hypothetical protein
+[09:37:12] Modify product: transcription termination/antitermination protein NusA => hypothetical protein
+[09:37:12] Modify product: HutP superfamily => HutP superfamily protein
+[09:37:12] Modify product: DUF378 domain-containing protein => hypothetical protein
+[09:37:12] Modify product: DUF2798 domain-containing protein => hypothetical protein
+[09:37:12] Modify product: periplasmic molybdate-binding protein/domain => periplasmic molybdate-binding protein/domain protein
+[09:37:12] Modify product: DUF5105 domain-containing protein => hypothetical protein
+[09:37:13] Modify product: nucleoside hydrolase IUNH family => nucleoside hydrolase IUNH family protein
+[09:37:13] Modify product: prepilin-type N-terminal cleavage/methylation domain-containing protein => hypothetical protein
+[09:37:13] Modify product: prepilin-type N-terminal cleavage/methylation domain-containing protein => hypothetical protein
+[09:37:13] Modify product: transcription termination/antitermination protein NusG => hypothetical protein
+[09:37:13] Modify product: DUF4931 domain-containing protein => hypothetical protein
+[09:37:13] Modify product: DUF368 domain-containing protein => hypothetical protein
+[09:37:13] Modify product: DUF4363 domain-containing protein => hypothetical protein
+[09:37:13] Modify product: DUF1963 domain-containing protein => hypothetical protein
+[09:37:13] Modify product: DUF4829 domain-containing protein => hypothetical protein
+[09:37:13] Modify product: DUF5050 domain-containing protein => hypothetical protein
+[09:37:13] Modify product: prepilin-type N-terminal cleavage/methylation domain-containing protein => hypothetical protein
+[09:37:13] Modify product: N utilization substance protein B homolog => hypothetical protein
+[09:37:14] Modify product: DUF4163 domain-containing protein => hypothetical protein
+[09:37:14] Modify product: DUF1292 domain-containing protein => hypothetical protein
+[09:37:14] Modify product: transcription termination factor Rho => hypothetical protein
+[09:37:14] Modify product: DUF370 domain-containing protein => hypothetical protein
+[09:37:14] Cleaned 26 /product names
+[09:37:14] Deleting unwanted file: /mnt/data/CbFastq/CC-3677_S2/annotation/Clostridium.faa
+[09:37:14] Deleting unwanted file: /mnt/data/CbFastq/CC-3677_S2/annotation/Clostridium.blast
+[09:37:14] There are still 670 unannotated CDS left (started with 3268)
+[09:37:14] Will use blast to search against /home/sid/Tools/prokka/bin/../db/kingdom/Bacteria/sprot with 8 CPUs
+[09:37:14] Running: cat \/mnt\/data\/CbFastq\/CC\-3677_S2\/annotation\/sprot\.faa | parallel --gnu --plain -j 8 --block 8126 --recstart '>' --pipe blastp -query - -db /home/sid/Tools/prokka/bin/../db/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \/mnt\/data\/CbFastq\/CC\-3677_S2\/annotation\/sprot\.blast 2> /dev/null
+[09:37:19] Modify product: N-glycosidase Npun_R5314 => N-glycosidase
+[09:37:19] Modify product: Pentapeptide repeat protein VPA0095 => Pentapeptide repeat protein
+[09:37:19] Modify product: Uncharacterized beta-barrel protein YwiB => putative beta-barrel protein YwiB
+[09:37:19] Modify product: Probable antitoxin YezG => putative antitoxin YezG
+[09:37:19] Cleaned 4 /product names
+[09:37:19] Deleting unwanted file: /mnt/data/CbFastq/CC-3677_S2/annotation/sprot.faa
+[09:37:19] Deleting unwanted file: /mnt/data/CbFastq/CC-3677_S2/annotation/sprot.blast
+[09:37:19] There are still 641 unannotated CDS left (started with 3268)
+[09:37:19] Will use hmmer3 to search against /home/sid/Tools/prokka/bin/../db/hmm/HAMAP.hmm with 8 CPUs
+[09:37:19] Running: cat \/mnt\/data\/CbFastq\/CC\-3677_S2\/annotation\/HAMAP\.hmm\.faa | parallel --gnu --plain -j 8 --block 7596 --recstart '>' --pipe hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 /home/sid/Tools/prokka/bin/../db/hmm/HAMAP.hmm /dev/stdin > \/mnt\/data\/CbFastq\/CC\-3677_S2\/annotation\/HAMAP\.hmm\.hmmer3 2> /dev/null
+[09:37:25] Deleting unwanted file: /mnt/data/CbFastq/CC-3677_S2/annotation/HAMAP.hmm.faa
+[09:37:25] Deleting unwanted file: /mnt/data/CbFastq/CC-3677_S2/annotation/HAMAP.hmm.hmmer3
+[09:37:25] Labelling remaining 631 proteins as 'hypothetical protein'
+[09:37:25] Possible /pseudo 'transketolase' at NODE_1_length_514423_cov_99.2337 position 26119
+[09:37:25] Possible /pseudo 'lipase' at NODE_1_length_514423_cov_99.2337 position 84347
+[09:37:25] Possible /pseudo 'lipase' at NODE_1_length_514423_cov_99.2337 position 85815
+[09:37:25] Possible /pseudo 'type IV pilin' at NODE_1_length_514423_cov_99.2337 position 105205
+[09:37:25] Possible /pseudo 'signal peptidase I' at NODE_1_length_514423_cov_99.2337 position 124790
+[09:37:25] Possible /pseudo 'cell wall-binding protein' at NODE_1_length_514423_cov_99.2337 position 148704
+[09:37:25] Possible /pseudo 'glycosyl transferase' at NODE_1_length_514423_cov_99.2337 position 162451
+[09:37:25] Possible /pseudo 'cell wall-binding protein' at NODE_1_length_514423_cov_99.2337 position 213966
+[09:37:25] Possible /pseudo 'cell wall hydrolase' at NODE_1_length_514423_cov_99.2337 position 248044
+[09:37:25] Possible /pseudo 'chemotaxis protein' at NODE_1_length_514423_cov_99.2337 position 291486
+[09:37:25] Possible /pseudo 'iron transporter FeoA' at NODE_1_length_514423_cov_99.2337 position 464311
+[09:37:25] Possible /pseudo 'fecCD transport family protein' at NODE_1_length_514423_cov_99.2337 position 481303
+[09:37:25] Possible /pseudo 'ABC transporter family protein' at NODE_1_length_514423_cov_99.2337 position 483154
+[09:37:25] Possible /pseudo 'ABC transporter ATP-binding protein' at NODE_2_length_416502_cov_55.6412 position 19167
+[09:37:25] Possible /pseudo 'membrane protein' at NODE_2_length_416502_cov_55.6412 position 31464
+[09:37:25] Possible /pseudo 'PAS domain-containing sensor histidine kinase' at NODE_2_length_416502_cov_55.6412 position 167187
+[09:37:25] Possible /pseudo 'sigma-54-dependent Fis family transcriptional regulator' at NODE_2_length_416502_cov_55.6412 position 232363
+[09:37:25] Possible /pseudo 'peptidase S8' at NODE_2_length_416502_cov_55.6412 position 244307
+[09:37:25] Possible /pseudo 'peptide ABC transporter ATP-binding protein' at NODE_2_length_416502_cov_55.6412 position 265943
+[09:37:25] Possible /pseudo 'carboxysome shell protein' at NODE_2_length_416502_cov_55.6412 position 287208
+[09:37:25] Possible /pseudo 'MFS transporter' at NODE_2_length_416502_cov_55.6412 position 307552
+[09:37:25] Possible /pseudo 'MFS transporter' at NODE_2_length_416502_cov_55.6412 position 307843
+[09:37:25] Possible /pseudo 'membrane protein' at NODE_3_length_346670_cov_87.4358 position 21929
+[09:37:25] Possible /pseudo 'preprotein translocase subunit SecD' at NODE_3_length_346670_cov_87.4358 position 80695
+[09:37:25] Possible /pseudo 'phage protein' at NODE_3_length_346670_cov_87.4358 position 153036
+[09:37:25] Possible /pseudo 'flagellar basal body rod protein FlgG' at NODE_3_length_346670_cov_87.4358 position 226610
+[09:37:25] Possible /pseudo 'flagellar hook protein FlgE' at NODE_3_length_346670_cov_87.4358 position 240750
+[09:37:25] Possible /pseudo 'transcriptional regulator' at NODE_3_length_346670_cov_87.4358 position 344627
+[09:37:25] Possible /pseudo 'peptide ABC transporter ATP-binding protein' at NODE_5_length_303456_cov_64.5458 position 115857
+[09:37:25] Possible /pseudo 'NADH dehydrogenase' at NODE_5_length_303456_cov_64.5458 position 265775
+[09:37:25] Possible /pseudo 'RNA helicase' at NODE_5_length_303456_cov_64.5458 position 297598
+[09:37:25] Possible /pseudo '50S ribosomal protein L25' at NODE_5_length_303456_cov_64.5458 position 299544
+[09:37:25] Possible /pseudo 'oxidoreductase' at NODE_6_length_294141_cov_81.4553 position 37607
+[09:37:25] Possible /pseudo 'rubredoxin/rubrerythrin' at NODE_6_length_294141_cov_81.4553 position 84613
+[09:37:25] Possible /pseudo 'ABC transporter' at NODE_6_length_294141_cov_81.4553 position 246714
+[09:37:25] Possible /pseudo 'Ni/Fe hydrogenase' at NODE_6_length_294141_cov_81.4553 position 257156
+[09:37:25] Possible /pseudo 'transketolase' at NODE_7_length_241116_cov_66.2365 position 50741
+[09:37:25] Possible /pseudo 'membrane protein' at NODE_7_length_241116_cov_66.2365 position 75418
+[09:37:25] Possible /pseudo 'membrane protein' at NODE_7_length_241116_cov_66.2365 position 92120
+[09:37:25] Possible /pseudo 'membrane protein' at NODE_7_length_241116_cov_66.2365 position 137309
+[09:37:25] Possible /pseudo 'peptidase S8' at NODE_7_length_241116_cov_66.2365 position 226743
+[09:37:25] Possible /pseudo 'peptidase S8' at NODE_7_length_241116_cov_66.2365 position 230476
+[09:37:25] Possible /pseudo 'competence protein ComF' at NODE_8_length_240260_cov_94.6716 position 5435
+[09:37:25] Possible /pseudo 'ABC transporter family protein' at NODE_8_length_240260_cov_94.6716 position 78726
+[09:37:25] Possible /pseudo '2-hydroxyglutaryl-CoA dehydratase' at NODE_8_length_240260_cov_94.6716 position 116098
+[09:37:25] Possible /pseudo 'chemotaxis protein' at NODE_8_length_240260_cov_94.6716 position 131505
+[09:37:25] Possible /pseudo 'mor transcription activator family protein' at NODE_8_length_240260_cov_94.6716 position 157853
+[09:37:25] Possible /pseudo 'histidine kinase' at NODE_8_length_240260_cov_94.6716 position 233589
+[09:37:25] Possible /pseudo 'NrdH-redoxin' at NODE_9_length_216045_cov_121.283 position 14383
+[09:37:25] Possible /pseudo 'energy-coupling factor transporter ATPase' at NODE_9_length_216045_cov_121.283 position 60719
+[09:37:25] Possible /pseudo 'fumarate hydratase' at NODE_9_length_216045_cov_121.283 position 68854
+[09:37:25] Possible /pseudo 'chromate transporter' at NODE_9_length_216045_cov_121.283 position 80022
+[09:37:25] Possible /pseudo 'membrane protein' at NODE_9_length_216045_cov_121.283 position 86008
+[09:37:25] Possible /pseudo 'multidrug transporter' at NODE_9_length_216045_cov_121.283 position 116974
+[09:37:25] Possible /pseudo 'PTS system glucitol/sorbitol-specific transporter subunit IIBC' at NODE_9_length_216045_cov_121.283 position 190594
+[09:37:25] Possible /pseudo 'ABC transporter family protein' at NODE_10_length_123853_cov_59.2157 position 65345
+[09:37:25] Possible /pseudo 'spore maturation protein' at NODE_11_length_105248_cov_126.209 position 26034
+[09:37:25] Possible /pseudo 'membrane protein' at NODE_11_length_105248_cov_126.209 position 64030
+[09:37:25] Possible /pseudo 'PTS glucose transporter subunit IIA' at NODE_13_length_68690_cov_121.967 position 1344
+[09:37:25] Possible /pseudo 'iron ABC transporter permease' at NODE_13_length_68690_cov_121.967 position 59812
+[09:37:25] Possible /pseudo 'membrane protein' at NODE_13_length_68690_cov_121.967 position 67530
+[09:37:25] Possible /pseudo 'spore coat protein' at NODE_14_length_67045_cov_97.1553 position 22157
+[09:37:25] Possible /pseudo 'spore coat protein' at NODE_14_length_67045_cov_97.1553 position 22976
+[09:37:25] Possible /pseudo 'transketolase' at NODE_15_length_45800_cov_122.673 position 34097
+[09:37:25] Possible /pseudo 'two-component sensor histidine kinase' at NODE_18_length_39036_cov_71.0798 position 9007
+[09:37:25] Possible /pseudo 'phage infection protein' at NODE_18_length_39036_cov_71.0798 position 13500
+[09:37:25] Possible /pseudo 'primase' at NODE_21_length_13416_cov_100.961 position 3967
+[09:37:25] Possible /pseudo 'lipoprotein' at NODE_22_length_12487_cov_75.7043 position 8028
+[09:37:25] Found 114 unique /gene codes.
+[09:37:25] Fixed 2 duplicate /gene - flgG_1 flgG_2
+[09:37:25] Fixed 2 duplicate /gene - gutE_1 gutE_2
+[09:37:25] Fixed 2 duplicate /gene - rsgI_1 rsgI_2
+[09:37:25] Fixed 2 duplicate /gene - bepA_1 bepA_2
+[09:37:25] Fixed 2 duplicate /gene - gyrB_1 gyrB_2
+[09:37:25] Fixed 2 duplicate /gene - malH_1 malH_2
+[09:37:25] Fixed 2 duplicate /gene - fusA_1 fusA_2
+[09:37:25] Fixed 2 duplicate /gene - tuf_1 tuf_2
+[09:37:25] Fixed 8 colliding /gene names.
+[09:37:25] Adding /locus_tag identifiers
+[09:37:25] Assigned 3331 locus_tags to CDS and RNA features.
+[09:37:25] Writing outputs to /mnt/data/CbFastq/CC-3677_S2/annotation/
+[09:37:26] Generating annotation statistics file
+[09:37:26] Generating Genbank and Sequin files
+[09:37:26] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.12-beta from https://github.com/tseemann/prokka' -Z \/mnt\/data\/CbFastq\/CC\-3677_S2\/annotation\/PROKKA_01052017\.err -i \/mnt\/data\/CbFastq\/CC\-3677_S2\/annotation\/PROKKA_01052017\.fsa 2> /dev/null
+[09:37:34] Deleting unwanted file: /mnt/data/CbFastq/CC-3677_S2/annotation/errorsummary.val
+[09:37:34] Deleting unwanted file: /mnt/data/CbFastq/CC-3677_S2/annotation/PROKKA_01052017.dr
+[09:37:34] Deleting unwanted file: /mnt/data/CbFastq/CC-3677_S2/annotation/PROKKA_01052017.fixedproducts
+[09:37:34] Deleting unwanted file: /mnt/data/CbFastq/CC-3677_S2/annotation/PROKKA_01052017.ecn
+[09:37:34] Deleting unwanted file: /mnt/data/CbFastq/CC-3677_S2/annotation/PROKKA_01052017.val
+[09:37:34] Repairing broken .GBK output that tbl2asn produces...
+[09:37:34] Running: sed 's/COORDINATES: profile/COORDINATES:profile/' < \/mnt\/data\/CbFastq\/CC\-3677_S2\/annotation\/PROKKA_01052017\.gbf > \/mnt\/data\/CbFastq\/CC\-3677_S2\/annotation\/PROKKA_01052017\.gbk
+[09:37:34] Deleting unwanted file: /mnt/data/CbFastq/CC-3677_S2/annotation/PROKKA_01052017.gbf
+[09:37:34] Output files:
+[09:37:34] /mnt/data/CbFastq/CC-3677_S2/annotation/PROKKA_01052017.txt
+[09:37:34] /mnt/data/CbFastq/CC-3677_S2/annotation/PROKKA_01052017.ffn
+[09:37:34] /mnt/data/CbFastq/CC-3677_S2/annotation/PROKKA_01052017.sqn
+[09:37:34] /mnt/data/CbFastq/CC-3677_S2/annotation/PROKKA_01052017.tbl
+[09:37:34] /mnt/data/CbFastq/CC-3677_S2/annotation/PROKKA_01052017.gff
+[09:37:34] /mnt/data/CbFastq/CC-3677_S2/annotation/PROKKA_01052017.fsa
+[09:37:34] /mnt/data/CbFastq/CC-3677_S2/annotation/PROKKA_01052017.fna
+[09:37:34] /mnt/data/CbFastq/CC-3677_S2/annotation/PROKKA_01052017.log
+[09:37:34] /mnt/data/CbFastq/CC-3677_S2/annotation/PROKKA_01052017.faa
+[09:37:34] /mnt/data/CbFastq/CC-3677_S2/annotation/PROKKA_01052017.gbk
+[09:37:34] /mnt/data/CbFastq/CC-3677_S2/annotation/PROKKA_01052017.err
+[09:37:34] Annotation finished successfully.
+[09:37:34] Walltime used: 0.95 minutes
+[09:37:34] If you use this result please cite the Prokka paper:
+[09:37:34] Seemann T (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30(14):2068-9.
+[09:37:34] Type 'prokka --citation' for more details.
+[09:37:34] Share and enjoy!
+[09:37:34] This is prokka 1.12-beta
+[09:37:34] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[09:37:34] Homepage is https://github.com/tseemann/prokka
+[09:37:34] Local time is Thu Jan  5 09:37:34 2017
+[09:37:34] You are sid
+[09:37:34] Operating system is linux
+[09:37:34] You have BioPerl 1.006924
+[09:37:34] System has 8 cores.
+[09:37:34] Will use maximum of 8 cores.
+[09:37:34] Annotating as >>> Bacteria <<<
+[09:37:34] Creating new output folder: /mnt/data/CbFastq/CC-3678_S3/annotation
+[09:37:34] Running: mkdir -p \/mnt\/data\/CbFastq\/CC\-3678_S3\/annotation
+[09:37:34] Using filename prefix: PROKKA_01052017.XXX
+[09:37:34] Setting HMMER_NCPU=1
+[09:37:34] Writing log to: /mnt/data/CbFastq/CC-3678_S3/annotation/PROKKA_01052017.log
+[09:37:34] Command: /home/sid/Tools/prokka/bin/prokka --cpus 8 --kingdom Bacteria --genus Clostridium --species botulinum --usegenus --locustag CLSTRD --outdir /mnt/data/CbFastq/CC-3678_S3/annotation /mnt/data/CbFastq/CC-3678_S3/asm/contigs.fasta
+[09:37:34] Appending to PATH: /home/sid/Tools/prokka/bin/../binaries/linux
+[09:37:34] Appending to PATH: /home/sid/Tools/prokka/bin/../binaries/linux/../common
+[09:37:34] Appending to PATH: /home/sid/Tools/prokka/bin
+[09:37:34] Looking for 'aragorn' - found /home/sid/Tools/prokka/bin/../binaries/linux/aragorn
+[09:37:34] Determined aragorn version is 1.2
+[09:37:34] Looking for 'blastp' - found /usr/bin/blastp
+[09:37:34] Determined blastp version is 2.2
+[09:37:34] Looking for 'cmpress' - found /usr/bin/cmpress
+[09:37:34] Determined cmpress version is 1.1
+[09:37:34] Looking for 'cmscan' - found /usr/bin/cmscan
+[09:37:34] Determined cmscan version is 1.1
+[09:37:34] Looking for 'egrep' - found /bin/egrep
+[09:37:34] Looking for 'find' - found /usr/bin/find
+[09:37:34] Looking for 'grep' - found /bin/grep
+[09:37:34] Looking for 'hmmpress' - found /usr/bin/hmmpress
+[09:37:34] Determined hmmpress version is 3.1
+[09:37:34] Looking for 'hmmscan' - found /usr/bin/hmmscan
+[09:37:34] Determined hmmscan version is 3.1
+[09:37:34] Looking for 'less' - found /usr/bin/less
+[09:37:34] Looking for 'makeblastdb' - found /usr/bin/makeblastdb
+[09:37:34] Determined makeblastdb version is 2.2
+[09:37:34] Looking for 'minced' - found /home/sid/Tools/prokka/bin/../binaries/linux/../common/minced
+[09:37:34] Determined minced version is 2.0
+[09:37:34] Looking for 'parallel' - found /usr/bin/parallel
+[09:37:34] Determined parallel version is 20141022
+[09:37:34] Looking for 'prodigal' - found /home/sid/Tools/prokka/bin/../binaries/linux/prodigal
+[09:37:34] Determined prodigal version is 2.6
+[09:37:34] Looking for 'prokka-genbank_to_fasta_db' - found /home/sid/Tools/prokka/bin/prokka-genbank_to_fasta_db
+[09:37:34] Looking for 'sed' - found /bin/sed
+[09:37:34] Looking for 'tbl2asn' - found /home/sid/Tools/prokka/bin/../binaries/linux/tbl2asn
+[09:37:34] Determined tbl2asn version is 25.0
+[09:37:34] Using genetic code table 11.
+[09:37:34] Loading and checking input file: /mnt/data/CbFastq/CC-3678_S3/asm/contigs.fasta
+[09:37:34] Wrote 234 contigs totalling 3923472 bp.
+[09:37:34] Predicting tRNAs and tmRNAs
+[09:37:34] Running: aragorn -l -gc11  -w \/mnt\/data\/CbFastq\/CC\-3678_S3\/annotation\/PROKKA_01052017\.fna
+[09:37:35] 1 tRNA-Leu [7699,7785] 35 (caa)
+[09:37:35] 2 tRNA-Glu [150329,150403] 34 (ctc)
+[09:37:35] 3 tRNA-Phe c[711038,711113] 34 (gaa)
+[09:37:35] 4 tRNA-Ala c[734056,734131] 34 (tgc)
+[09:37:35] 5 tRNA-Met c[734137,734213] 35 (cat)
+[09:37:35] 1 tRNA-Trp [22137,22211] 33 (cca)
+[09:37:35] 2 tRNA-Trp [33719,33793] 33 (cca)
+[09:37:35] 3 tRNA-Met c[559315,559390] 34 (cat)
+[09:37:35] 1 tRNA-Arg [13207,13283] 35 (tct)
+[09:37:35] 1 tRNA-Phe [228,303] 34 (gaa)
+[09:37:35] 2 tRNA-Cys [305,378] 33 (gca)
+[09:37:35] 3 tRNA-Thr [26373,26448] 34 (ggt)
+[09:37:35] 4 tRNA-Pro [226118,226193] 34 (tgg)
+[09:37:35] 5 tRNA-Gly [226215,226288] 33 (tcc)
+[09:37:35] 6 tRNA-Arg [226522,226598] 35 (tct)
+[09:37:35] 7 tRNA-Pro [226605,226680] 34 (tgg)
+[09:37:35] 1 tRNA-Ser [4667,4757] 36 (tga)
+[09:37:35] 2 tRNA-Ser [4793,4883] 35 (gct)
+[09:37:35] 3 tRNA-Ser [5350,5440] 36 (tga)
+[09:37:35] 4 tRNA-Ser [5476,5566] 35 (gct)
+[09:37:35] 5 tRNA-Arg [18642,18716] 34 (acg)
+[09:37:35] 6 tRNA-Leu [151194,151282] 35 (taa)
+[09:37:35] 7 tRNA-Met [151303,151378] 34 (cat)
+[09:37:35] 8 tRNA-Met [151389,151465] 35 (cat)
+[09:37:35] 9 tRNA-Leu [151471,151559] 35 (taa)
+[09:37:35] 10 tRNA-Asn [165465,165539] 33 (gtt)
+[09:37:35] 11 tRNA-Asn [165857,165931] 33 (gtt)
+[09:37:35] 12 tRNA-Asn [166238,166312] 33 (gtt)
+[09:37:35] 1 tRNA-Cys [42836,42910] 33 (gca)
+[09:37:35] 1 tRNA-Asn [107,181] 33 (gtt)
+[09:37:35] 1 tRNA-Asp [71,147] 35 (gtc)
+[09:37:35] 1 tRNA-Glu [41610,41684] 34 (ttc)
+[09:37:35] 2 tRNA-Val [41698,41773] 34 (tac)
+[09:37:35] 3 tRNA-Asp [41780,41856] 35 (gtc)
+[09:37:35] 4 tRNA-Thr [41866,41940] 33 (tgt)
+[09:37:35] 5 tRNA-Glu [41972,42046] 34 (ttc)
+[09:37:35] 6 tRNA-Val [42059,42134] 34 (tac)
+[09:37:35] 1 tRNA-Arg [28504,28580] 35 (tct)
+[09:37:35] 2 tRNA-Lys [28584,28659] 34 (ttt)
+[09:37:35] 3 tRNA-Arg [29251,29327] 35 (tct)
+[09:37:35] 4 tRNA-Lys [29331,29406] 34 (ttt)
+[09:37:35] 1 tRNA-Ser [205,296] 35 (gga)
+[09:37:35] 1 tRNA-Arg c[12847,12923] 35 (tcg)
+[09:37:35] 1 tRNA-Lys [63,138] 34 (ctt)
+[09:37:35] 2 tRNA-Lys [3731,3806] 34 (ttt)
+[09:37:35] 1 tRNA-Arg c[3732,3806] 34 (cct)
+[09:37:35] 1 tRNA-Ile c[443,519] 35 (gat)
+[09:37:35] 1 tRNA-Tyr c[2,86] 35 (gta)
+[09:37:35] 2 tRNA-Thr c[93,167] 33 (tgt)
+[09:37:35] 3 tRNA-Val c[190,265] 34 (tac)
+[09:37:35] 4 tRNA-Tyr c[272,356] 35 (gta)
+[09:37:35] 1 tRNA-Arg [70,146] 35 (tct)
+[09:37:35] 2 tRNA-His [152,227] 34 (gtg)
+[09:37:35] 3 tRNA-Gln [231,305] 33 (ttg)
+[09:37:35] 1 tRNA-Gly c[54,128] 33 (gcc)
+[09:37:35] 2 tRNA-Leu c[134,218] 35 (tag)
+[09:37:35] 3 tRNA-Lys c[226,301] 34 (ttt)
+[09:37:35] 1 tRNA-Gly c[1,74] 33 (tcc)
+[09:37:35] Found 58 tRNAs
+[09:37:35] Predicting Ribosomal RNAs
+[09:37:35] You need either Barrnap or RNAmmer installed to predict rRNAs!
+[09:37:35] Skipping ncRNA search, enable with --rfam if desired.
+[09:37:35] Total of 58 tRNA + rRNA features
+[09:37:35] Searching for CRISPR repeats
+[09:37:35] CRISPR1 NODE_7_length_203927_cov_65.4631 188577 with 13 spacers
+[09:37:35] CRISPR2 NODE_17_length_41948_cov_71.6122 29849 with 4 spacers
+[09:37:35] Found 2 CRISPRs
+[09:37:35] Predicting coding sequences
+[09:37:35] Contigs total 3923472 bp, so using single mode
+[09:37:35] Running: prodigal -i \/mnt\/data\/CbFastq\/CC\-3678_S3\/annotation\/PROKKA_01052017\.fna -c -m -g 11 -p single -f sco -q
+[09:37:38] Found 3641 CDS
+[09:37:38] Connecting features back to sequences
+[09:37:38] Using custom Clostridium database for annotation
+[09:37:38] Annotating CDS, please be patient.
+[09:37:38] Will use 8 CPUs for similarity searching.
+[09:37:39] There are still 3641 unannotated CDS left (started with 3641)
+[09:37:39] Will use blast to search against /home/sid/Tools/prokka/bin/../db/genus/Clostridium with 8 CPUs
+[09:37:39] Running: cat \/mnt\/data\/CbFastq\/CC\-3678_S3\/annotation\/Clostridium\.faa | parallel --gnu --plain -j 8 --block 68328 --recstart '>' --pipe blastp -query - -db /home/sid/Tools/prokka/bin/../db/genus/Clostridium -evalue 1e-06 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \/mnt\/data\/CbFastq\/CC\-3678_S3\/annotation\/Clostridium\.blast 2> /dev/null
+[09:38:10] Modify product: nucleoside hydrolase IUNH family => nucleoside hydrolase IUNH family protein
+[09:38:10] Modify product: periplasmic molybdate-binding protein/domain => periplasmic molybdate-binding protein/domain protein
+[09:38:10] Modify product: DUF1292 domain-containing protein => hypothetical protein
+[09:38:10] Modify product: DUF4250 domain-containing protein => hypothetical protein
+[09:38:10] Modify product: DUF1292 domain-containing protein => hypothetical protein
+[09:38:10] Modify product: carbon storage regulator homolog => hypothetical protein
+[09:38:10] Modify product: DUF350 domain-containing protein => hypothetical protein
+[09:38:11] Modify product: phosphotransferase enzyme family => phosphotransferase enzyme family protein
+[09:38:11] Modify product: DUF378 domain-containing protein => hypothetical protein
+[09:38:11] Modify product: prepilin-type N-terminal cleavage/methylation domain-containing protein => hypothetical protein
+[09:38:11] Modify product: N utilization substance protein B homolog => hypothetical protein
+[09:38:11] Modify product: DUF4931 domain-containing protein => hypothetical protein
+[09:38:11] Modify product: DUF368 domain-containing protein => hypothetical protein
+[09:38:11] Modify product: prepilin-type N-terminal cleavage/methylation domain-containing protein => hypothetical protein
+[09:38:11] Modify product: prepilin-type N-terminal cleavage/methylation domain-containing protein => hypothetical protein
+[09:38:11] Modify product: prepilin-type N-terminal cleavage/methylation domain-containing protein => hypothetical protein
+[09:38:11] Modify product: HutP superfamily => HutP superfamily protein
+[09:38:11] Modify product: transcription termination/antitermination protein NusA => hypothetical protein
+[09:38:11] Modify product: DUF378 domain-containing protein => hypothetical protein
+[09:38:11] Modify product: transcription termination/antitermination protein NusG => hypothetical protein
+[09:38:12] Modify product: DUF4956 domain-containing protein => hypothetical protein
+[09:38:12] Modify product: DUF5050 domain-containing protein => hypothetical protein
+[09:38:12] Modify product: DUF5105 domain-containing protein => hypothetical protein
+[09:38:12] Modify product: transcription termination factor Rho => hypothetical protein
+[09:38:12] Modify product: DUF2798 domain-containing protein => hypothetical protein
+[09:38:12] Modify product: DUF370 domain-containing protein => hypothetical protein
+[09:38:12] Modify product: replication terminator protein => hypothetical protein
+[09:38:12] Modify product: replication terminator protein => hypothetical protein
+[09:38:12] Modify product: DUF1963 domain-containing protein => hypothetical protein
+[09:38:12] Modify product: DUF4163 domain-containing protein => hypothetical protein
+[09:38:12] Modify product: DUF4163 domain-containing protein => hypothetical protein
+[09:38:12] Modify product: DUF4163 domain-containing protein => hypothetical protein
+[09:38:12] Cleaned 32 /product names
+[09:38:12] Deleting unwanted file: /mnt/data/CbFastq/CC-3678_S3/annotation/Clostridium.faa
+[09:38:12] Deleting unwanted file: /mnt/data/CbFastq/CC-3678_S3/annotation/Clostridium.blast
+[09:38:13] There are still 841 unannotated CDS left (started with 3641)
+[09:38:13] Will use blast to search against /home/sid/Tools/prokka/bin/../db/kingdom/Bacteria/sprot with 8 CPUs
+[09:38:13] Running: cat \/mnt\/data\/CbFastq\/CC\-3678_S3\/annotation\/sprot\.faa | parallel --gnu --plain -j 8 --block 9020 --recstart '>' --pipe blastp -query - -db /home/sid/Tools/prokka/bin/../db/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \/mnt\/data\/CbFastq\/CC\-3678_S3\/annotation\/sprot\.blast 2> /dev/null
+[09:38:17] Modify product: Pentapeptide repeat protein VPA0095 => Pentapeptide repeat protein
+[09:38:17] Cleaned 1 /product names
+[09:38:17] Deleting unwanted file: /mnt/data/CbFastq/CC-3678_S3/annotation/sprot.faa
+[09:38:17] Deleting unwanted file: /mnt/data/CbFastq/CC-3678_S3/annotation/sprot.blast
+[09:38:18] There are still 826 unannotated CDS left (started with 3641)
+[09:38:18] Will use hmmer3 to search against /home/sid/Tools/prokka/bin/../db/hmm/HAMAP.hmm with 8 CPUs
+[09:38:18] Running: cat \/mnt\/data\/CbFastq\/CC\-3678_S3\/annotation\/HAMAP\.hmm\.faa | parallel --gnu --plain -j 8 --block 8695 --recstart '>' --pipe hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 /home/sid/Tools/prokka/bin/../db/hmm/HAMAP.hmm /dev/stdin > \/mnt\/data\/CbFastq\/CC\-3678_S3\/annotation\/HAMAP\.hmm\.hmmer3 2> /dev/null
+[09:38:25] Deleting unwanted file: /mnt/data/CbFastq/CC-3678_S3/annotation/HAMAP.hmm.faa
+[09:38:25] Deleting unwanted file: /mnt/data/CbFastq/CC-3678_S3/annotation/HAMAP.hmm.hmmer3
+[09:38:25] Labelling remaining 818 proteins as 'hypothetical protein'
+[09:38:25] Possible /pseudo 'transcriptional regulator' at NODE_1_length_734436_cov_88.2919 position 3256
+[09:38:25] Possible /pseudo 'rubredoxin/rubrerythrin' at NODE_1_length_734436_cov_88.2919 position 38846
+[09:38:25] Possible /pseudo 'ABC transporter' at NODE_1_length_734436_cov_88.2919 position 186264
+[09:38:25] Possible /pseudo 'acetyltransferase' at NODE_1_length_734436_cov_88.2919 position 257757
+[09:38:25] Possible /pseudo 'membrane protein' at NODE_1_length_734436_cov_88.2919 position 259152
+[09:38:25] Possible /pseudo 'iron transporter FeoA' at NODE_1_length_734436_cov_88.2919 position 278968
+[09:38:25] Possible /pseudo 'L-serine dehydratase, iron-sulfur-dependent subunit alpha' at NODE_1_length_734436_cov_88.2919 position 360497
+[09:38:25] Possible /pseudo 'cell wall-binding protein' at NODE_1_length_734436_cov_88.2919 position 444681
+[09:38:25] Possible /pseudo 'cell wall hydrolase' at NODE_1_length_734436_cov_88.2919 position 480438
+[09:38:25] Possible /pseudo 'cell wall-binding protein' at NODE_1_length_734436_cov_88.2919 position 510912
+[09:38:25] Possible /pseudo 'collagenolytic protease' at NODE_1_length_734436_cov_88.2919 position 517029
+[09:38:25] Possible /pseudo 'cell wall-binding protein' at NODE_1_length_734436_cov_88.2919 position 566452
+[09:38:25] Possible /pseudo 'signal peptidase I' at NODE_1_length_734436_cov_88.2919 position 600458
+[09:38:25] Possible /pseudo 'lipase' at NODE_1_length_734436_cov_88.2919 position 638058
+[09:38:25] Possible /pseudo 'transketolase' at NODE_1_length_734436_cov_88.2919 position 684646
+[09:38:25] Possible /pseudo 'competence protein ComF' at NODE_2_length_583366_cov_87.1807 position 5257
+[09:38:25] Possible /pseudo 'peptidase S8' at NODE_2_length_583366_cov_87.1807 position 30361
+[09:38:25] Possible /pseudo 'adenine permease' at NODE_2_length_583366_cov_87.1807 position 32926
+[09:38:25] Possible /pseudo '2-hydroxyglutaryl-CoA dehydratase' at NODE_2_length_583366_cov_87.1807 position 124334
+[09:38:25] Possible /pseudo 'histidine kinase' at NODE_2_length_583366_cov_87.1807 position 215550
+[09:38:25] Possible /pseudo 'transcriptional regulator' at NODE_2_length_583366_cov_87.1807 position 224083
+[09:38:25] Possible /pseudo 'flagellar hook protein FlgE' at NODE_2_length_583366_cov_87.1807 position 335604
+[09:38:25] Possible /pseudo 'flagellar basal body rod protein FlgG' at NODE_2_length_583366_cov_87.1807 position 349533
+[09:38:25] Possible /pseudo 'competence protein ComEC' at NODE_2_length_583366_cov_87.1807 position 369077
+[09:38:25] Possible /pseudo 'phage protein' at NODE_2_length_583366_cov_87.1807 position 418742
+[09:38:25] Possible /pseudo 'glutathionylspermidine synthase' at NODE_2_length_583366_cov_87.1807 position 541801
+[09:38:25] Possible /pseudo 'membrane protein' at NODE_2_length_583366_cov_87.1807 position 549290
+[09:38:25] Possible /pseudo 'transketolase' at NODE_3_length_348042_cov_77.4284 position 51250
+[09:38:25] Possible /pseudo 'membrane protein' at NODE_3_length_348042_cov_77.4284 position 77784
+[09:38:25] Possible /pseudo 'membrane protein' at NODE_3_length_348042_cov_77.4284 position 78225
+[09:38:25] Possible /pseudo 'membrane protein' at NODE_3_length_348042_cov_77.4284 position 95435
+[09:38:25] Possible /pseudo 'alpha-mannosidase' at NODE_3_length_348042_cov_77.4284 position 179772
+[09:38:25] Possible /pseudo 'alpha-mannosidase' at NODE_3_length_348042_cov_77.4284 position 180566
+[09:38:25] Possible /pseudo 'PTS fructose transporter subunit IIABC' at NODE_3_length_348042_cov_77.4284 position 181692
+[09:38:25] Possible /pseudo 'MFS transporter' at NODE_3_length_348042_cov_77.4284 position 244675
+[09:38:25] Possible /pseudo 'chitinase' at NODE_3_length_348042_cov_77.4284 position 286489
+[09:38:25] Possible /pseudo 'cell surface protein' at NODE_4_length_275043_cov_75.386 position 99938
+[09:38:25] Possible /pseudo 'peptide ABC transporter ATP-binding protein' at NODE_4_length_275043_cov_75.386 position 137433
+[09:38:25] Possible /pseudo 'MarR family transcriptional regulator' at NODE_5_length_245357_cov_84.1849 position 37429
+[09:38:25] Possible /pseudo 'ABC transporter' at NODE_5_length_245357_cov_84.1849 position 39764
+[09:38:25] Possible /pseudo 'terminase' at NODE_5_length_245357_cov_84.1849 position 229440
+[09:38:25] Possible /pseudo 'NrdH-redoxin' at NODE_6_length_226742_cov_105.95 position 14575
+[09:38:25] Possible /pseudo 'energy-coupling factor transporter ATPase' at NODE_6_length_226742_cov_105.95 position 60964
+[09:38:25] Possible /pseudo 'fumarate hydratase' at NODE_6_length_226742_cov_105.95 position 69604
+[09:38:25] Possible /pseudo 'chromate transporter' at NODE_6_length_226742_cov_105.95 position 81145
+[09:38:25] Possible /pseudo 'membrane protein' at NODE_6_length_226742_cov_105.95 position 87123
+[09:38:25] Possible /pseudo 'multidrug transporter' at NODE_6_length_226742_cov_105.95 position 116940
+[09:38:25] Possible /pseudo 'PTS system glucitol/sorbitol-specific transporter subunit IIBC' at NODE_6_length_226742_cov_105.95 position 202699
+[09:38:25] Possible /pseudo 'two-component sensor histidine kinase' at NODE_7_length_203927_cov_65.4631 position 67399
+[09:38:25] Possible /pseudo 'hydrogenase formation protein HypD' at NODE_7_length_203927_cov_65.4631 position 132237
+[09:38:25] Possible /pseudo 'Ni/Fe hydrogenase' at NODE_7_length_203927_cov_65.4631 position 139092
+[09:38:25] Possible /pseudo 'Ni/Fe hydrogenase' at NODE_7_length_203927_cov_65.4631 position 139425
+[09:38:25] Possible /pseudo 'Ni/Fe hydrogenase' at NODE_7_length_203927_cov_65.4631 position 139623
+[09:38:25] Possible /pseudo 'sugar ABC transporter permease' at NODE_7_length_203927_cov_65.4631 position 169148
+[09:38:25] Possible /pseudo 'peptidase S8' at NODE_7_length_203927_cov_65.4631 position 197070
+[09:38:25] Possible /pseudo 'membrane protein' at NODE_8_length_171334_cov_101.007 position 39541
+[09:38:25] Possible /pseudo 'spore maturation protein' at NODE_8_length_171334_cov_101.007 position 82474
+[09:38:25] Possible /pseudo 'encapsulation protein CapA' at NODE_8_length_171334_cov_101.007 position 128404
+[09:38:25] Possible /pseudo 'carboxysome shell protein' at NODE_9_length_165252_cov_66.65 position 61780
+[09:38:25] Possible /pseudo 'MFS transporter' at NODE_9_length_165252_cov_66.65 position 83291
+[09:38:25] Possible /pseudo 'MFS transporter' at NODE_9_length_165252_cov_66.65 position 83567
+[09:38:25] Possible /pseudo 'type I pullulanase' at NODE_9_length_165252_cov_66.65 position 117486
+[09:38:25] Possible /pseudo '50S ribosomal protein L25' at NODE_10_length_154289_cov_68.7849 position 21719
+[09:38:25] Possible /pseudo 'cell wall-binding protein' at NODE_11_length_121835_cov_76.0248 position 3270
+[09:38:25] Possible /pseudo 'phage infection protein' at NODE_11_length_121835_cov_76.0248 position 90295
+[09:38:25] Possible /pseudo 'two-component sensor histidine kinase' at NODE_11_length_121835_cov_76.0248 position 94768
+[09:38:25] Possible /pseudo 'transcriptional regulator' at NODE_12_length_100339_cov_74.7818 position 11193
+[09:38:25] Possible /pseudo 'FkbM family methyltransferase' at NODE_12_length_100339_cov_74.7818 position 46087
+[09:38:25] Possible /pseudo 'NADH dehydrogenase' at NODE_12_length_100339_cov_74.7818 position 77759
+[09:38:25] Possible /pseudo 'RepB family plasmid replication initiator protein' at NODE_13_length_71398_cov_99.6968 position 68707
+[09:38:25] Possible /pseudo 'spore coat protein' at NODE_14_length_67409_cov_91.3957 position 22279
+[09:38:25] Possible /pseudo 'spore coat protein' at NODE_14_length_67409_cov_91.3957 position 23098
+[09:38:25] Possible /pseudo 'transketolase' at NODE_15_length_48188_cov_88.8706 position 36105
+[09:38:25] Possible /pseudo 'PTS glucose transporter subunit IIA' at NODE_18_length_38849_cov_96.5433 position 37034
+[09:38:25] Possible /pseudo 'phage portal protein' at NODE_19_length_29998_cov_80.3208 position 9748
+[09:38:25] Possible /pseudo 'membrane protein' at NODE_22_length_18537_cov_96.7765 position 17446
+[09:38:25] Found 89 unique /gene codes.
+[09:38:25] Fixed 2 duplicate /gene - bepA_1 bepA_2
+[09:38:25] Fixed 2 duplicate /gene - gldA_1 gldA_2
+[09:38:25] Fixed 2 duplicate /gene - flgG_1 flgG_2
+[09:38:25] Fixed 2 duplicate /gene - recU_1 recU_2
+[09:38:25] Fixed 2 duplicate /gene - ribH_1 ribH_2
+[09:38:25] Fixed 2 duplicate /gene - gyrB_1 gyrB_2
+[09:38:25] Fixed 2 duplicate /gene - tuf_1 tuf_2
+[09:38:25] Fixed 2 duplicate /gene - fusA_1 fusA_2
+[09:38:25] Fixed 2 duplicate /gene - gutE_1 gutE_2
+[09:38:25] Fixed 9 colliding /gene names.
+[09:38:25] Adding /locus_tag identifiers
+[09:38:25] Assigned 3699 locus_tags to CDS and RNA features.
+[09:38:25] Writing outputs to /mnt/data/CbFastq/CC-3678_S3/annotation/
+[09:38:26] Generating annotation statistics file
+[09:38:26] Generating Genbank and Sequin files
+[09:38:26] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.12-beta from https://github.com/tseemann/prokka' -Z \/mnt\/data\/CbFastq\/CC\-3678_S3\/annotation\/PROKKA_01052017\.err -i \/mnt\/data\/CbFastq\/CC\-3678_S3\/annotation\/PROKKA_01052017\.fsa 2> /dev/null
+[09:38:37] Deleting unwanted file: /mnt/data/CbFastq/CC-3678_S3/annotation/errorsummary.val
+[09:38:37] Deleting unwanted file: /mnt/data/CbFastq/CC-3678_S3/annotation/PROKKA_01052017.dr
+[09:38:37] Deleting unwanted file: /mnt/data/CbFastq/CC-3678_S3/annotation/PROKKA_01052017.fixedproducts
+[09:38:37] Deleting unwanted file: /mnt/data/CbFastq/CC-3678_S3/annotation/PROKKA_01052017.ecn
+[09:38:37] Deleting unwanted file: /mnt/data/CbFastq/CC-3678_S3/annotation/PROKKA_01052017.val
+[09:38:37] Repairing broken .GBK output that tbl2asn produces...
+[09:38:37] Running: sed 's/COORDINATES: profile/COORDINATES:profile/' < \/mnt\/data\/CbFastq\/CC\-3678_S3\/annotation\/PROKKA_01052017\.gbf > \/mnt\/data\/CbFastq\/CC\-3678_S3\/annotation\/PROKKA_01052017\.gbk
+[09:38:37] Deleting unwanted file: /mnt/data/CbFastq/CC-3678_S3/annotation/PROKKA_01052017.gbf
+[09:38:37] Output files:
+[09:38:37] /mnt/data/CbFastq/CC-3678_S3/annotation/PROKKA_01052017.txt
+[09:38:37] /mnt/data/CbFastq/CC-3678_S3/annotation/PROKKA_01052017.ffn
+[09:38:37] /mnt/data/CbFastq/CC-3678_S3/annotation/PROKKA_01052017.sqn
+[09:38:37] /mnt/data/CbFastq/CC-3678_S3/annotation/PROKKA_01052017.tbl
+[09:38:37] /mnt/data/CbFastq/CC-3678_S3/annotation/PROKKA_01052017.gff
+[09:38:37] /mnt/data/CbFastq/CC-3678_S3/annotation/PROKKA_01052017.fsa
+[09:38:37] /mnt/data/CbFastq/CC-3678_S3/annotation/PROKKA_01052017.fna
+[09:38:37] /mnt/data/CbFastq/CC-3678_S3/annotation/PROKKA_01052017.log
+[09:38:37] /mnt/data/CbFastq/CC-3678_S3/annotation/PROKKA_01052017.faa
+[09:38:37] /mnt/data/CbFastq/CC-3678_S3/annotation/PROKKA_01052017.gbk
+[09:38:37] /mnt/data/CbFastq/CC-3678_S3/annotation/PROKKA_01052017.err
+[09:38:37] Annotation finished successfully.
+[09:38:37] Walltime used: 1.05 minutes
+[09:38:37] If you use this result please cite the Prokka paper:
+[09:38:37] Seemann T (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30(14):2068-9.
+[09:38:37] Type 'prokka --citation' for more details.
+[09:38:37] Share and enjoy!
+[09:38:37] This is prokka 1.12-beta
+[09:38:37] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[09:38:37] Homepage is https://github.com/tseemann/prokka
+[09:38:37] Local time is Thu Jan  5 09:38:37 2017
+[09:38:37] You are sid
+[09:38:37] Operating system is linux
+[09:38:37] You have BioPerl 1.006924
+[09:38:37] System has 8 cores.
+[09:38:37] Will use maximum of 8 cores.
+[09:38:37] Annotating as >>> Bacteria <<<
+[09:38:37] Creating new output folder: /mnt/data/CbFastq/CC-1985_S4/annotation
+[09:38:37] Running: mkdir -p \/mnt\/data\/CbFastq\/CC\-1985_S4\/annotation
+[09:38:37] Using filename prefix: PROKKA_01052017.XXX
+[09:38:37] Setting HMMER_NCPU=1
+[09:38:37] Writing log to: /mnt/data/CbFastq/CC-1985_S4/annotation/PROKKA_01052017.log
+[09:38:37] Command: /home/sid/Tools/prokka/bin/prokka --cpus 8 --kingdom Bacteria --genus Clostridium --species botulinum --usegenus --locustag CLSTRD --outdir /mnt/data/CbFastq/CC-1985_S4/annotation /mnt/data/CbFastq/CC-1985_S4/asm/contigs.fasta
+[09:38:37] Appending to PATH: /home/sid/Tools/prokka/bin/../binaries/linux
+[09:38:37] Appending to PATH: /home/sid/Tools/prokka/bin/../binaries/linux/../common
+[09:38:37] Appending to PATH: /home/sid/Tools/prokka/bin
+[09:38:37] Looking for 'aragorn' - found /home/sid/Tools/prokka/bin/../binaries/linux/aragorn
+[09:38:37] Determined aragorn version is 1.2
+[09:38:37] Looking for 'blastp' - found /usr/bin/blastp
+[09:38:38] Determined blastp version is 2.2
+[09:38:38] Looking for 'cmpress' - found /usr/bin/cmpress
+[09:38:38] Determined cmpress version is 1.1
+[09:38:38] Looking for 'cmscan' - found /usr/bin/cmscan
+[09:38:38] Determined cmscan version is 1.1
+[09:38:38] Looking for 'egrep' - found /bin/egrep
+[09:38:38] Looking for 'find' - found /usr/bin/find
+[09:38:38] Looking for 'grep' - found /bin/grep
+[09:38:38] Looking for 'hmmpress' - found /usr/bin/hmmpress
+[09:38:38] Determined hmmpress version is 3.1
+[09:38:38] Looking for 'hmmscan' - found /usr/bin/hmmscan
+[09:38:38] Determined hmmscan version is 3.1
+[09:38:38] Looking for 'less' - found /usr/bin/less
+[09:38:38] Looking for 'makeblastdb' - found /usr/bin/makeblastdb
+[09:38:38] Determined makeblastdb version is 2.2
+[09:38:38] Looking for 'minced' - found /home/sid/Tools/prokka/bin/../binaries/linux/../common/minced
+[09:38:38] Determined minced version is 2.0
+[09:38:38] Looking for 'parallel' - found /usr/bin/parallel
+[09:38:38] Determined parallel version is 20141022
+[09:38:38] Looking for 'prodigal' - found /home/sid/Tools/prokka/bin/../binaries/linux/prodigal
+[09:38:38] Determined prodigal version is 2.6
+[09:38:38] Looking for 'prokka-genbank_to_fasta_db' - found /home/sid/Tools/prokka/bin/prokka-genbank_to_fasta_db
+[09:38:38] Looking for 'sed' - found /bin/sed
+[09:38:38] Looking for 'tbl2asn' - found /home/sid/Tools/prokka/bin/../binaries/linux/tbl2asn
+[09:38:38] Determined tbl2asn version is 25.0
+[09:38:38] Using genetic code table 11.
+[09:38:38] Loading and checking input file: /mnt/data/CbFastq/CC-1985_S4/asm/contigs.fasta
+[09:38:38] Wrote 492 contigs totalling 3830944 bp.
+[09:38:38] Predicting tRNAs and tmRNAs
+[09:38:38] Running: aragorn -l -gc11  -w \/mnt\/data\/CbFastq\/CC\-1985_S4\/annotation\/PROKKA_01052017\.fna
+[09:38:39] 1 tRNA-Met c[49083,49158] 34 (cat)
+[09:38:39] 1 tRNA-Thr [22531,22606] 34 (ggt)
+[09:38:39] 2 tRNA-Pro [243320,243395] 34 (tgg)
+[09:38:39] 3 tRNA-Gly [243414,243487] 33 (tcc)
+[09:38:39] 4 tRNA-Arg [243731,243807] 35 (tct)
+[09:38:39] 5 tRNA-Pro [243814,243889] 34 (tgg)
+[09:38:39] 6 tRNA-Gly [243912,243985] 33 (tcc)
+[09:38:39] 7 tRNA-Arg [244000,244076] 35 (tct)
+[09:38:39] 8 tRNA-His [244082,244157] 34 (gtg)
+[09:38:39] 9 tRNA-Gln [244161,244235] 33 (ttg)
+[09:38:39] 10 tRNA-Lys [244242,244317] 34 (ttt)
+[09:38:39] 11 tRNA-Leu [244325,244409] 35 (tag)
+[09:38:39] 12 tRNA-Gly [244415,244489] 33 (gcc)
+[09:38:39] 13 tRNA-Gly [244505,244578] 33 (tcc)
+[09:38:39] 14 tRNA-Arg [244592,244667] 34 (tct)
+[09:38:39] 15 tRNA-His [244673,244748] 34 (gtg)
+[09:38:39] 16 tRNA-Gln [244754,244828] 33 (ttg)
+[09:38:39] 17 tRNA-Lys [244850,244925] 34 (ttt)
+[09:38:39] 18 tRNA-Leu [244934,245018] 35 (tag)
+[09:38:39] 19 tRNA-Gly [245024,245098] 33 (gcc)
+[09:38:39] 20 tRNA-Gly [245113,245186] 33 (tcc)
+[09:38:39] 21 tRNA-Arg [245229,245305] 35 (tcg)
+[09:38:39] 1 tmRNA c[107047,107400] 95,124 AEDNFAIAA*
+[09:38:39] 1 tRNA-Asn c[9417,9491] 33 (gtt)
+[09:38:39] 2 tRNA-Asn c[9828,9902] 33 (gtt)
+[09:38:39] 3 tRNA-Leu c[23874,23962] 35 (taa)
+[09:38:39] 4 tRNA-Met c[23968,24044] 35 (cat)
+[09:38:39] 5 tRNA-Met c[24055,24130] 34 (cat)
+[09:38:39] 6 tRNA-Leu c[24150,24238] 35 (taa)
+[09:38:39] 7 tRNA-Arg c[172553,172627] 34 (acg)
+[09:38:39] 8 tRNA-Ser c[185736,185826] 35 (gct)
+[09:38:39] 9 tRNA-Ser c[185862,185952] 36 (tga)
+[09:38:39] 10 tRNA-Ser c[186227,186317] 35 (gct)
+[09:38:39] 11 tRNA-Ser c[186353,186443] 36 (tga)
+[09:38:39] 12 tRNA-Ala c[191086,191161] 34 (tgc)
+[09:38:39] 13 tRNA-Met c[191166,191242] 35 (cat)
+[09:38:39] 1 tRNA-Glu [31114,31188] 34 (ctc)
+[09:38:39] 1 tRNA-Arg [134218,134294] 35 (tct)
+[09:38:39] 2 tRNA-Lys [134298,134373] 34 (ttt)
+[09:38:39] 3 tRNA-Arg [135883,135959] 35 (tct)
+[09:38:39] 4 tRNA-Lys [135963,136038] 34 (ttt)
+[09:38:39] 1 tRNA-Arg [23355,23429] 34 (cct)
+[09:38:39] 2 tRNA-Ser [45549,45640] 35 (gga)
+[09:38:39] 3 tRNA-Val [77298,77385] 31 (aac)
+[09:38:39] 1 tRNA-Trp c[54170,54244] 33 (cca)
+[09:38:39] 2 tRNA-Trp c[54664,54738] 33 (cca)
+[09:38:39] 1 tRNA-Asn c[67127,67201] 33 (gtt)
+[09:38:39] 1 tRNA-Leu [59670,59756] 35 (caa)
+[09:38:39] 1 tRNA-Cys c[78,152] 33 (gca)
+[09:38:39] 1 tRNA-Met [236,312] 35 (cat)
+[09:38:39] 2 tRNA-Ala [318,393] 34 (tgc)
+[09:38:39] 3 tRNA-Phe [25211,25286] 34 (gaa)
+[09:38:39] 1 tRNA-Glu [41792,41866] 34 (ttc)
+[09:38:39] 2 tRNA-Val [41880,41955] 34 (tac)
+[09:38:39] 3 tRNA-Asp [41962,42038] 35 (gtc)
+[09:38:39] 4 tRNA-Thr [42048,42122] 33 (tgt)
+[09:38:39] 5 tRNA-Glu [42155,42229] 34 (ttc)
+[09:38:39] 6 tRNA-Val [42242,42317] 34 (tac)
+[09:38:39] 1 tRNA-Asp [72,148] 35 (gtc)
+[09:38:39] 1 tRNA-Lys [63,138] 34 (ctt)
+[09:38:39] 2 tRNA-Lys [3663,3738] 34 (ttt)
+[09:38:39] 1 tRNA-Cys c[3673,3746] 33 (gca)
+[09:38:39] 2 tRNA-Phe c[3748,3823] 34 (gaa)
+[09:38:39] 1 tRNA-Tyr c[2,86] 35 (gta)
+[09:38:39] 2 tRNA-Thr c[93,167] 33 (tgt)
+[09:38:39] 3 tRNA-Val c[188,263] 34 (tac)
+[09:38:39] 4 tRNA-Tyr c[270,354] 35 (gta)
+[09:38:39] 1 tRNA-Ile c[17,93] 35 (gat)
+[09:38:39] Found 68 tRNAs
+[09:38:39] Predicting Ribosomal RNAs
+[09:38:39] You need either Barrnap or RNAmmer installed to predict rRNAs!
+[09:38:39] Skipping ncRNA search, enable with --rfam if desired.
+[09:38:39] Total of 67 tRNA + rRNA features
+[09:38:39] Searching for CRISPR repeats
+[09:38:39] CRISPR1 NODE_10_length_146993_cov_59.8152 136327 with 9 spacers
+[09:38:39] CRISPR2 NODE_10_length_146993_cov_59.8152 146245 with 11 spacers
+[09:38:39] CRISPR3 NODE_12_length_117811_cov_52.743 116931 with 5 spacers
+[09:38:39] Found 3 CRISPRs
+[09:38:39] Predicting coding sequences
+[09:38:39] Contigs total 3830944 bp, so using single mode
+[09:38:39] Running: prodigal -i \/mnt\/data\/CbFastq\/CC\-1985_S4\/annotation\/PROKKA_01052017\.fna -c -m -g 11 -p single -f sco -q
+[09:38:41] Excluding CDS which overlaps existing RNA (tRNA) at NODE_13_length_110030_cov_87.2103:76989..77687 on + strand
+[09:38:42] Found 3360 CDS
+[09:38:42] Connecting features back to sequences
+[09:38:42] Using custom Clostridium database for annotation
+[09:38:42] Annotating CDS, please be patient.
+[09:38:42] Will use 8 CPUs for similarity searching.
+[09:38:42] There are still 3360 unannotated CDS left (started with 3360)
+[09:38:42] Will use blast to search against /home/sid/Tools/prokka/bin/../db/genus/Clostridium with 8 CPUs
+[09:38:42] Running: cat \/mnt\/data\/CbFastq\/CC\-1985_S4\/annotation\/Clostridium\.faa | parallel --gnu --plain -j 8 --block 65839 --recstart '>' --pipe blastp -query - -db /home/sid/Tools/prokka/bin/../db/genus/Clostridium -evalue 1e-06 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \/mnt\/data\/CbFastq\/CC\-1985_S4\/annotation\/Clostridium\.blast 2> /dev/null
+[09:39:13] Modify product: periplasmic molybdate-binding protein/domain => periplasmic molybdate-binding protein/domain protein
+[09:39:13] Modify product: DUF2798 domain-containing protein => hypothetical protein
+[09:39:13] Modify product: transcription termination/antitermination protein NusA => hypothetical protein
+[09:39:13] Modify product: DUF378 domain-containing protein => hypothetical protein
+[09:39:13] Modify product: transcription termination/antitermination protein NusG => hypothetical protein
+[09:39:13] Modify product: DUF5050 domain-containing protein => hypothetical protein
+[09:39:13] Modify product: DUF4956 domain-containing protein => hypothetical protein
+[09:39:13] Modify product: DUF4829 domain-containing protein => hypothetical protein
+[09:39:13] Modify product: DUF378 domain-containing protein => hypothetical protein
+[09:39:14] Modify product: carbon storage regulator homolog => hypothetical protein
+[09:39:14] Modify product: DUF1292 domain-containing protein => hypothetical protein
+[09:39:14] Modify product: DUF4250 domain-containing protein => hypothetical protein
+[09:39:14] Modify product: DUF350 domain-containing protein => hypothetical protein
+[09:39:14] Modify product: HutP superfamily => HutP superfamily protein
+[09:39:14] Modify product: DUF1292 domain-containing protein => hypothetical protein
+[09:39:14] Modify product: N utilization substance protein B homolog => hypothetical protein
+[09:39:14] Modify product: prepilin-type N-terminal cleavage/methylation domain-containing protein => hypothetical protein
+[09:39:14] Modify product: type II secretion system protein F domain => type II secretion system protein F domain protein
+[09:39:15] Modify product: transcription termination factor Rho => hypothetical protein
+[09:39:15] Modify product: DUF5105 domain-containing protein => hypothetical protein
+[09:39:15] Modify product: DUF370 domain-containing protein => hypothetical protein
+[09:39:15] Modify product: DUF4931 domain-containing protein => hypothetical protein
+[09:39:15] Modify product: DUF368 domain-containing protein => hypothetical protein
+[09:39:15] Modify product: nucleoside hydrolase IUNH family => nucleoside hydrolase IUNH family protein
+[09:39:15] Modify product: prepilin-type N-terminal cleavage/methylation domain-containing protein => hypothetical protein
+[09:39:15] Modify product: prepilin-type N-terminal cleavage/methylation domain-containing protein => hypothetical protein
+[09:39:15] Modify product: DUF2798 domain-containing protein => hypothetical protein
+[09:39:15] Modify product: DUF4163 domain-containing protein => hypothetical protein
+[09:39:15] Cleaned 28 /product names
+[09:39:15] Deleting unwanted file: /mnt/data/CbFastq/CC-1985_S4/annotation/Clostridium.faa
+[09:39:15] Deleting unwanted file: /mnt/data/CbFastq/CC-1985_S4/annotation/Clostridium.blast
+[09:39:15] There are still 650 unannotated CDS left (started with 3360)
+[09:39:15] Will use blast to search against /home/sid/Tools/prokka/bin/../db/kingdom/Bacteria/sprot with 8 CPUs
+[09:39:15] Running: cat \/mnt\/data\/CbFastq\/CC\-1985_S4\/annotation\/sprot\.faa | parallel --gnu --plain -j 8 --block 7866 --recstart '>' --pipe blastp -query - -db /home/sid/Tools/prokka/bin/../db/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \/mnt\/data\/CbFastq\/CC\-1985_S4\/annotation\/sprot\.blast 2> /dev/null
+[09:39:20] Modify product: Probable transport protein MmpL9 => putative transport protein MmpL9
+[09:39:20] Modify product: Pentapeptide repeat protein VPA0095 => Pentapeptide repeat protein
+[09:39:20] Modify product: Uncharacterized beta-barrel protein YwiB => putative beta-barrel protein YwiB
+[09:39:20] Cleaned 3 /product names
+[09:39:20] Deleting unwanted file: /mnt/data/CbFastq/CC-1985_S4/annotation/sprot.faa
+[09:39:20] Deleting unwanted file: /mnt/data/CbFastq/CC-1985_S4/annotation/sprot.blast
+[09:39:20] There are still 632 unannotated CDS left (started with 3360)
+[09:39:20] Will use hmmer3 to search against /home/sid/Tools/prokka/bin/../db/hmm/HAMAP.hmm with 8 CPUs
+[09:39:20] Running: cat \/mnt\/data\/CbFastq\/CC\-1985_S4\/annotation\/HAMAP\.hmm\.faa | parallel --gnu --plain -j 8 --block 7448 --recstart '>' --pipe hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 /home/sid/Tools/prokka/bin/../db/hmm/HAMAP.hmm /dev/stdin > \/mnt\/data\/CbFastq\/CC\-1985_S4\/annotation\/HAMAP\.hmm\.hmmer3 2> /dev/null
+[09:39:26] Deleting unwanted file: /mnt/data/CbFastq/CC-1985_S4/annotation/HAMAP.hmm.faa
+[09:39:26] Deleting unwanted file: /mnt/data/CbFastq/CC-1985_S4/annotation/HAMAP.hmm.hmmer3
+[09:39:26] Labelling remaining 628 proteins as 'hypothetical protein'
+[09:39:26] Possible /pseudo 'terminase' at NODE_1_length_297848_cov_80.2868 position 8275
+[09:39:26] Possible /pseudo 'tyrosine recombinase/integrase' at NODE_1_length_297848_cov_80.2868 position 32400
+[09:39:26] Possible /pseudo 'tyrosine recombinase/integrase' at NODE_1_length_297848_cov_80.2868 position 33814
+[09:39:26] Possible /pseudo 'cell wall hydrolase' at NODE_1_length_297848_cov_80.2868 position 219150
+[09:39:26] Possible /pseudo 'cell wall-binding protein' at NODE_1_length_297848_cov_80.2868 position 256784
+[09:39:26] Possible /pseudo 'membrane protein' at NODE_2_length_287458_cov_74.9197 position 40222
+[09:39:26] Possible /pseudo 'ABC transporter' at NODE_2_length_287458_cov_74.9197 position 124630
+[09:39:26] Possible /pseudo 'NrdH-redoxin' at NODE_3_length_251567_cov_96.1869 position 10721
+[09:39:26] Possible /pseudo 'energy-coupling factor transporter ATPase' at NODE_3_length_251567_cov_96.1869 position 57105
+[09:39:26] Possible /pseudo 'fumarate hydratase' at NODE_3_length_251567_cov_96.1869 position 66008
+[09:39:26] Possible /pseudo 'chromate transporter' at NODE_3_length_251567_cov_96.1869 position 77874
+[09:39:26] Possible /pseudo 'membrane protein' at NODE_3_length_251567_cov_96.1869 position 83850
+[09:39:26] Possible /pseudo 'multidrug transporter' at NODE_3_length_251567_cov_96.1869 position 117462
+[09:39:26] Possible /pseudo 'PTS system glucitol/sorbitol-specific transporter subunit IIBC' at NODE_3_length_251567_cov_96.1869 position 219894
+[09:39:26] Possible /pseudo 'flagellar basal body rod protein FlgG' at NODE_4_length_242579_cov_77.2524 position 143196
+[09:39:26] Possible /pseudo 'flagellar hook protein FlgE' at NODE_4_length_242579_cov_77.2524 position 157414
+[09:39:26] Possible /pseudo 'transcriptional regulator' at NODE_5_length_203851_cov_70.6669 position 34266
+[09:39:26] Possible /pseudo 'histidine kinase' at NODE_5_length_203851_cov_70.6669 position 39591
+[09:39:26] Possible /pseudo '2-hydroxyglutaryl-CoA dehydratase' at NODE_5_length_203851_cov_70.6669 position 146942
+[09:39:26] Possible /pseudo 'ABC transporter' at NODE_5_length_203851_cov_70.6669 position 185708
+[09:39:26] Possible /pseudo 'Modification methylase FokI' at NODE_5_length_203851_cov_70.6669 position 195267
+[09:39:26] Possible /pseudo 'collagen-binding protein' at NODE_6_length_191474_cov_95.321 position 5800
+[09:39:26] Possible /pseudo 'spore maturation protein' at NODE_6_length_191474_cov_95.321 position 92345
+[09:39:26] Possible /pseudo 'membrane protein' at NODE_6_length_191474_cov_95.321 position 137227
+[09:39:26] Possible /pseudo 'cell surface protein' at NODE_7_length_163955_cov_60.8199 position 60153
+[09:39:26] Possible /pseudo 'peptide ABC transporter ATP-binding protein' at NODE_7_length_163955_cov_60.8199 position 99682
+[09:39:26] Possible /pseudo 'rubredoxin/rubrerythrin' at NODE_8_length_152411_cov_66.5359 position 98775
+[09:39:26] Possible /pseudo '(4Fe-4S)-binding protein' at NODE_8_length_152411_cov_66.5359 position 127250
+[09:39:26] Possible /pseudo 'transcriptional regulator' at NODE_9_length_151547_cov_75.3127 position 36800
+[09:39:26] Possible /pseudo 'ABC transporter permease' at NODE_9_length_151547_cov_75.3127 position 48921
+[09:39:26] Possible /pseudo 'ABC transporter' at NODE_9_length_151547_cov_75.3127 position 55446
+[09:39:26] Possible /pseudo 'methyl-accepting chemotaxis protein' at NODE_9_length_151547_cov_75.3127 position 111788
+[09:39:26] Possible /pseudo 'iron transporter FeoA' at NODE_9_length_151547_cov_75.3127 position 134593
+[09:39:26] Possible /pseudo 'CoA-disulfide reductase' at NODE_9_length_151547_cov_75.3127 position 135758
+[09:39:26] Possible /pseudo 'membrane protein' at NODE_10_length_146993_cov_59.8152 position 9960
+[09:39:26] Possible /pseudo 'membrane protein' at NODE_10_length_146993_cov_59.8152 position 27353
+[09:39:26] Possible /pseudo 'membrane protein' at NODE_10_length_146993_cov_59.8152 position 27937
+[09:39:26] Possible /pseudo 'transketolase' at NODE_10_length_146993_cov_59.8152 position 57560
+[09:39:26] Possible /pseudo 'lipase' at NODE_11_length_145989_cov_78.3448 position 42765
+[09:39:26] Possible /pseudo 'lipase' at NODE_11_length_145989_cov_78.3448 position 44205
+[09:39:26] Possible /pseudo 'signal peptidase I' at NODE_11_length_145989_cov_78.3448 position 87419
+[09:39:26] Possible /pseudo 'cell wall-binding protein' at NODE_11_length_145989_cov_78.3448 position 122227
+[09:39:26] Possible /pseudo 'hydrogenase' at NODE_12_length_117811_cov_52.743 position 1630
+[09:39:26] Possible /pseudo 'uracil permease' at NODE_12_length_117811_cov_52.743 position 8760
+[09:39:26] Possible /pseudo 'Ni/Fe hydrogenase' at NODE_12_length_117811_cov_52.743 position 75423
+[09:39:26] Possible /pseudo 'peptidase S8' at NODE_12_length_117811_cov_52.743 position 99324
+[09:39:26] Possible /pseudo 'membrane protein' at NODE_13_length_110030_cov_87.2103 position 1183
+[09:39:26] Possible /pseudo 'iron ABC transporter permease' at NODE_13_length_110030_cov_87.2103 position 9511
+[09:39:26] Possible /pseudo 'transcriptional regulator' at NODE_13_length_110030_cov_87.2103 position 24815
+[09:39:26] Possible /pseudo 'glycosyl transferase' at NODE_13_length_110030_cov_87.2103 position 68680
+[09:39:26] Possible /pseudo 'PTS glucose transporter subunit IIA' at NODE_13_length_110030_cov_87.2103 position 108067
+[09:39:26] Possible /pseudo '50S ribosomal protein L25' at NODE_14_length_105470_cov_59.8667 position 5883
+[09:39:26] Possible /pseudo 'NADH dehydrogenase' at NODE_14_length_105470_cov_59.8667 position 40956
+[09:39:26] Possible /pseudo 'membrane protein' at NODE_15_length_91656_cov_71.8399 position 27088
+[09:39:26] Possible /pseudo 'membrane protein' at NODE_15_length_91656_cov_71.8399 position 89504
+[09:39:26] Possible /pseudo 'transcriptional regulator' at NODE_16_length_78190_cov_72.864 position 2866
+[09:39:26] Possible /pseudo 'transcriptional regulator' at NODE_16_length_78190_cov_72.864 position 3127
+[09:39:26] Possible /pseudo 'transcriptional regulator' at NODE_16_length_78190_cov_72.864 position 3514
+[09:39:26] Possible /pseudo 'competence protein ComF' at NODE_16_length_78190_cov_72.864 position 72860
+[09:39:26] Possible /pseudo 'transcriptional regulator' at NODE_17_length_78047_cov_61.36 position 16954
+[09:39:26] Possible /pseudo 'transcriptional regulator' at NODE_17_length_78047_cov_61.36 position 17518
+[09:39:26] Possible /pseudo 'transcriptional regulator' at NODE_17_length_78047_cov_61.36 position 17867
+[09:39:26] Possible /pseudo 'cell wall-binding protein' at NODE_17_length_78047_cov_61.36 position 18916
+[09:39:26] Possible /pseudo 'transposase' at NODE_17_length_78047_cov_61.36 position 33429
+[09:39:26] Possible /pseudo 'PAS domain-containing sensor histidine kinase' at NODE_18_length_74667_cov_51.5955 position 67788
+[09:39:26] Possible /pseudo 'spore coat protein' at NODE_19_length_67314_cov_78.4102 position 44319
+[09:39:26] Possible /pseudo 'spore coat protein' at NODE_19_length_67314_cov_78.4102 position 45064
+[09:39:26] Possible /pseudo 'phage infection protein' at NODE_20_length_63063_cov_59.2959 position 4839
+[09:39:26] Possible /pseudo 'chloramphenicol acetyltransferase' at NODE_20_length_63063_cov_59.2959 position 31689
+[09:39:26] Possible /pseudo 'MFS transporter' at NODE_22_length_58551_cov_78.4018 position 16122
+[09:39:26] Possible /pseudo 'transcriptional regulator' at NODE_24_length_50522_cov_62.2516 position 27894
+[09:39:26] Possible /pseudo 'peptide ABC transporter ATP-binding protein' at NODE_25_length_49266_cov_53.3291 position 4401
+[09:39:26] Possible /pseudo 'sulfatase' at NODE_26_length_46487_cov_88.6868 position 6471
+[09:39:26] Possible /pseudo 'transketolase' at NODE_26_length_46487_cov_88.6868 position 45381
+[09:39:26] Possible /pseudo 'MFS transporter' at NODE_27_length_45458_cov_52.8733 position 11669
+[09:39:26] Possible /pseudo 'MFS transporter' at NODE_27_length_45458_cov_52.8733 position 11945
+[09:39:26] Possible /pseudo 'membrane protein' at NODE_30_length_32981_cov_53.2249 position 19467
+[09:39:26] Possible /pseudo 'transketolase' at NODE_33_length_23408_cov_88.4113 position 14380
+[09:39:26] Found 90 unique /gene codes.
+[09:39:26] Fixed 2 duplicate /gene - tuf_1 tuf_2
+[09:39:26] Fixed 2 duplicate /gene - gyrB_1 gyrB_2
+[09:39:26] Fixed 2 duplicate /gene - fokIM_1 fokIM_2
+[09:39:26] Fixed 2 duplicate /gene - gutE_1 gutE_2
+[09:39:26] Fixed 2 duplicate /gene - fusA_1 fusA_2
+[09:39:26] Fixed 2 duplicate /gene - flgG_1 flgG_2
+[09:39:26] Fixed 6 colliding /gene names.
+[09:39:26] Adding /locus_tag identifiers
+[09:39:26] Assigned 3428 locus_tags to CDS and RNA features.
+[09:39:26] Writing outputs to /mnt/data/CbFastq/CC-1985_S4/annotation/
+[09:39:27] Generating annotation statistics file
+[09:39:27] Generating Genbank and Sequin files
+[09:39:27] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.12-beta from https://github.com/tseemann/prokka' -Z \/mnt\/data\/CbFastq\/CC\-1985_S4\/annotation\/PROKKA_01052017\.err -i \/mnt\/data\/CbFastq\/CC\-1985_S4\/annotation\/PROKKA_01052017\.fsa 2> /dev/null
+[09:39:39] Deleting unwanted file: /mnt/data/CbFastq/CC-1985_S4/annotation/errorsummary.val
+[09:39:39] Deleting unwanted file: /mnt/data/CbFastq/CC-1985_S4/annotation/PROKKA_01052017.dr
+[09:39:39] Deleting unwanted file: /mnt/data/CbFastq/CC-1985_S4/annotation/PROKKA_01052017.fixedproducts
+[09:39:39] Deleting unwanted file: /mnt/data/CbFastq/CC-1985_S4/annotation/PROKKA_01052017.ecn
+[09:39:39] Deleting unwanted file: /mnt/data/CbFastq/CC-1985_S4/annotation/PROKKA_01052017.val
+[09:39:39] Repairing broken .GBK output that tbl2asn produces...
+[09:39:39] Running: sed 's/COORDINATES: profile/COORDINATES:profile/' < \/mnt\/data\/CbFastq\/CC\-1985_S4\/annotation\/PROKKA_01052017\.gbf > \/mnt\/data\/CbFastq\/CC\-1985_S4\/annotation\/PROKKA_01052017\.gbk
+[09:39:39] Deleting unwanted file: /mnt/data/CbFastq/CC-1985_S4/annotation/PROKKA_01052017.gbf
+[09:39:39] Output files:
+[09:39:39] /mnt/data/CbFastq/CC-1985_S4/annotation/PROKKA_01052017.txt
+[09:39:39] /mnt/data/CbFastq/CC-1985_S4/annotation/PROKKA_01052017.ffn
+[09:39:39] /mnt/data/CbFastq/CC-1985_S4/annotation/PROKKA_01052017.sqn
+[09:39:39] /mnt/data/CbFastq/CC-1985_S4/annotation/PROKKA_01052017.tbl
+[09:39:39] /mnt/data/CbFastq/CC-1985_S4/annotation/PROKKA_01052017.gff
+[09:39:39] /mnt/data/CbFastq/CC-1985_S4/annotation/PROKKA_01052017.fsa
+[09:39:39] /mnt/data/CbFastq/CC-1985_S4/annotation/PROKKA_01052017.fna
+[09:39:39] /mnt/data/CbFastq/CC-1985_S4/annotation/PROKKA_01052017.log
+[09:39:39] /mnt/data/CbFastq/CC-1985_S4/annotation/PROKKA_01052017.faa
+[09:39:39] /mnt/data/CbFastq/CC-1985_S4/annotation/PROKKA_01052017.gbk
+[09:39:39] /mnt/data/CbFastq/CC-1985_S4/annotation/PROKKA_01052017.err
+[09:39:39] Annotation finished successfully.
+[09:39:39] Walltime used: 1.03 minutes
+[09:39:39] If you use this result please cite the Prokka paper:
+[09:39:39] Seemann T (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30(14):2068-9.
+[09:39:39] Type 'prokka --citation' for more details.
+[09:39:39] Thank you, come again.
