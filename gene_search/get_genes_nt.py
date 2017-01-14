@@ -50,7 +50,7 @@ with open(gene_list, "r") as gene_fh:
                     nt_handle.close()
                     fasta_fh.write("\n".join(wrap(str(nt_record.seq), 80)) + "\n")
                 else:
-                    genes_not_found_fh.write(gene.strip("\n") + ":old_version\n")
+                    genes_not_found_fh.write(gene)
                 print(nt_record.id)
 
         # empty list (based on gene label, no results could be found, literature)
