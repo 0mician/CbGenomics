@@ -12,7 +12,13 @@ do
 done
 
 # this loop will regroup all the results in multiple csv files for different similarity levels
-# filtering hits for 90-100% sequence identity
+
+echo "strain,query,target,ppos" > blast_results_90.csv
+echo "strain,query,target,ppos" > blast_results_80.csv
+echo "strain,query,target,ppos" > blast_results_70.csv
+echo "strain,query,target,ppos" > blast_results_60.csv
+echo "strain,query,target,ppos" > blast_results_50.csv
+
 for dir in */;
 do
     cd $dir
