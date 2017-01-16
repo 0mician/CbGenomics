@@ -15,17 +15,16 @@ done
 # filtering hits for 90-100% sequence identity
 for dir in */;
 do
-    echo $(basename $dir) >> blast_results_90.csv
-    echo $(basename $dir) >> blast_results_80.csv
-    echo $(basename $dir) >> blast_results_70.csv
-    echo $(basename $dir) >> blast_results_60.csv
-    echo $(basename $dir) >> blast_results_50.csv
-    
     cd $dir
-    cat blast_report.txt | awk '{if($5 > 90) print $1","$2","$5}' >> ../blast_results_90.csv
-    cat blast_report.txt | awk '{if($5 > 80) print $1","$2","$5}' >> ../blast_results_80.csv
-    cat blast_report.txt | awk '{if($5 > 70) print $1","$2","$5}' >> ../blast_results_70.csv
-    cat blast_report.txt | awk '{if($5 > 60) print $1","$2","$5}' >> ../blast_results_60.csv
-    cat blast_report.txt | awk '{if($5 > 50) print $1","$2","$5}' >> ../blast_results_50.csv
+    cat blast_report.txt |
+	awk -v x=$(basename $dir) '{if($5 > 90) print x","$1","$2","$5}' >> ../blast_results_90.csv
+    cat blast_report.txt |
+	awk -v x=$(basename $dir) '{if($5 > 80) print x","$1","$2","$5}' >> ../blast_results_80.csv
+    cat blast_report.txt |
+	awk -v x=$(basename $dir) '{if($5 > 70) print x","$1","$2","$5}' >> ../blast_results_70.csv
+    cat blast_report.txt |
+	awk -v x=$(basename $dir) '{if($5 > 60) print x","$1","$2","$5}' >> ../blast_results_60.csv
+    cat blast_report.txt |
+	awk -v x=$(basename $dir) '{if($5 > 50) print x","$1","$2","$5}' >> ../blast_results_50.csv
     cd ../
 done
