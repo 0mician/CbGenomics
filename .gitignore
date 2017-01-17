@@ -39,3 +39,8 @@ emacs-config.el
 # folder
 publication/
 venv/
+
+# R
+.RData
+.Rhistory
+
