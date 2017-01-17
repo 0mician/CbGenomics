@@ -5,7 +5,7 @@
 library(ggplot2)
 library(reshape2)
 
-setwd(dir = "/home/sid/Dev/CbGenomics/data/")
+setwd(dir = "/home/sid/Dev/CbGenomics/gene_search/data/")
 blast <- read.csv("blast_proteins.csv", check.names = FALSE, header=TRUE) 
 
 # creating dataframe for heatmap
@@ -84,7 +84,7 @@ for(i in 1:nrow(blast)) {
   heat_protein[as.character(blast$query[i]), as.character(blast$hit[i])] <- blast$perc_id[i]
 }
 
-heat_protein[lower.tri(heat_protein)] <- NA
+heat_protein[lower.tri(heat_protein)] <- 0
 
 heat_proteins.melt <- melt(heat_protein)
 heat_proteins.melt$hit <- rep(labels, 64)
@@ -101,6 +101,6 @@ ggplot(data = heat_proteins.melt, aes(x = query  , y = target)) +
   xlab("Gene ID") +
   ylab("Gene ID") +
   theme(axis.text.x = element_text(angle=45, hjust=1, vjust=1),  
-        legend.position="none",
-        text = element_text(size=12),
+        legend.position= c(0.2, 0.8),
+        text = element_text(size=10),
         plot.title = element_text(size=16))
